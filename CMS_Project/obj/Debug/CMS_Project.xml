@@ -22,25 +22,5 @@ CMS_Project
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="P:CMS_Project.My.Resources.Resources.college">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:CMS_Project.My.Resources.Resources.key">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:CMS_Project.My.Resources.Resources.user">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:CMS_Project.My.Resources.Resources.water">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 </members>
 </doc>

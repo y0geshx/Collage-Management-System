@@ -39,3 +39,8 @@ C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.pdb
 C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.Login.resources
 C:\Users\yx\source\repos\CMS_Project\CMS_Project\bin\Debug\Guna.UI2.dll
 C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.splash.resources
+C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.Dashboard.resources
+C:\Users\yx\source\repos\CMS_Project\CMS_Project\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.Student.resources
+C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.Teacher.resources
+C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.Dashform.resources

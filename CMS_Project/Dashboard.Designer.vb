@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Dashboard
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,11 +20,216 @@ Partial Class Dashboard
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
+        Me.TopPanel = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.VarLabel1 = New System.Windows.Forms.Label()
+        Me.PanelLogo = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.logo = New System.Windows.Forms.PictureBox()
+        Me.PanelMenu = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
+        Me.TeacherButton = New Guna.UI2.WinForms.Guna2Button()
+        Me.StudentButton = New Guna.UI2.WinForms.Guna2Button()
+        Me.DashBoardButton = New Guna.UI2.WinForms.Guna2Button()
+        Me.MainPanal = New System.Windows.Forms.Panel()
+        Me.TopPanel.SuspendLayout()
+        Me.PanelLogo.SuspendLayout()
+        CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelMenu.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'TopPanel
+        '
+        Me.TopPanel.BackColor = System.Drawing.Color.SlateBlue
+        Me.TopPanel.Controls.Add(Me.VarLabel1)
+        Me.TopPanel.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TopPanel.Location = New System.Drawing.Point(199, 0)
+        Me.TopPanel.Name = "TopPanel"
+        Me.TopPanel.ShadowDecoration.Parent = Me.TopPanel
+        Me.TopPanel.Size = New System.Drawing.Size(925, 58)
+        Me.TopPanel.TabIndex = 2
+        '
+        'VarLabel1
+        '
+        Me.VarLabel1.AutoSize = True
+        Me.VarLabel1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VarLabel1.ForeColor = System.Drawing.Color.White
+        Me.VarLabel1.Location = New System.Drawing.Point(6, 23)
+        Me.VarLabel1.Name = "VarLabel1"
+        Me.VarLabel1.Size = New System.Drawing.Size(82, 32)
+        Me.VarLabel1.TabIndex = 1
+        Me.VarLabel1.Text = "Home"
+        '
+        'PanelLogo
+        '
+        Me.PanelLogo.BackColor = System.Drawing.Color.DarkSlateBlue
+        Me.PanelLogo.Controls.Add(Me.Label1)
+        Me.PanelLogo.Controls.Add(Me.logo)
+        Me.PanelLogo.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelLogo.Location = New System.Drawing.Point(0, 0)
+        Me.PanelLogo.Name = "PanelLogo"
+        Me.PanelLogo.ShadowDecoration.Parent = Me.PanelLogo
+        Me.PanelLogo.Size = New System.Drawing.Size(199, 58)
+        Me.PanelLogo.TabIndex = 0
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(71, 25)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(55, 30)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "CMS"
+        '
+        'logo
+        '
+        Me.logo.Image = CType(resources.GetObject("logo.Image"), System.Drawing.Image)
+        Me.logo.Location = New System.Drawing.Point(3, 5)
+        Me.logo.Name = "logo"
+        Me.logo.Size = New System.Drawing.Size(73, 50)
+        Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.logo.TabIndex = 0
+        Me.logo.TabStop = False
+        '
+        'PanelMenu
+        '
+        Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.PanelMenu.Controls.Add(Me.Guna2Button4)
+        Me.PanelMenu.Controls.Add(Me.TeacherButton)
+        Me.PanelMenu.Controls.Add(Me.StudentButton)
+        Me.PanelMenu.Controls.Add(Me.DashBoardButton)
+        Me.PanelMenu.Controls.Add(Me.PanelLogo)
+        Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelMenu.Font = New System.Drawing.Font("Open Sans", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
+        Me.PanelMenu.Name = "PanelMenu"
+        Me.PanelMenu.ShadowDecoration.Parent = Me.PanelMenu
+        Me.PanelMenu.Size = New System.Drawing.Size(199, 530)
+        Me.PanelMenu.TabIndex = 1
+        '
+        'Guna2Button4
+        '
+        Me.Guna2Button4.Animated = True
+        Me.Guna2Button4.CheckedState.Parent = Me.Guna2Button4
+        Me.Guna2Button4.CustomImages.Parent = Me.Guna2Button4
+        Me.Guna2Button4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2Button4.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button4.HoverState.Parent = Me.Guna2Button4
+        Me.Guna2Button4.Image = CType(resources.GetObject("Guna2Button4.Image"), System.Drawing.Image)
+        Me.Guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Guna2Button4.ImageSize = New System.Drawing.Size(40, 40)
+        Me.Guna2Button4.Location = New System.Drawing.Point(0, 193)
+        Me.Guna2Button4.Name = "Guna2Button4"
+        Me.Guna2Button4.ShadowDecoration.Parent = Me.Guna2Button4
+        Me.Guna2Button4.Size = New System.Drawing.Size(199, 45)
+        Me.Guna2Button4.TabIndex = 14
+        Me.Guna2Button4.Text = "DashBoard"
+        '
+        'TeacherButton
+        '
+        Me.TeacherButton.Animated = True
+        Me.TeacherButton.CheckedState.Parent = Me.TeacherButton
+        Me.TeacherButton.CustomImages.Parent = Me.TeacherButton
+        Me.TeacherButton.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TeacherButton.FillColor = System.Drawing.Color.Transparent
+        Me.TeacherButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TeacherButton.ForeColor = System.Drawing.Color.White
+        Me.TeacherButton.HoverState.Parent = Me.TeacherButton
+        Me.TeacherButton.Image = CType(resources.GetObject("TeacherButton.Image"), System.Drawing.Image)
+        Me.TeacherButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.TeacherButton.ImageSize = New System.Drawing.Size(40, 40)
+        Me.TeacherButton.Location = New System.Drawing.Point(0, 148)
+        Me.TeacherButton.Name = "TeacherButton"
+        Me.TeacherButton.ShadowDecoration.Parent = Me.TeacherButton
+        Me.TeacherButton.Size = New System.Drawing.Size(199, 45)
+        Me.TeacherButton.TabIndex = 12
+        Me.TeacherButton.Text = "Teachers"
+        '
+        'StudentButton
+        '
+        Me.StudentButton.Animated = True
+        Me.StudentButton.CheckedState.Parent = Me.StudentButton
+        Me.StudentButton.CustomImages.Parent = Me.StudentButton
+        Me.StudentButton.Dock = System.Windows.Forms.DockStyle.Top
+        Me.StudentButton.FillColor = System.Drawing.Color.Transparent
+        Me.StudentButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StudentButton.ForeColor = System.Drawing.Color.White
+        Me.StudentButton.HoverState.Parent = Me.StudentButton
+        Me.StudentButton.Image = CType(resources.GetObject("StudentButton.Image"), System.Drawing.Image)
+        Me.StudentButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.StudentButton.ImageSize = New System.Drawing.Size(40, 40)
+        Me.StudentButton.Location = New System.Drawing.Point(0, 103)
+        Me.StudentButton.Name = "StudentButton"
+        Me.StudentButton.ShadowDecoration.Parent = Me.StudentButton
+        Me.StudentButton.Size = New System.Drawing.Size(199, 45)
+        Me.StudentButton.TabIndex = 10
+        Me.StudentButton.Text = "Students"
+        '
+        'DashBoardButton
+        '
+        Me.DashBoardButton.Animated = True
+        Me.DashBoardButton.CheckedState.Parent = Me.DashBoardButton
+        Me.DashBoardButton.CustomImages.Parent = Me.DashBoardButton
+        Me.DashBoardButton.Dock = System.Windows.Forms.DockStyle.Top
+        Me.DashBoardButton.FillColor = System.Drawing.Color.Transparent
+        Me.DashBoardButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DashBoardButton.ForeColor = System.Drawing.Color.White
+        Me.DashBoardButton.HoverState.Parent = Me.DashBoardButton
+        Me.DashBoardButton.Image = CType(resources.GetObject("DashBoardButton.Image"), System.Drawing.Image)
+        Me.DashBoardButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.DashBoardButton.ImageSize = New System.Drawing.Size(40, 40)
+        Me.DashBoardButton.Location = New System.Drawing.Point(0, 58)
+        Me.DashBoardButton.Name = "DashBoardButton"
+        Me.DashBoardButton.ShadowDecoration.Parent = Me.DashBoardButton
+        Me.DashBoardButton.Size = New System.Drawing.Size(199, 45)
+        Me.DashBoardButton.TabIndex = 1
+        Me.DashBoardButton.Text = "DashBoard"
+        '
+        'MainPanal
+        '
+        Me.MainPanal.BackColor = System.Drawing.Color.White
+        Me.MainPanal.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MainPanal.Location = New System.Drawing.Point(199, 58)
+        Me.MainPanal.Name = "MainPanal"
+        Me.MainPanal.Size = New System.Drawing.Size(925, 472)
+        Me.MainPanal.TabIndex = 3
+        '
+        'Dashboard
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Dashboard"
+        Me.ClientSize = New System.Drawing.Size(1124, 530)
+        Me.Controls.Add(Me.MainPanal)
+        Me.Controls.Add(Me.TopPanel)
+        Me.Controls.Add(Me.PanelMenu)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Name = "Dashboard"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        Me.TopPanel.ResumeLayout(False)
+        Me.TopPanel.PerformLayout()
+        Me.PanelLogo.ResumeLayout(False)
+        Me.PanelLogo.PerformLayout()
+        CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelMenu.ResumeLayout(False)
+        Me.ResumeLayout(False)
+
     End Sub
+    Friend WithEvents TopPanel As Guna.UI2.WinForms.Guna2GradientPanel
+    Friend WithEvents PanelLogo As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents logo As PictureBox
+    Friend WithEvents PanelMenu As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents DashBoardButton As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents TeacherButton As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents StudentButton As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents MainPanal As Panel
+    Friend WithEvents VarLabel1 As Label
 End Class

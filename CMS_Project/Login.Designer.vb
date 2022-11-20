@@ -24,9 +24,9 @@ Partial Class Login
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.Guna2CheckBox1 = New Guna.UI2.WinForms.Guna2CheckBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.LoginButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.Showpass = New Guna.UI2.WinForms.Guna2CheckBox()
+        Me.Resetme = New System.Windows.Forms.Label()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -34,8 +34,8 @@ Partial Class Login
         Me.Label4 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Password1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Username1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2GradientPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -52,58 +52,58 @@ Partial Class Login
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Admin Login"
         '
-        'Guna2GradientButton1
+        'LoginButton1
         '
-        Me.Guna2GradientButton1.AutoRoundedCorners = True
-        Me.Guna2GradientButton1.BorderRadius = 21
-        Me.Guna2GradientButton1.CheckedState.Parent = Me.Guna2GradientButton1
-        Me.Guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton1.CustomImages.Parent = Me.Guna2GradientButton1
-        Me.Guna2GradientButton1.FillColor = System.Drawing.Color.SlateBlue
-        Me.Guna2GradientButton1.FillColor2 = System.Drawing.Color.Orchid
-        Me.Guna2GradientButton1.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GradientButton1.ForeColor = System.Drawing.Color.White
-        Me.Guna2GradientButton1.HoverState.FillColor = System.Drawing.Color.Orchid
-        Me.Guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.SlateBlue
-        Me.Guna2GradientButton1.HoverState.Parent = Me.Guna2GradientButton1
-        Me.Guna2GradientButton1.Location = New System.Drawing.Point(448, 281)
-        Me.Guna2GradientButton1.Name = "Guna2GradientButton1"
-        Me.Guna2GradientButton1.PressedColor = System.Drawing.Color.Teal
-        Me.Guna2GradientButton1.PressedDepth = 50
-        Me.Guna2GradientButton1.ShadowDecoration.Parent = Me.Guna2GradientButton1
-        Me.Guna2GradientButton1.Size = New System.Drawing.Size(180, 45)
-        Me.Guna2GradientButton1.TabIndex = 5
-        Me.Guna2GradientButton1.Text = "Login"
+        Me.LoginButton1.AutoRoundedCorners = True
+        Me.LoginButton1.BorderRadius = 21
+        Me.LoginButton1.CheckedState.Parent = Me.LoginButton1
+        Me.LoginButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.LoginButton1.CustomImages.Parent = Me.LoginButton1
+        Me.LoginButton1.FillColor = System.Drawing.Color.SlateBlue
+        Me.LoginButton1.FillColor2 = System.Drawing.Color.Orchid
+        Me.LoginButton1.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LoginButton1.ForeColor = System.Drawing.Color.White
+        Me.LoginButton1.HoverState.FillColor = System.Drawing.Color.Orchid
+        Me.LoginButton1.HoverState.FillColor2 = System.Drawing.Color.SlateBlue
+        Me.LoginButton1.HoverState.Parent = Me.LoginButton1
+        Me.LoginButton1.Location = New System.Drawing.Point(448, 281)
+        Me.LoginButton1.Name = "LoginButton1"
+        Me.LoginButton1.PressedColor = System.Drawing.Color.Teal
+        Me.LoginButton1.PressedDepth = 50
+        Me.LoginButton1.ShadowDecoration.Parent = Me.LoginButton1
+        Me.LoginButton1.Size = New System.Drawing.Size(180, 45)
+        Me.LoginButton1.TabIndex = 5
+        Me.LoginButton1.Text = "Login"
         '
-        'Guna2CheckBox1
+        'Showpass
         '
-        Me.Guna2CheckBox1.AutoSize = True
-        Me.Guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2CheckBox1.CheckedState.BorderRadius = 2
-        Me.Guna2CheckBox1.CheckedState.BorderThickness = 0
-        Me.Guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2CheckBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2CheckBox1.Location = New System.Drawing.Point(489, 256)
-        Me.Guna2CheckBox1.Name = "Guna2CheckBox1"
-        Me.Guna2CheckBox1.Size = New System.Drawing.Size(109, 19)
-        Me.Guna2CheckBox1.TabIndex = 7
-        Me.Guna2CheckBox1.Text = "Show Password"
-        Me.Guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.Guna2CheckBox1.UncheckedState.BorderRadius = 2
-        Me.Guna2CheckBox1.UncheckedState.BorderThickness = 0
-        Me.Guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.Guna2CheckBox1.UseVisualStyleBackColor = True
+        Me.Showpass.AutoSize = True
+        Me.Showpass.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Showpass.CheckedState.BorderRadius = 2
+        Me.Showpass.CheckedState.BorderThickness = 0
+        Me.Showpass.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Showpass.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Showpass.Location = New System.Drawing.Point(489, 256)
+        Me.Showpass.Name = "Showpass"
+        Me.Showpass.Size = New System.Drawing.Size(109, 19)
+        Me.Showpass.TabIndex = 7
+        Me.Showpass.Text = "Show Password"
+        Me.Showpass.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Showpass.UncheckedState.BorderRadius = 2
+        Me.Showpass.UncheckedState.BorderThickness = 0
+        Me.Showpass.UncheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Showpass.UseVisualStyleBackColor = True
         '
-        'Label2
+        'Resetme
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label2.Font = New System.Drawing.Font("Open Sans Semibold", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(516, 329)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(41, 17)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "Reset"
+        Me.Resetme.AutoSize = True
+        Me.Resetme.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Resetme.Font = New System.Drawing.Font("Open Sans Semibold", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Resetme.Location = New System.Drawing.Point(516, 329)
+        Me.Resetme.Name = "Resetme"
+        Me.Resetme.Size = New System.Drawing.Size(41, 17)
+        Me.Resetme.TabIndex = 8
+        Me.Resetme.Text = "Reset"
         '
         'Guna2GradientPanel1
         '
@@ -125,11 +125,11 @@ Partial Class Login
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.Label6.Location = New System.Drawing.Point(66, 32)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(40, 20)
+        Me.Label6.Size = New System.Drawing.Size(43, 21)
         Me.Label6.TabIndex = 15
         Me.Label6.Text = "CMS"
         '
@@ -172,7 +172,7 @@ Partial Class Login
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = Global.CMS_Project.My.Resources.Resources.water
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(13, 7)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(56, 45)
@@ -190,73 +190,73 @@ Partial Class Login
         Me.PictureBox2.TabIndex = 6
         Me.PictureBox2.TabStop = False
         '
-        'Guna2TextBox2
+        'Password1
         '
-        Me.Guna2TextBox2.AutoRoundedCorners = True
-        Me.Guna2TextBox2.BorderColor = System.Drawing.Color.Silver
-        Me.Guna2TextBox2.BorderRadius = 17
-        Me.Guna2TextBox2.BorderThickness = 2
-        Me.Guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox2.DefaultText = ""
-        Me.Guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.Orchid
-        Me.Guna2TextBox2.FocusedState.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2TextBox2.ForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.MediumPurple
-        Me.Guna2TextBox2.HoverState.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
-        Me.Guna2TextBox2.IconLeft = Global.CMS_Project.My.Resources.Resources.key
-        Me.Guna2TextBox2.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.Guna2TextBox2.Location = New System.Drawing.Point(427, 214)
-        Me.Guna2TextBox2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Guna2TextBox2.Name = "Guna2TextBox2"
-        Me.Guna2TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox2.PlaceholderText = "Password"
-        Me.Guna2TextBox2.SelectedText = ""
-        Me.Guna2TextBox2.ShadowDecoration.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.Size = New System.Drawing.Size(230, 36)
-        Me.Guna2TextBox2.TabIndex = 3
-        Me.Guna2TextBox2.UseSystemPasswordChar = True
+        Me.Password1.AutoRoundedCorners = True
+        Me.Password1.BorderColor = System.Drawing.Color.Silver
+        Me.Password1.BorderRadius = 17
+        Me.Password1.BorderThickness = 2
+        Me.Password1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Password1.DefaultText = ""
+        Me.Password1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Password1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Password1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Password1.DisabledState.Parent = Me.Password1
+        Me.Password1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Password1.FocusedState.BorderColor = System.Drawing.Color.Orchid
+        Me.Password1.FocusedState.Parent = Me.Password1
+        Me.Password1.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Password1.ForeColor = System.Drawing.Color.Black
+        Me.Password1.HoverState.BorderColor = System.Drawing.Color.MediumPurple
+        Me.Password1.HoverState.Parent = Me.Password1
+        Me.Password1.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
+        Me.Password1.IconLeft = CType(resources.GetObject("Password1.IconLeft"), System.Drawing.Image)
+        Me.Password1.IconLeftOffset = New System.Drawing.Point(4, 0)
+        Me.Password1.Location = New System.Drawing.Point(427, 214)
+        Me.Password1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Password1.Name = "Password1"
+        Me.Password1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Password1.PlaceholderForeColor = System.Drawing.Color.Black
+        Me.Password1.PlaceholderText = "Password"
+        Me.Password1.SelectedText = ""
+        Me.Password1.ShadowDecoration.Parent = Me.Password1
+        Me.Password1.Size = New System.Drawing.Size(230, 36)
+        Me.Password1.TabIndex = 3
+        Me.Password1.UseSystemPasswordChar = True
         '
-        'Guna2TextBox1
+        'Username1
         '
-        Me.Guna2TextBox1.Animated = True
-        Me.Guna2TextBox1.AutoRoundedCorners = True
-        Me.Guna2TextBox1.BorderColor = System.Drawing.Color.Silver
-        Me.Guna2TextBox1.BorderRadius = 17
-        Me.Guna2TextBox1.BorderThickness = 2
-        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox1.DefaultText = ""
-        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.Orchid
-        Me.Guna2TextBox1.FocusedState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2TextBox1.ForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.MediumPurple
-        Me.Guna2TextBox1.HoverState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
-        Me.Guna2TextBox1.IconLeft = Global.CMS_Project.My.Resources.Resources.user
-        Me.Guna2TextBox1.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(427, 148)
-        Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Guna2TextBox1.Name = "Guna2TextBox1"
-        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox1.PlaceholderText = "User Name"
-        Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.ShadowDecoration.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(230, 36)
-        Me.Guna2TextBox1.TabIndex = 2
+        Me.Username1.Animated = True
+        Me.Username1.AutoRoundedCorners = True
+        Me.Username1.BorderColor = System.Drawing.Color.Silver
+        Me.Username1.BorderRadius = 17
+        Me.Username1.BorderThickness = 2
+        Me.Username1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Username1.DefaultText = ""
+        Me.Username1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Username1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Username1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Username1.DisabledState.Parent = Me.Username1
+        Me.Username1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Username1.FocusedState.BorderColor = System.Drawing.Color.Orchid
+        Me.Username1.FocusedState.Parent = Me.Username1
+        Me.Username1.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Username1.ForeColor = System.Drawing.Color.Black
+        Me.Username1.HoverState.BorderColor = System.Drawing.Color.MediumPurple
+        Me.Username1.HoverState.Parent = Me.Username1
+        Me.Username1.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
+        Me.Username1.IconLeft = CType(resources.GetObject("Username1.IconLeft"), System.Drawing.Image)
+        Me.Username1.IconLeftOffset = New System.Drawing.Point(4, 0)
+        Me.Username1.Location = New System.Drawing.Point(427, 148)
+        Me.Username1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Username1.Name = "Username1"
+        Me.Username1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Username1.PlaceholderForeColor = System.Drawing.Color.Black
+        Me.Username1.PlaceholderText = "User Name"
+        Me.Username1.SelectedText = ""
+        Me.Username1.ShadowDecoration.Parent = Me.Username1
+        Me.Username1.Size = New System.Drawing.Size(230, 36)
+        Me.Username1.TabIndex = 2
         '
         'Login
         '
@@ -264,12 +264,12 @@ Partial Class Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(725, 467)
         Me.Controls.Add(Me.Guna2GradientPanel1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Guna2CheckBox1)
+        Me.Controls.Add(Me.Resetme)
+        Me.Controls.Add(Me.Showpass)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.Guna2GradientButton1)
-        Me.Controls.Add(Me.Guna2TextBox2)
-        Me.Controls.Add(Me.Guna2TextBox1)
+        Me.Controls.Add(Me.LoginButton1)
+        Me.Controls.Add(Me.Password1)
+        Me.Controls.Add(Me.Username1)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Open Sans Semibold", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.Black
@@ -289,12 +289,12 @@ Partial Class Login
 
     End Sub
     Friend WithEvents Label1 As Label
-    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2TextBox2 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents Username1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Password1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents LoginButton1 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Guna2CheckBox1 As Guna.UI2.WinForms.Guna2CheckBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents Showpass As Guna.UI2.WinForms.Guna2CheckBox
+    Friend WithEvents Resetme As Label
     Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label3 As Label

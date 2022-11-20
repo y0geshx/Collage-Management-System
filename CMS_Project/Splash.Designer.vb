@@ -35,7 +35,7 @@ Partial Class splash
         'LoadingBar1
         '
         Me.LoadingBar1.FillColor = System.Drawing.Color.White
-        Me.LoadingBar1.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LoadingBar1.Font = New System.Drawing.Font("Open Sans", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LoadingBar1.ForeColor = System.Drawing.Color.Black
         Me.LoadingBar1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal
         Me.LoadingBar1.Location = New System.Drawing.Point(0, 285)
@@ -77,7 +77,7 @@ Partial Class splash
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.CMS_Project.My.Resources.Resources.water
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 6)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(674, 148)
