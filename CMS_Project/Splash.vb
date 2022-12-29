@@ -3,7 +3,7 @@
         LoadingBar1.Increment(1)
         If LoadingBar1.Value = 100 Then
             Me.Hide()
-            Dim log = New Login
+            Dim log = New FacultyLogin
             log.Show()
             Timer1.Enabled = False
         End If

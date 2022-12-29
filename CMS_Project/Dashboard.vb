@@ -1,4 +1,6 @@
-﻿Public Class Dashboard
+﻿Imports Mysqlx.XDevAPI.Common
+
+Public Class Dashboard
     Private Sub DashBoardButton_Click(sender As Object, e As EventArgs) Handles DashBoardButton.Click
         While Me.MainPanal.Controls.Count > 0
             Me.MainPanal.Controls(0).Dispose()
@@ -43,6 +45,24 @@
             .BringToFront()
             .Show()
         End With
-        VarLabel1.Text = "Teachers"
+        VarLabel1.Text = "Faculty"
+    End Sub
+
+    Private Sub LogoutButton_Click(sender As Object, e As EventArgs) Handles LogoutButton.Click
+        Dim result As DialogResult
+        result = MessageBox.Show("Are you sure you want to logout", "LOGOUT", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If result = Windows.Forms.DialogResult.Yes Then
+            FacultyLogin.Show()
+            Me.Hide()
+        End If
+    End Sub
+
+    Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
+        Dim result As DialogResult
+        result = MessageBox.Show("Are you sure you want to exit", "EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+        If result = Windows.Forms.DialogResult.Yes Then
+            End
+        End If
+
     End Sub
 End Class

@@ -277,8 +277,8 @@ Partial Class FacultyLogin
         Me.LoginAsAdmin.ForeColor = System.Drawing.Color.DarkSlateBlue
         Me.LoginAsAdmin.HoverState.FillColor = System.Drawing.Color.White
         Me.LoginAsAdmin.HoverState.FillColor2 = System.Drawing.Color.White
-        Me.LoginAsAdmin.HoverState.Image = CType(resources.GetObject("LoginAsAdmin.HoverState.Image"), System.Drawing.Image)
         Me.LoginAsAdmin.HoverState.Parent = Me.LoginAsAdmin
+        Me.LoginAsAdmin.Image = CType(resources.GetObject("LoginAsAdmin.Image"), System.Drawing.Image)
         Me.LoginAsAdmin.Location = New System.Drawing.Point(447, 359)
         Me.LoginAsAdmin.Name = "LoginAsAdmin"
         Me.LoginAsAdmin.PressedColor = System.Drawing.Color.Turquoise

@@ -274,8 +274,8 @@ Partial Class Login
         Me.LoginAsFaculty.ForeColor = System.Drawing.Color.DarkSlateBlue
         Me.LoginAsFaculty.HoverState.FillColor = System.Drawing.Color.White
         Me.LoginAsFaculty.HoverState.FillColor2 = System.Drawing.Color.White
-        Me.LoginAsFaculty.HoverState.Image = CType(resources.GetObject("Guna2GradientButton1.HoverState.Image"), System.Drawing.Image)
         Me.LoginAsFaculty.HoverState.Parent = Me.LoginAsFaculty
+        Me.LoginAsFaculty.Image = CType(resources.GetObject("LoginAsFaculty.Image"), System.Drawing.Image)
         Me.LoginAsFaculty.Location = New System.Drawing.Point(454, 362)
         Me.LoginAsFaculty.Name = "LoginAsFaculty"
         Me.LoginAsFaculty.PressedColor = System.Drawing.Color.Orchid
