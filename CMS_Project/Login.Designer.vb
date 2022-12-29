@@ -36,6 +36,7 @@ Partial Class Login
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Password1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Username1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.LoginAsFaculty = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -125,11 +126,11 @@ Partial Class Login
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.Label6.Location = New System.Drawing.Point(66, 32)
+        Me.Label6.Location = New System.Drawing.Point(55, 23)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(43, 21)
+        Me.Label6.Size = New System.Drawing.Size(51, 25)
         Me.Label6.TabIndex = 15
         Me.Label6.Text = "CMS"
         '
@@ -139,7 +140,7 @@ Partial Class Login
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(156, 252)
+        Me.Label3.Location = New System.Drawing.Point(157, 252)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(124, 21)
         Me.Label3.TabIndex = 14
@@ -151,7 +152,7 @@ Partial Class Login
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(105, 229)
+        Me.Label5.Location = New System.Drawing.Point(106, 229)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(74, 21)
         Me.Label5.TabIndex = 13
@@ -163,17 +164,17 @@ Partial Class Login
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(51, 169)
+        Me.Label4.Location = New System.Drawing.Point(43, 170)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(247, 45)
+        Me.Label4.Size = New System.Drawing.Size(280, 45)
         Me.Label4.TabIndex = 12
-        Me.Label4.Text = "Welcome back!"
+        Me.Label4.Text = "Welcome admin !"
         '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(13, 7)
+        Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(56, 45)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -185,7 +186,7 @@ Partial Class Login
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(510, 37)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(57, 51)
+        Me.PictureBox2.Size = New System.Drawing.Size(61, 58)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 6
         Me.PictureBox2.TabStop = False
@@ -258,11 +259,38 @@ Partial Class Login
         Me.Username1.Size = New System.Drawing.Size(230, 36)
         Me.Username1.TabIndex = 2
         '
+        'LoginAsFaculty
+        '
+        Me.LoginAsFaculty.Animated = True
+        Me.LoginAsFaculty.AutoRoundedCorners = True
+        Me.LoginAsFaculty.BorderColor = System.Drawing.Color.Transparent
+        Me.LoginAsFaculty.BorderRadius = 10
+        Me.LoginAsFaculty.CheckedState.Parent = Me.LoginAsFaculty
+        Me.LoginAsFaculty.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.LoginAsFaculty.CustomImages.Parent = Me.LoginAsFaculty
+        Me.LoginAsFaculty.FillColor = System.Drawing.Color.White
+        Me.LoginAsFaculty.FillColor2 = System.Drawing.Color.White
+        Me.LoginAsFaculty.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LoginAsFaculty.ForeColor = System.Drawing.Color.DarkSlateBlue
+        Me.LoginAsFaculty.HoverState.FillColor = System.Drawing.Color.White
+        Me.LoginAsFaculty.HoverState.FillColor2 = System.Drawing.Color.White
+        Me.LoginAsFaculty.HoverState.Image = CType(resources.GetObject("Guna2GradientButton1.HoverState.Image"), System.Drawing.Image)
+        Me.LoginAsFaculty.HoverState.Parent = Me.LoginAsFaculty
+        Me.LoginAsFaculty.Location = New System.Drawing.Point(454, 362)
+        Me.LoginAsFaculty.Name = "LoginAsFaculty"
+        Me.LoginAsFaculty.PressedColor = System.Drawing.Color.Orchid
+        Me.LoginAsFaculty.PressedDepth = 50
+        Me.LoginAsFaculty.ShadowDecoration.Parent = Me.LoginAsFaculty
+        Me.LoginAsFaculty.Size = New System.Drawing.Size(174, 22)
+        Me.LoginAsFaculty.TabIndex = 18
+        Me.LoginAsFaculty.Text = "Login as faculty"
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(725, 467)
+        Me.Controls.Add(Me.LoginAsFaculty)
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.Controls.Add(Me.Resetme)
         Me.Controls.Add(Me.Showpass)
@@ -276,6 +304,7 @@ Partial Class Login
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Login"
         Me.Padding = New System.Windows.Forms.Padding(23, 69, 23, 23)
         Me.Style = MetroFramework.MetroColorStyle.Purple
@@ -301,4 +330,5 @@ Partial Class Login
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents LoginAsFaculty As Guna.UI2.WinForms.Guna2GradientButton
 End Class

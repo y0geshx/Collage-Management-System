@@ -45,4 +45,10 @@ Public Class Login
             Password1.UseSystemPasswordChar = True
         End If
     End Sub
+
+    Private Sub LoginAsFaculty_Click(sender As Object, e As EventArgs) Handles LoginAsFaculty.Click
+        Dim obj = New FacultyLogin
+        obj.Show()
+        Me.Hide()
+    End Sub
 End Class

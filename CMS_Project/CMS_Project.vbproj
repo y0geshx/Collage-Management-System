@@ -148,6 +148,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DTconnection\DTconnection.vb" />
+    <Compile Include="FacultyLogin.Designer.vb">
+      <DependentUpon>FacultyLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
@@ -195,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashform.resx">
       <DependentUpon>Dashform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacultyLogin.resx">
+      <DependentUpon>FacultyLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
