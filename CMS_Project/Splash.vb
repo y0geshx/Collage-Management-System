@@ -13,4 +13,7 @@
         Timer1.Start()
     End Sub
 
+    Private Sub LoadingBar1_ValueChanged(sender As Object, e As EventArgs) Handles LoadingBar1.ValueChanged
+
+    End Sub
 End Class
