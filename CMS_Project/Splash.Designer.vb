@@ -47,7 +47,7 @@ Partial Class splash
         Me.LoadingBar1.FillColor = System.Drawing.Color.Transparent
         Me.LoadingBar1.Font = New System.Drawing.Font("Open Sans", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LoadingBar1.ForeColor = System.Drawing.Color.White
-        Me.LoadingBar1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal
+        Me.LoadingBar1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal
         Me.LoadingBar1.Location = New System.Drawing.Point(3, 283)
         Me.LoadingBar1.Name = "LoadingBar1"
         Me.LoadingBar1.ProgressColor = System.Drawing.Color.Aquamarine
