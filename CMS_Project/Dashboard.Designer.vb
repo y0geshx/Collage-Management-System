@@ -36,7 +36,7 @@ Partial Class Dashboard
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
+        Me.CourceButton = New Guna.UI2.WinForms.Guna2Button()
         Me.TeacherButton = New Guna.UI2.WinForms.Guna2Button()
         Me.StudentButton = New Guna.UI2.WinForms.Guna2Button()
         Me.DashBoardButton = New Guna.UI2.WinForms.Guna2Button()
@@ -55,7 +55,7 @@ Partial Class Dashboard
         Me.TopPanel.Location = New System.Drawing.Point(199, 0)
         Me.TopPanel.Name = "TopPanel"
         Me.TopPanel.ShadowDecoration.Parent = Me.TopPanel
-        Me.TopPanel.Size = New System.Drawing.Size(925, 58)
+        Me.TopPanel.Size = New System.Drawing.Size(782, 58)
         Me.TopPanel.TabIndex = 2
         '
         'VarLabel1
@@ -112,7 +112,7 @@ Partial Class Dashboard
         Me.PanelMenu.Controls.Add(Me.Guna2Button3)
         Me.PanelMenu.Controls.Add(Me.Guna2Button2)
         Me.PanelMenu.Controls.Add(Me.Guna2Button1)
-        Me.PanelMenu.Controls.Add(Me.Guna2Button4)
+        Me.PanelMenu.Controls.Add(Me.CourceButton)
         Me.PanelMenu.Controls.Add(Me.TeacherButton)
         Me.PanelMenu.Controls.Add(Me.StudentButton)
         Me.PanelMenu.Controls.Add(Me.DashBoardButton)
@@ -122,7 +122,7 @@ Partial Class Dashboard
         Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.ShadowDecoration.Parent = Me.PanelMenu
-        Me.PanelMenu.Size = New System.Drawing.Size(199, 560)
+        Me.PanelMenu.Size = New System.Drawing.Size(199, 565)
         Me.PanelMenu.TabIndex = 1
         '
         'ExitButton
@@ -265,25 +265,25 @@ Partial Class Dashboard
         Me.Guna2Button1.TabIndex = 15
         Me.Guna2Button1.Text = "ENTER MARKS"
         '
-        'Guna2Button4
+        'CourceButton
         '
-        Me.Guna2Button4.Animated = True
-        Me.Guna2Button4.CheckedState.Parent = Me.Guna2Button4
-        Me.Guna2Button4.CustomImages.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Button4.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button4.HoverState.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Image = CType(resources.GetObject("Guna2Button4.Image"), System.Drawing.Image)
-        Me.Guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button4.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button4.Location = New System.Drawing.Point(0, 193)
-        Me.Guna2Button4.Name = "Guna2Button4"
-        Me.Guna2Button4.ShadowDecoration.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Size = New System.Drawing.Size(199, 45)
-        Me.Guna2Button4.TabIndex = 14
-        Me.Guna2Button4.Text = "COURSES"
+        Me.CourceButton.Animated = True
+        Me.CourceButton.CheckedState.Parent = Me.CourceButton
+        Me.CourceButton.CustomImages.Parent = Me.CourceButton
+        Me.CourceButton.Dock = System.Windows.Forms.DockStyle.Top
+        Me.CourceButton.FillColor = System.Drawing.Color.Transparent
+        Me.CourceButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CourceButton.ForeColor = System.Drawing.Color.White
+        Me.CourceButton.HoverState.Parent = Me.CourceButton
+        Me.CourceButton.Image = CType(resources.GetObject("CourceButton.Image"), System.Drawing.Image)
+        Me.CourceButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.CourceButton.ImageSize = New System.Drawing.Size(40, 40)
+        Me.CourceButton.Location = New System.Drawing.Point(0, 193)
+        Me.CourceButton.Name = "CourceButton"
+        Me.CourceButton.ShadowDecoration.Parent = Me.CourceButton
+        Me.CourceButton.Size = New System.Drawing.Size(199, 45)
+        Me.CourceButton.TabIndex = 14
+        Me.CourceButton.Text = "COURCES"
         '
         'TeacherButton
         '
@@ -347,18 +347,19 @@ Partial Class Dashboard
         '
         'MainPanal
         '
+        Me.MainPanal.AutoScroll = True
         Me.MainPanal.BackColor = System.Drawing.Color.White
         Me.MainPanal.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MainPanal.Location = New System.Drawing.Point(199, 58)
         Me.MainPanal.Name = "MainPanal"
-        Me.MainPanal.Size = New System.Drawing.Size(925, 502)
+        Me.MainPanal.Size = New System.Drawing.Size(782, 507)
         Me.MainPanal.TabIndex = 3
         '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1124, 560)
+        Me.ClientSize = New System.Drawing.Size(981, 565)
         Me.Controls.Add(Me.MainPanal)
         Me.Controls.Add(Me.TopPanel)
         Me.Controls.Add(Me.PanelMenu)
@@ -381,7 +382,7 @@ Partial Class Dashboard
     Friend WithEvents logo As PictureBox
     Friend WithEvents PanelMenu As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents DashBoardButton As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents CourceButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents TeacherButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents StudentButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents MainPanal As Panel

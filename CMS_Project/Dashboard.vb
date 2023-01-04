@@ -47,7 +47,21 @@ Public Class Dashboard
         End With
         VarLabel1.Text = "Faculty"
     End Sub
+    Private Sub CourceButton_Click(sender As Object, e As EventArgs) Handles CourceButton.Click
+        While Me.MainPanal.Controls.Count > 0
+            Me.MainPanal.Controls(0).Dispose()
+        End While
 
+        With Cources
+            .TopLevel = False
+            .AutoSize = False
+            .Dock = DockStyle.Fill
+            MainPanal.Controls.Add(Cources)
+            .BringToFront()
+            .Show()
+        End With
+        VarLabel1.Text = "Cources"
+    End Sub
     Private Sub LogoutButton_Click(sender As Object, e As EventArgs) Handles LogoutButton.Click
         Dim result As DialogResult
         result = MessageBox.Show("Are you sure you want to logout", "LOGOUT", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
@@ -65,4 +79,12 @@ Public Class Dashboard
         End If
 
     End Sub
+    '' Private Sub MainPanal_Scroll(sender As Object, e As ScrollEventArgs) Handles MainPanal.Scroll
+    ''If e.ScrollOrientation = ScrollOrientation.VerticalScroll Then
+    ''      MainPanal.VerticalScroll.Value = e.NewValue
+    ''End If
+    ''If e.ScrollOrientation = ScrollOrientation.HorizontalScroll Then
+    ''      MainPanal.HorizontalScroll.Value = e.NewValue
+    ''End If
+    ''End Sub
 End Class

@@ -63,7 +63,7 @@ Partial Class Dashform
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.VarLabel1)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Location = New System.Drawing.Point(19, 183)
+        Me.Panel1.Location = New System.Drawing.Point(28, 183)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(243, 199)
         Me.Panel1.TabIndex = 0
@@ -245,7 +245,7 @@ Partial Class Dashform
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.GhostWhite
-        Me.Label9.Location = New System.Drawing.Point(801, 20)
+        Me.Label9.Location = New System.Drawing.Point(764, 18)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(316, 37)
         Me.Label9.TabIndex = 5
@@ -256,7 +256,7 @@ Partial Class Dashform
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.GhostWhite
-        Me.Label10.Location = New System.Drawing.Point(846, 67)
+        Me.Label10.Location = New System.Drawing.Point(793, 67)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(47, 20)
         Me.Label10.TabIndex = 6
@@ -272,7 +272,7 @@ Partial Class Dashform
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1130, 131)
+        Me.Panel5.Size = New System.Drawing.Size(1127, 131)
         Me.Panel5.TabIndex = 4
         '
         'DateLabel
@@ -280,7 +280,7 @@ Partial Class Dashform
         Me.DateLabel.AutoSize = True
         Me.DateLabel.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateLabel.ForeColor = System.Drawing.Color.GhostWhite
-        Me.DateLabel.Location = New System.Drawing.Point(899, 67)
+        Me.DateLabel.Location = New System.Drawing.Point(846, 67)
         Me.DateLabel.Name = "DateLabel"
         Me.DateLabel.Size = New System.Drawing.Size(40, 20)
         Me.DateLabel.TabIndex = 7
@@ -293,8 +293,9 @@ Partial Class Dashform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1130, 595)
+        Me.ClientSize = New System.Drawing.Size(1127, 460)
         Me.ControlBox = False
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel4)
