@@ -32,10 +32,10 @@ Partial Class Dashboard
         Me.ExitButton = New Guna.UI2.WinForms.Guna2Button()
         Me.LogoutButton = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
+        Me.SearchButton = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.EnterMarksButton = New Guna.UI2.WinForms.Guna2Button()
         Me.CourceButton = New Guna.UI2.WinForms.Guna2Button()
         Me.TeacherButton = New Guna.UI2.WinForms.Guna2Button()
         Me.StudentButton = New Guna.UI2.WinForms.Guna2Button()
@@ -108,10 +108,10 @@ Partial Class Dashboard
         Me.PanelMenu.Controls.Add(Me.ExitButton)
         Me.PanelMenu.Controls.Add(Me.LogoutButton)
         Me.PanelMenu.Controls.Add(Me.Guna2Button6)
-        Me.PanelMenu.Controls.Add(Me.Guna2Button5)
+        Me.PanelMenu.Controls.Add(Me.SearchButton)
         Me.PanelMenu.Controls.Add(Me.Guna2Button3)
         Me.PanelMenu.Controls.Add(Me.Guna2Button2)
-        Me.PanelMenu.Controls.Add(Me.Guna2Button1)
+        Me.PanelMenu.Controls.Add(Me.EnterMarksButton)
         Me.PanelMenu.Controls.Add(Me.CourceButton)
         Me.PanelMenu.Controls.Add(Me.TeacherButton)
         Me.PanelMenu.Controls.Add(Me.StudentButton)
@@ -185,25 +185,25 @@ Partial Class Dashboard
         Me.Guna2Button6.TabIndex = 19
         Me.Guna2Button6.Text = "ADD USERS"
         '
-        'Guna2Button5
+        'SearchButton
         '
-        Me.Guna2Button5.Animated = True
-        Me.Guna2Button5.CheckedState.Parent = Me.Guna2Button5
-        Me.Guna2Button5.CustomImages.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Button5.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button5.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button5.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button5.HoverState.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Image = CType(resources.GetObject("Guna2Button5.Image"), System.Drawing.Image)
-        Me.Guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button5.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button5.Location = New System.Drawing.Point(0, 373)
-        Me.Guna2Button5.Name = "Guna2Button5"
-        Me.Guna2Button5.ShadowDecoration.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Size = New System.Drawing.Size(199, 45)
-        Me.Guna2Button5.TabIndex = 18
-        Me.Guna2Button5.Text = "SEARCH"
+        Me.SearchButton.Animated = True
+        Me.SearchButton.CheckedState.Parent = Me.SearchButton
+        Me.SearchButton.CustomImages.Parent = Me.SearchButton
+        Me.SearchButton.Dock = System.Windows.Forms.DockStyle.Top
+        Me.SearchButton.FillColor = System.Drawing.Color.Transparent
+        Me.SearchButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SearchButton.ForeColor = System.Drawing.Color.White
+        Me.SearchButton.HoverState.Parent = Me.SearchButton
+        Me.SearchButton.Image = CType(resources.GetObject("SearchButton.Image"), System.Drawing.Image)
+        Me.SearchButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.SearchButton.ImageSize = New System.Drawing.Size(40, 40)
+        Me.SearchButton.Location = New System.Drawing.Point(0, 373)
+        Me.SearchButton.Name = "SearchButton"
+        Me.SearchButton.ShadowDecoration.Parent = Me.SearchButton
+        Me.SearchButton.Size = New System.Drawing.Size(199, 45)
+        Me.SearchButton.TabIndex = 18
+        Me.SearchButton.Text = "SEARCH"
         '
         'Guna2Button3
         '
@@ -245,25 +245,25 @@ Partial Class Dashboard
         Me.Guna2Button2.TabIndex = 16
         Me.Guna2Button2.Text = "ATTENDANCE"
         '
-        'Guna2Button1
+        'EnterMarksButton
         '
-        Me.Guna2Button1.Animated = True
-        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Button1.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Image = CType(resources.GetObject("Guna2Button1.Image"), System.Drawing.Image)
-        Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button1.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button1.Location = New System.Drawing.Point(0, 238)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Size = New System.Drawing.Size(199, 45)
-        Me.Guna2Button1.TabIndex = 15
-        Me.Guna2Button1.Text = "ENTER MARKS"
+        Me.EnterMarksButton.Animated = True
+        Me.EnterMarksButton.CheckedState.Parent = Me.EnterMarksButton
+        Me.EnterMarksButton.CustomImages.Parent = Me.EnterMarksButton
+        Me.EnterMarksButton.Dock = System.Windows.Forms.DockStyle.Top
+        Me.EnterMarksButton.FillColor = System.Drawing.Color.Transparent
+        Me.EnterMarksButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EnterMarksButton.ForeColor = System.Drawing.Color.White
+        Me.EnterMarksButton.HoverState.Parent = Me.EnterMarksButton
+        Me.EnterMarksButton.Image = CType(resources.GetObject("EnterMarksButton.Image"), System.Drawing.Image)
+        Me.EnterMarksButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.EnterMarksButton.ImageSize = New System.Drawing.Size(40, 40)
+        Me.EnterMarksButton.Location = New System.Drawing.Point(0, 238)
+        Me.EnterMarksButton.Name = "EnterMarksButton"
+        Me.EnterMarksButton.ShadowDecoration.Parent = Me.EnterMarksButton
+        Me.EnterMarksButton.Size = New System.Drawing.Size(199, 45)
+        Me.EnterMarksButton.TabIndex = 15
+        Me.EnterMarksButton.Text = "ENTER MARKS"
         '
         'CourceButton
         '
@@ -390,8 +390,8 @@ Partial Class Dashboard
     Friend WithEvents ExitButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents LogoutButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button6 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents SearchButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents EnterMarksButton As Guna.UI2.WinForms.Guna2Button
 End Class
