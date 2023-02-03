@@ -22,8 +22,11 @@ Partial Class Dashboard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
         Me.TopPanel = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.VarLabel1 = New System.Windows.Forms.Label()
         Me.PanelLogo = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -31,7 +34,8 @@ Partial Class Dashboard
         Me.PanelMenu = New Guna.UI2.WinForms.Guna2Panel()
         Me.ExitButton = New Guna.UI2.WinForms.Guna2Button()
         Me.LogoutButton = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.AddUsersButton = New Guna.UI2.WinForms.Guna2Button()
         Me.SearchButton = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
@@ -41,7 +45,10 @@ Partial Class Dashboard
         Me.StudentButton = New Guna.UI2.WinForms.Guna2Button()
         Me.DashBoardButton = New Guna.UI2.WinForms.Guna2Button()
         Me.MainPanal = New System.Windows.Forms.Panel()
+        Me.DateLabel2 = New System.Windows.Forms.Label()
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.TopPanel.SuspendLayout()
+        CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelLogo.SuspendLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelMenu.SuspendLayout()
@@ -50,22 +57,48 @@ Partial Class Dashboard
         'TopPanel
         '
         Me.TopPanel.BackColor = System.Drawing.Color.SlateBlue
+        Me.TopPanel.Controls.Add(Me.DateLabel2)
+        Me.TopPanel.Controls.Add(Me.Label2)
+        Me.TopPanel.Controls.Add(Me.Guna2CirclePictureBox1)
         Me.TopPanel.Controls.Add(Me.VarLabel1)
         Me.TopPanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.TopPanel.Location = New System.Drawing.Point(199, 0)
         Me.TopPanel.Name = "TopPanel"
         Me.TopPanel.ShadowDecoration.Parent = Me.TopPanel
-        Me.TopPanel.Size = New System.Drawing.Size(782, 58)
+        Me.TopPanel.Size = New System.Drawing.Size(1112, 58)
         Me.TopPanel.TabIndex = 2
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(1012, 9)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(71, 25)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "Admin"
+        '
+        'Guna2CirclePictureBox1
+        '
+        Me.Guna2CirclePictureBox1.Image = CType(resources.GetObject("Guna2CirclePictureBox1.Image"), System.Drawing.Image)
+        Me.Guna2CirclePictureBox1.Location = New System.Drawing.Point(951, 10)
+        Me.Guna2CirclePictureBox1.Name = "Guna2CirclePictureBox1"
+        Me.Guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2CirclePictureBox1.ShadowDecoration.Parent = Me.Guna2CirclePictureBox1
+        Me.Guna2CirclePictureBox1.Size = New System.Drawing.Size(55, 42)
+        Me.Guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Guna2CirclePictureBox1.TabIndex = 2
+        Me.Guna2CirclePictureBox1.TabStop = False
         '
         'VarLabel1
         '
         Me.VarLabel1.AutoSize = True
-        Me.VarLabel1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VarLabel1.Font = New System.Drawing.Font("Segoe UI", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.VarLabel1.ForeColor = System.Drawing.Color.White
-        Me.VarLabel1.Location = New System.Drawing.Point(6, 23)
+        Me.VarLabel1.Location = New System.Drawing.Point(18, 15)
         Me.VarLabel1.Name = "VarLabel1"
-        Me.VarLabel1.Size = New System.Drawing.Size(82, 32)
+        Me.VarLabel1.Size = New System.Drawing.Size(100, 40)
         Me.VarLabel1.TabIndex = 1
         Me.VarLabel1.Text = "Home"
         '
@@ -107,7 +140,8 @@ Partial Class Dashboard
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.PanelMenu.Controls.Add(Me.ExitButton)
         Me.PanelMenu.Controls.Add(Me.LogoutButton)
-        Me.PanelMenu.Controls.Add(Me.Guna2Button6)
+        Me.PanelMenu.Controls.Add(Me.Guna2Button1)
+        Me.PanelMenu.Controls.Add(Me.AddUsersButton)
         Me.PanelMenu.Controls.Add(Me.SearchButton)
         Me.PanelMenu.Controls.Add(Me.Guna2Button3)
         Me.PanelMenu.Controls.Add(Me.Guna2Button2)
@@ -122,7 +156,7 @@ Partial Class Dashboard
         Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.ShadowDecoration.Parent = Me.PanelMenu
-        Me.PanelMenu.Size = New System.Drawing.Size(199, 565)
+        Me.PanelMenu.Size = New System.Drawing.Size(199, 603)
         Me.PanelMenu.TabIndex = 1
         '
         'ExitButton
@@ -132,18 +166,18 @@ Partial Class Dashboard
         Me.ExitButton.CustomImages.Parent = Me.ExitButton
         Me.ExitButton.Dock = System.Windows.Forms.DockStyle.Top
         Me.ExitButton.FillColor = System.Drawing.Color.Transparent
-        Me.ExitButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ExitButton.Font = New System.Drawing.Font("Open Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ExitButton.ForeColor = System.Drawing.Color.White
         Me.ExitButton.HoverState.Parent = Me.ExitButton
         Me.ExitButton.Image = CType(resources.GetObject("ExitButton.Image"), System.Drawing.Image)
         Me.ExitButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.ExitButton.ImageSize = New System.Drawing.Size(40, 40)
-        Me.ExitButton.Location = New System.Drawing.Point(0, 508)
+        Me.ExitButton.Location = New System.Drawing.Point(0, 553)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.ShadowDecoration.Parent = Me.ExitButton
         Me.ExitButton.Size = New System.Drawing.Size(199, 45)
-        Me.ExitButton.TabIndex = 21
-        Me.ExitButton.Text = "EXIT"
+        Me.ExitButton.TabIndex = 24
+        Me.ExitButton.Text = "Exit"
         '
         'LogoutButton
         '
@@ -152,38 +186,58 @@ Partial Class Dashboard
         Me.LogoutButton.CustomImages.Parent = Me.LogoutButton
         Me.LogoutButton.Dock = System.Windows.Forms.DockStyle.Top
         Me.LogoutButton.FillColor = System.Drawing.Color.Transparent
-        Me.LogoutButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LogoutButton.Font = New System.Drawing.Font("Open Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LogoutButton.ForeColor = System.Drawing.Color.White
         Me.LogoutButton.HoverState.Parent = Me.LogoutButton
         Me.LogoutButton.Image = CType(resources.GetObject("LogoutButton.Image"), System.Drawing.Image)
         Me.LogoutButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.LogoutButton.ImageSize = New System.Drawing.Size(40, 40)
-        Me.LogoutButton.Location = New System.Drawing.Point(0, 463)
+        Me.LogoutButton.Location = New System.Drawing.Point(0, 508)
         Me.LogoutButton.Name = "LogoutButton"
         Me.LogoutButton.ShadowDecoration.Parent = Me.LogoutButton
         Me.LogoutButton.Size = New System.Drawing.Size(199, 45)
-        Me.LogoutButton.TabIndex = 20
-        Me.LogoutButton.Text = "LOGOUT"
+        Me.LogoutButton.TabIndex = 23
+        Me.LogoutButton.Text = "Logout"
         '
-        'Guna2Button6
+        'Guna2Button1
         '
-        Me.Guna2Button6.Animated = True
-        Me.Guna2Button6.CheckedState.Parent = Me.Guna2Button6
-        Me.Guna2Button6.CustomImages.Parent = Me.Guna2Button6
-        Me.Guna2Button6.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Button6.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button6.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button6.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button6.HoverState.Parent = Me.Guna2Button6
-        Me.Guna2Button6.Image = CType(resources.GetObject("Guna2Button6.Image"), System.Drawing.Image)
-        Me.Guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button6.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button6.Location = New System.Drawing.Point(0, 418)
-        Me.Guna2Button6.Name = "Guna2Button6"
-        Me.Guna2Button6.ShadowDecoration.Parent = Me.Guna2Button6
-        Me.Guna2Button6.Size = New System.Drawing.Size(199, 45)
-        Me.Guna2Button6.TabIndex = 19
-        Me.Guna2Button6.Text = "ADD USERS"
+        Me.Guna2Button1.Animated = True
+        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
+        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
+        Me.Guna2Button1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2Button1.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2Button1.Font = New System.Drawing.Font("Open Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
+        Me.Guna2Button1.Image = CType(resources.GetObject("Guna2Button1.Image"), System.Drawing.Image)
+        Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Guna2Button1.ImageSize = New System.Drawing.Size(40, 40)
+        Me.Guna2Button1.Location = New System.Drawing.Point(0, 463)
+        Me.Guna2Button1.Name = "Guna2Button1"
+        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
+        Me.Guna2Button1.Size = New System.Drawing.Size(199, 45)
+        Me.Guna2Button1.TabIndex = 22
+        Me.Guna2Button1.Text = "About Us"
+        '
+        'AddUsersButton
+        '
+        Me.AddUsersButton.Animated = True
+        Me.AddUsersButton.CheckedState.Parent = Me.AddUsersButton
+        Me.AddUsersButton.CustomImages.Parent = Me.AddUsersButton
+        Me.AddUsersButton.Dock = System.Windows.Forms.DockStyle.Top
+        Me.AddUsersButton.FillColor = System.Drawing.Color.Transparent
+        Me.AddUsersButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddUsersButton.ForeColor = System.Drawing.Color.White
+        Me.AddUsersButton.HoverState.Parent = Me.AddUsersButton
+        Me.AddUsersButton.Image = CType(resources.GetObject("AddUsersButton.Image"), System.Drawing.Image)
+        Me.AddUsersButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.AddUsersButton.ImageSize = New System.Drawing.Size(40, 40)
+        Me.AddUsersButton.Location = New System.Drawing.Point(0, 418)
+        Me.AddUsersButton.Name = "AddUsersButton"
+        Me.AddUsersButton.ShadowDecoration.Parent = Me.AddUsersButton
+        Me.AddUsersButton.Size = New System.Drawing.Size(199, 45)
+        Me.AddUsersButton.TabIndex = 19
+        Me.AddUsersButton.Text = "ADD USERS"
         '
         'SearchButton
         '
@@ -352,14 +406,25 @@ Partial Class Dashboard
         Me.MainPanal.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MainPanal.Location = New System.Drawing.Point(199, 58)
         Me.MainPanal.Name = "MainPanal"
-        Me.MainPanal.Size = New System.Drawing.Size(782, 507)
+        Me.MainPanal.Size = New System.Drawing.Size(1112, 545)
         Me.MainPanal.TabIndex = 3
+        '
+        'DateLabel2
+        '
+        Me.DateLabel2.AutoSize = True
+        Me.DateLabel2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateLabel2.ForeColor = System.Drawing.Color.GhostWhite
+        Me.DateLabel2.Location = New System.Drawing.Point(1013, 32)
+        Me.DateLabel2.Name = "DateLabel2"
+        Me.DateLabel2.Size = New System.Drawing.Size(40, 20)
+        Me.DateLabel2.TabIndex = 8
+        Me.DateLabel2.Text = "Date"
         '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(981, 565)
+        Me.ClientSize = New System.Drawing.Size(1311, 603)
         Me.Controls.Add(Me.MainPanal)
         Me.Controls.Add(Me.TopPanel)
         Me.Controls.Add(Me.PanelMenu)
@@ -369,6 +434,7 @@ Partial Class Dashboard
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.TopPanel.ResumeLayout(False)
         Me.TopPanel.PerformLayout()
+        CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelLogo.ResumeLayout(False)
         Me.PanelLogo.PerformLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
@@ -387,11 +453,16 @@ Partial Class Dashboard
     Friend WithEvents StudentButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents MainPanal As Panel
     Friend WithEvents VarLabel1 As Label
-    Friend WithEvents ExitButton As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents LogoutButton As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button6 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents AddUsersButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents SearchButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents EnterMarksButton As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents ExitButton As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents LogoutButton As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
+    Friend WithEvents DateLabel2 As Label
+    Friend WithEvents Timer2 As Timer
 End Class

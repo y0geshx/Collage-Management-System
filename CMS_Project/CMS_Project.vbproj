@@ -151,6 +151,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddUsers.Designer.vb">
+      <DependentUpon>AddUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Cources.Designer.vb">
       <DependentUpon>Cources.vb</DependentUpon>
     </Compile>
@@ -230,6 +236,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AddUsers.resx">
+      <DependentUpon>AddUsers.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cources.resx">
       <DependentUpon>Cources.vb</DependentUpon>
     </EmbeddedResource>

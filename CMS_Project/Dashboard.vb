@@ -1,4 +1,5 @@
-﻿Imports Mysqlx.XDevAPI.Common
+﻿Imports System.Threading
+Imports Mysqlx.XDevAPI.Common
 
 Public Class Dashboard
     Private Sub DashBoardButton_Click(sender As Object, e As EventArgs) Handles DashBoardButton.Click
@@ -94,6 +95,21 @@ Public Class Dashboard
         End With
         VarLabel1.Text = "Search"
     End Sub
+    Private Sub AddUsersButton_Click(sender As Object, e As EventArgs) Handles AddUsersButton.Click
+        While Me.MainPanal.Controls.Count > 0
+            Me.MainPanal.Controls(0).Dispose()
+        End While
+
+        With AddUsers
+            .TopLevel = False
+            .AutoSize = False
+            .Dock = DockStyle.Fill
+            MainPanal.Controls.Add(AddUsers)
+            .BringToFront()
+            .Show()
+        End With
+        VarLabel1.Text = "Add Users"
+    End Sub
 
     Private Sub LogoutButton_Click(sender As Object, e As EventArgs) Handles LogoutButton.Click
         Dim result As DialogResult
@@ -113,7 +129,13 @@ Public Class Dashboard
 
     End Sub
 
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+        DateLabel2.Text = DateTime.Now.ToString()
+    End Sub
 
+    Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Timer2.Start()
+    End Sub
     '' Private Sub MainPanal_Scroll(sender As Object, e As ScrollEventArgs) Handles MainPanal.Scroll
     ''If e.ScrollOrientation = ScrollOrientation.VerticalScroll Then
     ''      MainPanal.VerticalScroll.Value = e.NewValue
