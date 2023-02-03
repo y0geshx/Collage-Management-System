@@ -34,12 +34,11 @@ Partial Class AddUsers
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.UserPassword2 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.LoginButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.LoginButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Showpass = New Guna.UI2.WinForms.Guna2CheckBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -269,49 +268,6 @@ Partial Class AddUsers
         Me.Label6.TabIndex = 12
         Me.Label6.Text = "Password"
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label7.Location = New System.Drawing.Point(400, 351)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(214, 33)
-        Me.Label7.TabIndex = 15
-        Me.Label7.Text = "Retype Password"
-        '
-        'UserPassword2
-        '
-        Me.UserPassword2.BorderColor = System.Drawing.Color.Silver
-        Me.UserPassword2.BorderThickness = 2
-        Me.UserPassword2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.UserPassword2.DefaultText = ""
-        Me.UserPassword2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.UserPassword2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.UserPassword2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UserPassword2.DisabledState.Parent = Me.UserPassword2
-        Me.UserPassword2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UserPassword2.FocusedState.BorderColor = System.Drawing.Color.Orchid
-        Me.UserPassword2.FocusedState.Parent = Me.UserPassword2
-        Me.UserPassword2.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UserPassword2.ForeColor = System.Drawing.Color.Black
-        Me.UserPassword2.HoverState.BorderColor = System.Drawing.Color.MediumPurple
-        Me.UserPassword2.HoverState.Parent = Me.UserPassword2
-        Me.UserPassword2.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
-        Me.UserPassword2.IconLeft = CType(resources.GetObject("UserPassword2.IconLeft"), System.Drawing.Image)
-        Me.UserPassword2.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.UserPassword2.Location = New System.Drawing.Point(406, 387)
-        Me.UserPassword2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.UserPassword2.Name = "UserPassword2"
-        Me.UserPassword2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.UserPassword2.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.UserPassword2.PlaceholderText = "Retype Password"
-        Me.UserPassword2.SelectedText = ""
-        Me.UserPassword2.ShadowDecoration.Parent = Me.UserPassword2
-        Me.UserPassword2.Size = New System.Drawing.Size(230, 36)
-        Me.UserPassword2.TabIndex = 14
-        Me.UserPassword2.UseSystemPasswordChar = True
-        '
         'LoginButton1
         '
         Me.LoginButton1.AutoRoundedCorners = True
@@ -394,18 +350,37 @@ Partial Class AddUsers
         Me.PictureBox2.TabIndex = 20
         Me.PictureBox2.TabStop = False
         '
+        'Showpass
+        '
+        Me.Showpass.AutoSize = True
+        Me.Showpass.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Showpass.CheckedState.BorderRadius = 2
+        Me.Showpass.CheckedState.BorderThickness = 0
+        Me.Showpass.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Showpass.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Showpass.Font = New System.Drawing.Font("Open Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Showpass.Location = New System.Drawing.Point(321, 397)
+        Me.Showpass.Name = "Showpass"
+        Me.Showpass.Size = New System.Drawing.Size(148, 26)
+        Me.Showpass.TabIndex = 21
+        Me.Showpass.Text = "Show Password"
+        Me.Showpass.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Showpass.UncheckedState.BorderRadius = 2
+        Me.Showpass.UncheckedState.BorderThickness = 0
+        Me.Showpass.UncheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Showpass.UseVisualStyleBackColor = True
+        '
         'AddUsers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(933, 588)
+        Me.Controls.Add(Me.Showpass)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.LoginButton2)
         Me.Controls.Add(Me.Guna2GradientButton1)
         Me.Controls.Add(Me.LoginButton1)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.UserPassword2)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -440,10 +415,9 @@ Partial Class AddUsers
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents UserPassword2 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents LoginButton1 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents LoginButton2 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Showpass As Guna.UI2.WinForms.Guna2CheckBox
 End Class

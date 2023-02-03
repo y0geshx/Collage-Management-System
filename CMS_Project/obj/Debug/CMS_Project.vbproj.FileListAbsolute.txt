@@ -49,3 +49,5 @@ C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.Cources.r
 C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.EnterMarks.resources
 C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.Search.resources
 C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.AddUsers.resources
+C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.AddStudent.resources
+C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.AddFaculty.resources

@@ -11544,7 +11544,7 @@
   <data name="ExitButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADI0SURBVHhe7d0L
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADI0SURBVHhe7d0L
         lGVVfefxRpSHMUbFIDoxPuLEGB+J6ThJT5xYpu45+97qxwBakkwmiQq2o8RJok5cvkipwGoV6EUkCCZD
         HCDRmTxGaR4iAXkN2ghCBAGBBpp+001Xt13V99xbdJ/Z+/a/QnHq3921q8659+xzvr+1PsvMWrO0977n
         7N+/7nMRIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBC
@@ -11765,7 +11765,7 @@
   <data name="LogoutButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADJdSURBVHhe7d0J
+        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADJdSURBVHhe7d0J
         tB1Vmbdxb+7NzRwhAZNAAIkCQoCQQEQRxUZAZg0IRMaWNAphUBnkE0kIyDwPEgng0ERQAg2IioKCCiqD
         zGA7Mjgw2goCIvP+3h06dEj9k9StOuet2qeeZ63fWq29evW9dXa9u6rOyblvISIiIiIiIiIiIiIiIiIi
         IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIi
@@ -15970,7 +15970,7 @@
     <value>17, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>140</value>
+    <value>27</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

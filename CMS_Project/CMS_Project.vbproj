@@ -151,6 +151,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddFaculty.Designer.vb">
+      <DependentUpon>AddFaculty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddFaculty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudent.Designer.vb">
+      <DependentUpon>AddStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AddUsers.Designer.vb">
       <DependentUpon>AddUsers.vb</DependentUpon>
     </Compile>
@@ -236,6 +248,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AddFaculty.resx">
+      <DependentUpon>AddFaculty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudent.resx">
+      <DependentUpon>AddStudent.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddUsers.resx">
       <DependentUpon>AddUsers.vb</DependentUpon>
     </EmbeddedResource>

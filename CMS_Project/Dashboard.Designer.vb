@@ -25,6 +25,7 @@ Partial Class Dashboard
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
         Me.TopPanel = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.DateLabel2 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.VarLabel1 = New System.Windows.Forms.Label()
@@ -45,7 +46,6 @@ Partial Class Dashboard
         Me.StudentButton = New Guna.UI2.WinForms.Guna2Button()
         Me.DashBoardButton = New Guna.UI2.WinForms.Guna2Button()
         Me.MainPanal = New System.Windows.Forms.Panel()
-        Me.DateLabel2 = New System.Windows.Forms.Label()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.TopPanel.SuspendLayout()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -68,12 +68,23 @@ Partial Class Dashboard
         Me.TopPanel.Size = New System.Drawing.Size(1112, 58)
         Me.TopPanel.TabIndex = 2
         '
+        'DateLabel2
+        '
+        Me.DateLabel2.AutoSize = True
+        Me.DateLabel2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateLabel2.ForeColor = System.Drawing.Color.GhostWhite
+        Me.DateLabel2.Location = New System.Drawing.Point(983, 32)
+        Me.DateLabel2.Name = "DateLabel2"
+        Me.DateLabel2.Size = New System.Drawing.Size(40, 20)
+        Me.DateLabel2.TabIndex = 8
+        Me.DateLabel2.Text = "Date"
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(1012, 9)
+        Me.Label2.Location = New System.Drawing.Point(982, 10)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(71, 25)
         Me.Label2.TabIndex = 3
@@ -82,7 +93,7 @@ Partial Class Dashboard
         'Guna2CirclePictureBox1
         '
         Me.Guna2CirclePictureBox1.Image = CType(resources.GetObject("Guna2CirclePictureBox1.Image"), System.Drawing.Image)
-        Me.Guna2CirclePictureBox1.Location = New System.Drawing.Point(951, 10)
+        Me.Guna2CirclePictureBox1.Location = New System.Drawing.Point(921, 10)
         Me.Guna2CirclePictureBox1.Name = "Guna2CirclePictureBox1"
         Me.Guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.Guna2CirclePictureBox1.ShadowDecoration.Parent = Me.Guna2CirclePictureBox1
@@ -409,16 +420,8 @@ Partial Class Dashboard
         Me.MainPanal.Size = New System.Drawing.Size(1112, 545)
         Me.MainPanal.TabIndex = 3
         '
-        'DateLabel2
+        'Timer2
         '
-        Me.DateLabel2.AutoSize = True
-        Me.DateLabel2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateLabel2.ForeColor = System.Drawing.Color.GhostWhite
-        Me.DateLabel2.Location = New System.Drawing.Point(1013, 32)
-        Me.DateLabel2.Name = "DateLabel2"
-        Me.DateLabel2.Size = New System.Drawing.Size(40, 20)
-        Me.DateLabel2.TabIndex = 8
-        Me.DateLabel2.Text = "Date"
         '
         'Dashboard
         '

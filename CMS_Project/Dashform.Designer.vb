@@ -46,6 +46,7 @@ Partial Class Dashform
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.DateLabel = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -55,6 +56,7 @@ Partial Class Dashform
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -174,7 +176,7 @@ Partial Class Dashform
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(112, 32)
         Me.Label5.TabIndex = 2
-        Me.Label5.Text = "Teachers"
+        Me.Label5.Text = "Faculties"
         '
         'PictureBox3
         '
@@ -234,7 +236,7 @@ Partial Class Dashform
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.GhostWhite
-        Me.Label8.Location = New System.Drawing.Point(12, 67)
+        Me.Label8.Location = New System.Drawing.Point(79, 26)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(157, 37)
         Me.Label8.TabIndex = 4
@@ -265,6 +267,7 @@ Partial Class Dashform
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.Panel5.Controls.Add(Me.PictureBox5)
         Me.Panel5.Controls.Add(Me.DateLabel)
         Me.Panel5.Controls.Add(Me.Label9)
         Me.Panel5.Controls.Add(Me.Label8)
@@ -288,6 +291,16 @@ Partial Class Dashform
         '
         'Timer1
         '
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(73, 51)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox5.TabIndex = 8
+        Me.PictureBox5.TabStop = False
         '
         'Dashform
         '
@@ -320,6 +333,7 @@ Partial Class Dashform
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -346,4 +360,5 @@ Partial Class Dashform
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Timer1 As Timer
     Friend WithEvents DateLabel As Label
+    Friend WithEvents PictureBox5 As PictureBox
 End Class
