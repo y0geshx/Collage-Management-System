@@ -23,10 +23,10 @@ Partial Class Teacher
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Teacher))
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.AddFacultyButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Guna2GradientButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -40,35 +40,35 @@ Partial Class Teacher
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Guna2GradientButton1
+        'AddFacultyButton1
         '
-        Me.Guna2GradientButton1.AutoRoundedCorners = True
-        Me.Guna2GradientButton1.BorderRadius = 17
-        Me.Guna2GradientButton1.CheckedState.Parent = Me.Guna2GradientButton1
-        Me.Guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton1.CustomImages.Parent = Me.Guna2GradientButton1
-        Me.Guna2GradientButton1.FillColor = System.Drawing.Color.SlateBlue
-        Me.Guna2GradientButton1.FillColor2 = System.Drawing.Color.SlateBlue
-        Me.Guna2GradientButton1.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GradientButton1.ForeColor = System.Drawing.Color.White
-        Me.Guna2GradientButton1.HoverState.FillColor = System.Drawing.Color.Orchid
-        Me.Guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.Orchid
-        Me.Guna2GradientButton1.HoverState.Parent = Me.Guna2GradientButton1
-        Me.Guna2GradientButton1.Location = New System.Drawing.Point(579, 79)
-        Me.Guna2GradientButton1.Name = "Guna2GradientButton1"
-        Me.Guna2GradientButton1.PressedColor = System.Drawing.Color.Turquoise
-        Me.Guna2GradientButton1.PressedDepth = 100
-        Me.Guna2GradientButton1.ShadowDecoration.Parent = Me.Guna2GradientButton1
-        Me.Guna2GradientButton1.Size = New System.Drawing.Size(157, 37)
-        Me.Guna2GradientButton1.TabIndex = 7
-        Me.Guna2GradientButton1.Text = "ADD"
+        Me.AddFacultyButton1.AutoRoundedCorners = True
+        Me.AddFacultyButton1.BorderRadius = 17
+        Me.AddFacultyButton1.CheckedState.Parent = Me.AddFacultyButton1
+        Me.AddFacultyButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.AddFacultyButton1.CustomImages.Parent = Me.AddFacultyButton1
+        Me.AddFacultyButton1.FillColor = System.Drawing.Color.SlateBlue
+        Me.AddFacultyButton1.FillColor2 = System.Drawing.Color.SlateBlue
+        Me.AddFacultyButton1.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddFacultyButton1.ForeColor = System.Drawing.Color.White
+        Me.AddFacultyButton1.HoverState.FillColor = System.Drawing.Color.Orchid
+        Me.AddFacultyButton1.HoverState.FillColor2 = System.Drawing.Color.Orchid
+        Me.AddFacultyButton1.HoverState.Parent = Me.AddFacultyButton1
+        Me.AddFacultyButton1.Location = New System.Drawing.Point(579, 79)
+        Me.AddFacultyButton1.Name = "AddFacultyButton1"
+        Me.AddFacultyButton1.PressedColor = System.Drawing.Color.Turquoise
+        Me.AddFacultyButton1.PressedDepth = 100
+        Me.AddFacultyButton1.ShadowDecoration.Parent = Me.AddFacultyButton1
+        Me.AddFacultyButton1.Size = New System.Drawing.Size(157, 37)
+        Me.AddFacultyButton1.TabIndex = 7
+        Me.AddFacultyButton1.Text = "ADD"
         '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Panel5.Controls.Add(Me.PictureBox1)
         Me.Panel5.Controls.Add(Me.Guna2GradientButton2)
-        Me.Panel5.Controls.Add(Me.Guna2GradientButton1)
+        Me.Panel5.Controls.Add(Me.AddFacultyButton1)
         Me.Panel5.Controls.Add(Me.LoginButton1)
         Me.Panel5.Controls.Add(Me.Label8)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
@@ -146,33 +146,33 @@ Partial Class Teacher
         '
         'Guna2DataGridView1
         '
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.Guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.Guna2DataGridView1.BackgroundColor = System.Drawing.Color.DarkGray
         Me.Guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.Guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.Guna2DataGridView1.ColumnHeadersHeight = 4
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
         Me.Guna2DataGridView1.EnableHeadersVisualStyles = False
         Me.Guna2DataGridView1.GridColor = System.Drawing.Color.Teal
-        Me.Guna2DataGridView1.Location = New System.Drawing.Point(32, 212)
+        Me.Guna2DataGridView1.Location = New System.Drawing.Point(35, 212)
         Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
         Me.Guna2DataGridView1.RowHeadersVisible = False
         Me.Guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -259,7 +259,7 @@ Partial Class Teacher
 
     End Sub
 
-    Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents AddFacultyButton1 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Guna2GradientButton2 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents LoginButton1 As Guna.UI2.WinForms.Guna2GradientButton

@@ -46,12 +46,15 @@ Partial Class Dashboard
         Me.StudentButton = New Guna.UI2.WinForms.Guna2Button()
         Me.DashBoardButton = New Guna.UI2.WinForms.Guna2Button()
         Me.MainPanal = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.TopPanel.SuspendLayout()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelLogo.SuspendLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelMenu.SuspendLayout()
+        Me.MainPanal.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TopPanel
@@ -179,6 +182,7 @@ Partial Class Dashboard
         Me.ExitButton.FillColor = System.Drawing.Color.Transparent
         Me.ExitButton.Font = New System.Drawing.Font("Open Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ExitButton.ForeColor = System.Drawing.Color.White
+        Me.ExitButton.HoverState.FillColor = System.Drawing.Color.CornflowerBlue
         Me.ExitButton.HoverState.Parent = Me.ExitButton
         Me.ExitButton.Image = CType(resources.GetObject("ExitButton.Image"), System.Drawing.Image)
         Me.ExitButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -199,6 +203,7 @@ Partial Class Dashboard
         Me.LogoutButton.FillColor = System.Drawing.Color.Transparent
         Me.LogoutButton.Font = New System.Drawing.Font("Open Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LogoutButton.ForeColor = System.Drawing.Color.White
+        Me.LogoutButton.HoverState.FillColor = System.Drawing.Color.CornflowerBlue
         Me.LogoutButton.HoverState.Parent = Me.LogoutButton
         Me.LogoutButton.Image = CType(resources.GetObject("LogoutButton.Image"), System.Drawing.Image)
         Me.LogoutButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -219,6 +224,7 @@ Partial Class Dashboard
         Me.Guna2Button1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Button1.Font = New System.Drawing.Font("Open Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button1.HoverState.FillColor = System.Drawing.Color.CornflowerBlue
         Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
         Me.Guna2Button1.Image = CType(resources.GetObject("Guna2Button1.Image"), System.Drawing.Image)
         Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -239,6 +245,7 @@ Partial Class Dashboard
         Me.AddUsersButton.FillColor = System.Drawing.Color.Transparent
         Me.AddUsersButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AddUsersButton.ForeColor = System.Drawing.Color.White
+        Me.AddUsersButton.HoverState.FillColor = System.Drawing.Color.CornflowerBlue
         Me.AddUsersButton.HoverState.Parent = Me.AddUsersButton
         Me.AddUsersButton.Image = CType(resources.GetObject("AddUsersButton.Image"), System.Drawing.Image)
         Me.AddUsersButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -259,6 +266,7 @@ Partial Class Dashboard
         Me.SearchButton.FillColor = System.Drawing.Color.Transparent
         Me.SearchButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SearchButton.ForeColor = System.Drawing.Color.White
+        Me.SearchButton.HoverState.FillColor = System.Drawing.Color.CornflowerBlue
         Me.SearchButton.HoverState.Parent = Me.SearchButton
         Me.SearchButton.Image = CType(resources.GetObject("SearchButton.Image"), System.Drawing.Image)
         Me.SearchButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -279,6 +287,7 @@ Partial Class Dashboard
         Me.Guna2Button3.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button3.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button3.HoverState.FillColor = System.Drawing.Color.CornflowerBlue
         Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
         Me.Guna2Button3.Image = CType(resources.GetObject("Guna2Button3.Image"), System.Drawing.Image)
         Me.Guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -299,6 +308,7 @@ Partial Class Dashboard
         Me.Guna2Button2.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button2.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button2.HoverState.FillColor = System.Drawing.Color.CornflowerBlue
         Me.Guna2Button2.HoverState.Parent = Me.Guna2Button2
         Me.Guna2Button2.Image = CType(resources.GetObject("Guna2Button2.Image"), System.Drawing.Image)
         Me.Guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -319,6 +329,7 @@ Partial Class Dashboard
         Me.EnterMarksButton.FillColor = System.Drawing.Color.Transparent
         Me.EnterMarksButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EnterMarksButton.ForeColor = System.Drawing.Color.White
+        Me.EnterMarksButton.HoverState.FillColor = System.Drawing.Color.CornflowerBlue
         Me.EnterMarksButton.HoverState.Parent = Me.EnterMarksButton
         Me.EnterMarksButton.Image = CType(resources.GetObject("EnterMarksButton.Image"), System.Drawing.Image)
         Me.EnterMarksButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -339,6 +350,7 @@ Partial Class Dashboard
         Me.CourceButton.FillColor = System.Drawing.Color.Transparent
         Me.CourceButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CourceButton.ForeColor = System.Drawing.Color.White
+        Me.CourceButton.HoverState.FillColor = System.Drawing.Color.CornflowerBlue
         Me.CourceButton.HoverState.Parent = Me.CourceButton
         Me.CourceButton.Image = CType(resources.GetObject("CourceButton.Image"), System.Drawing.Image)
         Me.CourceButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -359,6 +371,7 @@ Partial Class Dashboard
         Me.TeacherButton.FillColor = System.Drawing.Color.Transparent
         Me.TeacherButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TeacherButton.ForeColor = System.Drawing.Color.White
+        Me.TeacherButton.HoverState.FillColor = System.Drawing.Color.CornflowerBlue
         Me.TeacherButton.HoverState.Parent = Me.TeacherButton
         Me.TeacherButton.Image = CType(resources.GetObject("TeacherButton.Image"), System.Drawing.Image)
         Me.TeacherButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -379,6 +392,7 @@ Partial Class Dashboard
         Me.StudentButton.FillColor = System.Drawing.Color.Transparent
         Me.StudentButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StudentButton.ForeColor = System.Drawing.Color.White
+        Me.StudentButton.HoverState.FillColor = System.Drawing.Color.CornflowerBlue
         Me.StudentButton.HoverState.Parent = Me.StudentButton
         Me.StudentButton.Image = CType(resources.GetObject("StudentButton.Image"), System.Drawing.Image)
         Me.StudentButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -399,6 +413,7 @@ Partial Class Dashboard
         Me.DashBoardButton.FillColor = System.Drawing.Color.Transparent
         Me.DashBoardButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DashBoardButton.ForeColor = System.Drawing.Color.White
+        Me.DashBoardButton.HoverState.FillColor = System.Drawing.Color.CornflowerBlue
         Me.DashBoardButton.HoverState.Parent = Me.DashBoardButton
         Me.DashBoardButton.Image = CType(resources.GetObject("DashBoardButton.Image"), System.Drawing.Image)
         Me.DashBoardButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -414,11 +429,24 @@ Partial Class Dashboard
         '
         Me.MainPanal.AutoScroll = True
         Me.MainPanal.BackColor = System.Drawing.Color.White
+        Me.MainPanal.Controls.Add(Me.PictureBox1)
         Me.MainPanal.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MainPanal.Location = New System.Drawing.Point(199, 58)
         Me.MainPanal.Name = "MainPanal"
         Me.MainPanal.Size = New System.Drawing.Size(1112, 545)
         Me.MainPanal.TabIndex = 3
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(1112, 545)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'Timer2
         '
@@ -442,6 +470,8 @@ Partial Class Dashboard
         Me.PanelLogo.PerformLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelMenu.ResumeLayout(False)
+        Me.MainPanal.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -468,4 +498,5 @@ Partial Class Dashboard
     Friend WithEvents Guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
     Friend WithEvents DateLabel2 As Label
     Friend WithEvents Timer2 As Timer
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

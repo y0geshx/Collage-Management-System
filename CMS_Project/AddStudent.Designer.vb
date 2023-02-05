@@ -51,15 +51,15 @@ Partial Class AddStudent
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.Guna2TextBox11 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Guna2ComboBox2 = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2DateTimePicker2 = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.LoginButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientButton3 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.AddCloseButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.Guna2TextBox10 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label17 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -93,7 +93,7 @@ Partial Class AddStudent
         Me.Username1.PlaceholderText = "First Name"
         Me.Username1.SelectedText = ""
         Me.Username1.ShadowDecoration.Parent = Me.Username1
-        Me.Username1.Size = New System.Drawing.Size(185, 36)
+        Me.Username1.Size = New System.Drawing.Size(170, 36)
         Me.Username1.TabIndex = 4
         '
         'Label1
@@ -112,7 +112,7 @@ Partial Class AddStudent
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label2.Location = New System.Drawing.Point(222, 39)
+        Me.Label2.Location = New System.Drawing.Point(207, 39)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(139, 33)
         Me.Label2.TabIndex = 5
@@ -162,7 +162,7 @@ Partial Class AddStudent
         Me.Guna2TextBox1.HoverState.Parent = Me.Guna2TextBox1
         Me.Guna2TextBox1.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.Guna2TextBox1.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(228, 75)
+        Me.Guna2TextBox1.Location = New System.Drawing.Point(213, 75)
         Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Guna2TextBox1.Name = "Guna2TextBox1"
         Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -170,7 +170,7 @@ Partial Class AddStudent
         Me.Guna2TextBox1.PlaceholderText = "Last Name"
         Me.Guna2TextBox1.SelectedText = ""
         Me.Guna2TextBox1.ShadowDecoration.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(185, 36)
+        Me.Guna2TextBox1.Size = New System.Drawing.Size(170, 36)
         Me.Guna2TextBox1.TabIndex = 10
         '
         'Guna2TextBox2
@@ -244,7 +244,7 @@ Partial Class AddStudent
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label5.Location = New System.Drawing.Point(560, 39)
+        Me.Label5.Location = New System.Drawing.Point(506, 39)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(163, 33)
         Me.Label5.TabIndex = 13
@@ -272,7 +272,7 @@ Partial Class AddStudent
         Me.Guna2DateTimePicker1.ForeColor = System.Drawing.Color.Black
         Me.Guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.Guna2DateTimePicker1.HoverState.Parent = Me.Guna2DateTimePicker1
-        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(566, 75)
+        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(512, 75)
         Me.Guna2DateTimePicker1.MaxDate = New Date(2023, 2, 3, 0, 0, 0, 0)
         Me.Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
@@ -319,7 +319,7 @@ Partial Class AddStudent
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label7.Location = New System.Drawing.Point(414, 39)
+        Me.Label7.Location = New System.Drawing.Point(384, 39)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(100, 33)
         Me.Label7.TabIndex = 17
@@ -343,10 +343,10 @@ Partial Class AddStudent
         Me.Guna2ComboBox1.ItemHeight = 30
         Me.Guna2ComboBox1.Items.AddRange(New Object() {"male", "female", "other"})
         Me.Guna2ComboBox1.ItemsAppearance.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Location = New System.Drawing.Point(420, 75)
+        Me.Guna2ComboBox1.Location = New System.Drawing.Point(390, 75)
         Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
         Me.Guna2ComboBox1.ShadowDecoration.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Size = New System.Drawing.Size(140, 36)
+        Me.Guna2ComboBox1.Size = New System.Drawing.Size(116, 36)
         Me.Guna2ComboBox1.TabIndex = 18
         '
         'Guna2TextBox5
@@ -377,7 +377,7 @@ Partial Class AddStudent
         Me.Guna2TextBox5.PlaceholderText = "Address"
         Me.Guna2TextBox5.SelectedText = ""
         Me.Guna2TextBox5.ShadowDecoration.Parent = Me.Guna2TextBox5
-        Me.Guna2TextBox5.Size = New System.Drawing.Size(183, 62)
+        Me.Guna2TextBox5.Size = New System.Drawing.Size(183, 79)
         Me.Guna2TextBox5.TabIndex = 19
         '
         'Label8
@@ -490,7 +490,7 @@ Partial Class AddStudent
         Me.Guna2TextBox8.HoverState.Parent = Me.Guna2TextBox8
         Me.Guna2TextBox8.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.Guna2TextBox8.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.Guna2TextBox8.Location = New System.Drawing.Point(601, 250)
+        Me.Guna2TextBox8.Location = New System.Drawing.Point(35, 380)
         Me.Guna2TextBox8.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Guna2TextBox8.Name = "Guna2TextBox8"
         Me.Guna2TextBox8.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -517,7 +517,7 @@ Partial Class AddStudent
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label11.Location = New System.Drawing.Point(595, 214)
+        Me.Label11.Location = New System.Drawing.Point(29, 344)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(121, 33)
         Me.Label11.TabIndex = 26
@@ -634,67 +634,23 @@ Partial Class AddStudent
         Me.Guna2GradientButton2.TabIndex = 32
         Me.Guna2GradientButton2.Text = "Clear"
         '
-        'Guna2TextBox11
-        '
-        Me.Guna2TextBox11.Animated = True
-        Me.Guna2TextBox11.AutoRoundedCorners = True
-        Me.Guna2TextBox11.BorderColor = System.Drawing.Color.Silver
-        Me.Guna2TextBox11.BorderRadius = 17
-        Me.Guna2TextBox11.BorderThickness = 2
-        Me.Guna2TextBox11.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox11.DefaultText = ""
-        Me.Guna2TextBox11.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox11.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox11.DisabledState.Parent = Me.Guna2TextBox11
-        Me.Guna2TextBox11.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox11.FocusedState.BorderColor = System.Drawing.Color.Orchid
-        Me.Guna2TextBox11.FocusedState.Parent = Me.Guna2TextBox11
-        Me.Guna2TextBox11.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2TextBox11.ForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox11.HoverState.BorderColor = System.Drawing.Color.MediumPurple
-        Me.Guna2TextBox11.HoverState.Parent = Me.Guna2TextBox11
-        Me.Guna2TextBox11.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
-        Me.Guna2TextBox11.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.Guna2TextBox11.Location = New System.Drawing.Point(228, 389)
-        Me.Guna2TextBox11.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Guna2TextBox11.Name = "Guna2TextBox11"
-        Me.Guna2TextBox11.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox11.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox11.PlaceholderText = "Roll Number"
-        Me.Guna2TextBox11.SelectedText = ""
-        Me.Guna2TextBox11.ShadowDecoration.Parent = Me.Guna2TextBox11
-        Me.Guna2TextBox11.Size = New System.Drawing.Size(185, 36)
-        Me.Guna2TextBox11.TabIndex = 34
-        '
         'Label14
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label14.Location = New System.Drawing.Point(29, 353)
+        Me.Label14.Location = New System.Drawing.Point(246, 344)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(96, 33)
         Me.Label14.TabIndex = 36
         Me.Label14.Text = "Cource"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label15.Location = New System.Drawing.Point(222, 353)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(106, 33)
-        Me.Label15.TabIndex = 37
-        Me.Label15.Text = "Roll No."
         '
         'Label16
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label16.Location = New System.Drawing.Point(415, 353)
+        Me.Label16.Location = New System.Drawing.Point(459, 344)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(198, 33)
         Me.Label16.TabIndex = 38
@@ -716,9 +672,8 @@ Partial Class AddStudent
         Me.Guna2ComboBox2.FormattingEnabled = True
         Me.Guna2ComboBox2.HoverState.Parent = Me.Guna2ComboBox2
         Me.Guna2ComboBox2.ItemHeight = 30
-        Me.Guna2ComboBox2.Items.AddRange(New Object() {"male", "female", "other"})
         Me.Guna2ComboBox2.ItemsAppearance.Parent = Me.Guna2ComboBox2
-        Me.Guna2ComboBox2.Location = New System.Drawing.Point(35, 389)
+        Me.Guna2ComboBox2.Location = New System.Drawing.Point(252, 380)
         Me.Guna2ComboBox2.Name = "Guna2ComboBox2"
         Me.Guna2ComboBox2.ShadowDecoration.Parent = Me.Guna2ComboBox2
         Me.Guna2ComboBox2.Size = New System.Drawing.Size(183, 36)
@@ -735,7 +690,7 @@ Partial Class AddStudent
         Me.Guna2DateTimePicker2.ForeColor = System.Drawing.Color.Black
         Me.Guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.Guna2DateTimePicker2.HoverState.Parent = Me.Guna2DateTimePicker2
-        Me.Guna2DateTimePicker2.Location = New System.Drawing.Point(421, 389)
+        Me.Guna2DateTimePicker2.Location = New System.Drawing.Point(465, 380)
         Me.Guna2DateTimePicker2.MaxDate = New Date(2023, 2, 3, 0, 0, 0, 0)
         Me.Guna2DateTimePicker2.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.Guna2DateTimePicker2.Name = "Guna2DateTimePicker2"
@@ -815,21 +770,65 @@ Partial Class AddStudent
         Me.AddCloseButton1.TabIndex = 43
         Me.AddCloseButton1.Text = "Cancel"
         '
+        'Guna2TextBox10
+        '
+        Me.Guna2TextBox10.Animated = True
+        Me.Guna2TextBox10.AutoRoundedCorners = True
+        Me.Guna2TextBox10.BorderColor = System.Drawing.Color.Silver
+        Me.Guna2TextBox10.BorderRadius = 17
+        Me.Guna2TextBox10.BorderThickness = 2
+        Me.Guna2TextBox10.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox10.DefaultText = ""
+        Me.Guna2TextBox10.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox10.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox10.DisabledState.Parent = Me.Guna2TextBox10
+        Me.Guna2TextBox10.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox10.FocusedState.BorderColor = System.Drawing.Color.Orchid
+        Me.Guna2TextBox10.FocusedState.Parent = Me.Guna2TextBox10
+        Me.Guna2TextBox10.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2TextBox10.ForeColor = System.Drawing.Color.Black
+        Me.Guna2TextBox10.HoverState.BorderColor = System.Drawing.Color.MediumPurple
+        Me.Guna2TextBox10.HoverState.Parent = Me.Guna2TextBox10
+        Me.Guna2TextBox10.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
+        Me.Guna2TextBox10.IconLeftOffset = New System.Drawing.Point(4, 0)
+        Me.Guna2TextBox10.Location = New System.Drawing.Point(698, 75)
+        Me.Guna2TextBox10.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Guna2TextBox10.Name = "Guna2TextBox10"
+        Me.Guna2TextBox10.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox10.PlaceholderForeColor = System.Drawing.Color.Black
+        Me.Guna2TextBox10.PlaceholderText = "Age"
+        Me.Guna2TextBox10.SelectedText = ""
+        Me.Guna2TextBox10.ShadowDecoration.Parent = Me.Guna2TextBox10
+        Me.Guna2TextBox10.Size = New System.Drawing.Size(121, 36)
+        Me.Guna2TextBox10.TabIndex = 44
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label17.Location = New System.Drawing.Point(692, 39)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(58, 33)
+        Me.Label17.TabIndex = 45
+        Me.Label17.Text = "Age"
+        '
         'AddStudent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(1045, 556)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.Guna2TextBox10)
         Me.Controls.Add(Me.AddCloseButton1)
         Me.Controls.Add(Me.Guna2GradientButton3)
         Me.Controls.Add(Me.LoginButton2)
         Me.Controls.Add(Me.Guna2DateTimePicker2)
         Me.Controls.Add(Me.Guna2ComboBox2)
         Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.Guna2TextBox11)
         Me.Controls.Add(Me.Guna2GradientButton2)
         Me.Controls.Add(Me.Guna2GradientButton1)
         Me.Controls.Add(Me.Label13)
@@ -859,6 +858,7 @@ Partial Class AddStudent
         Me.Controls.Add(Me.Username1)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "AddStudent"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -897,13 +897,13 @@ Partial Class AddStudent
     Friend WithEvents Label13 As Label
     Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientButton2 As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents Guna2TextBox11 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label14 As Label
-    Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Guna2ComboBox2 As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Guna2DateTimePicker2 As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents LoginButton2 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientButton3 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents AddCloseButton1 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents Guna2TextBox10 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Label17 As Label
 End Class

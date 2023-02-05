@@ -136,6 +136,7 @@ Public Class Dashboard
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer2.Start()
     End Sub
+
     '' Private Sub MainPanal_Scroll(sender As Object, e As ScrollEventArgs) Handles MainPanal.Scroll
     ''If e.ScrollOrientation = ScrollOrientation.VerticalScroll Then
     ''      MainPanal.VerticalScroll.Value = e.NewValue
