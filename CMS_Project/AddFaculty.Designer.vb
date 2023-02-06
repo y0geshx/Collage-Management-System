@@ -27,8 +27,8 @@ Partial Class AddFaculty
         Me.AddCloseButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.FacultyResetButton = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.FacultySaveButton = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.Guna2GradientButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.PicClearButton = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.PicSelectButton = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -62,6 +62,7 @@ Partial Class AddFaculty
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.timelable = New System.Windows.Forms.Label()
         Me.FLastNameTB = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -136,51 +137,51 @@ Partial Class AddFaculty
         Me.FacultySaveButton.TabIndex = 78
         Me.FacultySaveButton.Text = "Save"
         '
-        'Guna2GradientButton2
+        'PicClearButton
         '
-        Me.Guna2GradientButton2.AutoRoundedCorners = True
-        Me.Guna2GradientButton2.BorderRadius = 17
-        Me.Guna2GradientButton2.CheckedState.Parent = Me.Guna2GradientButton2
-        Me.Guna2GradientButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton2.CustomImages.Parent = Me.Guna2GradientButton2
-        Me.Guna2GradientButton2.FillColor = System.Drawing.Color.SlateBlue
-        Me.Guna2GradientButton2.FillColor2 = System.Drawing.Color.SlateBlue
-        Me.Guna2GradientButton2.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GradientButton2.ForeColor = System.Drawing.Color.White
-        Me.Guna2GradientButton2.HoverState.FillColor = System.Drawing.Color.Orchid
-        Me.Guna2GradientButton2.HoverState.FillColor2 = System.Drawing.Color.Orchid
-        Me.Guna2GradientButton2.HoverState.Parent = Me.Guna2GradientButton2
-        Me.Guna2GradientButton2.Location = New System.Drawing.Point(891, 245)
-        Me.Guna2GradientButton2.Name = "Guna2GradientButton2"
-        Me.Guna2GradientButton2.PressedColor = System.Drawing.Color.Turquoise
-        Me.Guna2GradientButton2.PressedDepth = 100
-        Me.Guna2GradientButton2.ShadowDecoration.Parent = Me.Guna2GradientButton2
-        Me.Guna2GradientButton2.Size = New System.Drawing.Size(104, 37)
-        Me.Guna2GradientButton2.TabIndex = 71
-        Me.Guna2GradientButton2.Text = "Clear"
+        Me.PicClearButton.AutoRoundedCorners = True
+        Me.PicClearButton.BorderRadius = 17
+        Me.PicClearButton.CheckedState.Parent = Me.PicClearButton
+        Me.PicClearButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PicClearButton.CustomImages.Parent = Me.PicClearButton
+        Me.PicClearButton.FillColor = System.Drawing.Color.SlateBlue
+        Me.PicClearButton.FillColor2 = System.Drawing.Color.SlateBlue
+        Me.PicClearButton.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PicClearButton.ForeColor = System.Drawing.Color.White
+        Me.PicClearButton.HoverState.FillColor = System.Drawing.Color.Orchid
+        Me.PicClearButton.HoverState.FillColor2 = System.Drawing.Color.Orchid
+        Me.PicClearButton.HoverState.Parent = Me.PicClearButton
+        Me.PicClearButton.Location = New System.Drawing.Point(905, 245)
+        Me.PicClearButton.Name = "PicClearButton"
+        Me.PicClearButton.PressedColor = System.Drawing.Color.Turquoise
+        Me.PicClearButton.PressedDepth = 100
+        Me.PicClearButton.ShadowDecoration.Parent = Me.PicClearButton
+        Me.PicClearButton.Size = New System.Drawing.Size(104, 37)
+        Me.PicClearButton.TabIndex = 71
+        Me.PicClearButton.Text = "Clear"
         '
-        'Guna2GradientButton1
+        'PicSelectButton
         '
-        Me.Guna2GradientButton1.AutoRoundedCorners = True
-        Me.Guna2GradientButton1.BorderRadius = 17
-        Me.Guna2GradientButton1.CheckedState.Parent = Me.Guna2GradientButton1
-        Me.Guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton1.CustomImages.Parent = Me.Guna2GradientButton1
-        Me.Guna2GradientButton1.FillColor = System.Drawing.Color.SlateBlue
-        Me.Guna2GradientButton1.FillColor2 = System.Drawing.Color.SlateBlue
-        Me.Guna2GradientButton1.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GradientButton1.ForeColor = System.Drawing.Color.White
-        Me.Guna2GradientButton1.HoverState.FillColor = System.Drawing.Color.Orchid
-        Me.Guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.Orchid
-        Me.Guna2GradientButton1.HoverState.Parent = Me.Guna2GradientButton1
-        Me.Guna2GradientButton1.Location = New System.Drawing.Point(770, 245)
-        Me.Guna2GradientButton1.Name = "Guna2GradientButton1"
-        Me.Guna2GradientButton1.PressedColor = System.Drawing.Color.Turquoise
-        Me.Guna2GradientButton1.PressedDepth = 100
-        Me.Guna2GradientButton1.ShadowDecoration.Parent = Me.Guna2GradientButton1
-        Me.Guna2GradientButton1.Size = New System.Drawing.Size(104, 36)
-        Me.Guna2GradientButton1.TabIndex = 70
-        Me.Guna2GradientButton1.Text = "Upload"
+        Me.PicSelectButton.AutoRoundedCorners = True
+        Me.PicSelectButton.BorderRadius = 17
+        Me.PicSelectButton.CheckedState.Parent = Me.PicSelectButton
+        Me.PicSelectButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PicSelectButton.CustomImages.Parent = Me.PicSelectButton
+        Me.PicSelectButton.FillColor = System.Drawing.Color.SlateBlue
+        Me.PicSelectButton.FillColor2 = System.Drawing.Color.SlateBlue
+        Me.PicSelectButton.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PicSelectButton.ForeColor = System.Drawing.Color.White
+        Me.PicSelectButton.HoverState.FillColor = System.Drawing.Color.Orchid
+        Me.PicSelectButton.HoverState.FillColor2 = System.Drawing.Color.Orchid
+        Me.PicSelectButton.HoverState.Parent = Me.PicSelectButton
+        Me.PicSelectButton.Location = New System.Drawing.Point(770, 245)
+        Me.PicSelectButton.Name = "PicSelectButton"
+        Me.PicSelectButton.PressedColor = System.Drawing.Color.Turquoise
+        Me.PicSelectButton.PressedDepth = 100
+        Me.PicSelectButton.ShadowDecoration.Parent = Me.PicSelectButton
+        Me.PicSelectButton.Size = New System.Drawing.Size(104, 36)
+        Me.PicSelectButton.TabIndex = 70
+        Me.PicSelectButton.Text = "Select"
         '
         'Label13
         '
@@ -195,7 +196,8 @@ Partial Class AddFaculty
         '
         'PictureBox1
         '
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(792, 72)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(184, 155)
@@ -832,6 +834,10 @@ Partial Class AddFaculty
         Me.FLastNameTB.Size = New System.Drawing.Size(185, 36)
         Me.FLastNameTB.TabIndex = 95
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'AddFaculty
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -851,8 +857,8 @@ Partial Class AddFaculty
         Me.Controls.Add(Me.AddCloseButton1)
         Me.Controls.Add(Me.FacultyResetButton)
         Me.Controls.Add(Me.FacultySaveButton)
-        Me.Controls.Add(Me.Guna2GradientButton2)
-        Me.Controls.Add(Me.Guna2GradientButton1)
+        Me.Controls.Add(Me.PicClearButton)
+        Me.Controls.Add(Me.PicSelectButton)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label12)
@@ -889,8 +895,8 @@ Partial Class AddFaculty
     Friend WithEvents AddCloseButton1 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents FacultyResetButton As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents FacultySaveButton As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents Guna2GradientButton2 As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents PicClearButton As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents PicSelectButton As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Label13 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label12 As Label
@@ -924,4 +930,5 @@ Partial Class AddFaculty
     Friend WithEvents Timer1 As Timer
     Friend WithEvents timelable As Label
     Friend WithEvents FLastNameTB As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class

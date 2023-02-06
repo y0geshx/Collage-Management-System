@@ -6,6 +6,7 @@ Public Class AddFaculty
     Dim myconnection As New DTconnection
     Dim objdatapter As New MySqlDataAdapter
     Dim dtable As New DataTable
+
     Private Sub AddFaculty_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Start()
     End Sub
@@ -94,6 +95,14 @@ Public Class AddFaculty
     End Sub
 
     Private Sub FacultySaveButton_Click(sender As Object, e As EventArgs) Handles FacultySaveButton.Click
+        Dim filename As String = OpenFileDialog1.FileName + ".jpg"
+        Dim FileSize As UInt32
+        Dim mstream As New System.IO.MemoryStream()
+        PictureBox1.Image.Save(mstream, System.Drawing.Imaging.ImageFormat.Jpeg)
+        Dim arrImage() As Byte = mstream.GetBuffer()
+        FileSize = mstream.Length
+        mstream.Close()
+
         Try
             If FLastNameTB.Text = "" Or
             FFirstNameTB.Text = "" Or
@@ -107,15 +116,16 @@ Public Class AddFaculty
             FQualiTB.Text = "" Or
             FExpTB.Text = "" Or
             FPasswordTB.Text = "" Then
+
                 MessageBox.Show("Missing Information. Please fill all the fields ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
 
-                Dim query = "insert into faculties (facultyfirstname, facultylastname, gender, dob, age, contactnumber, emailid, address, city, state, pincode, qualification, experience, password, activestatus, joindate )values
-                                               ('" & FLastNameTB.Text & "','" & FFirstNameTB.Text & "','" & FGenderComboBox.Text & "','" & FDOBDateTimePicker.Text & "','" & FAgeTB.Text & "','" & FPhoneTB.Text & "','" & FemailTB.Text & "','" & FAddressTB.Text & "', '" & FCityTB.Text & "','" & FStateTB.Text & "','" & FPINCodeTB.Text & "','" & FQualiTB.Text & "','" & FExpTB.Text & "','" & FPasswordTB.Text & "','" & "Active" & "','" & timelable.Text & "' ) "
+                Dim query = "insert into faculties (facultyfirstname, facultylastname, gender, dob, age, contactnumber, emailid, address, city, state, pincode, qualification, experience, password, activestatus, joindate, profilepic )values
+                                               ('" & FLastNameTB.Text & "','" & FFirstNameTB.Text & "','" & FGenderComboBox.Text & "','" & FDOBDateTimePicker.Text & "','" & FAgeTB.Text & "','" & FPhoneTB.Text & "','" & FemailTB.Text & "','" & FAddressTB.Text & "', '" & FCityTB.Text & "','" & FStateTB.Text & "','" & FPINCodeTB.Text & "','" & FQualiTB.Text & "','" & FExpTB.Text & "','" & FPasswordTB.Text & "','" & "Active" & "','" & timelable.Text & "', @ImageFile ) "
 
                 Dim cmd As MySqlCommand
                 cmd = New MySqlCommand(query, myconnection.open)
-
+                cmd.Parameters.AddWithValue("@ImageFile", arrImage)
                 cmd.ExecuteNonQuery()
                 myconnection.close()
                 MsgBox("Successfully Saved in database", MsgBoxStyle.Information, "Record Saved")
@@ -142,5 +152,56 @@ Public Class AddFaculty
         Me.Close()
     End Sub
 
+    Private Sub PicSelectButton_Click(sender As Object, e As EventArgs) Handles PicSelectButton.Click
+        Try
+            With OpenFileDialog1
+                'CHECK THE SELECTED FILE IF IT EXIST OTHERWISE THE DIALOG BOX WILL DISPLAY A WARNING.
+                .CheckFileExists = True
 
+                'CHECK THE SELECTED PATH IF IT EXIST OTHERWISE THE DIALOG BOX WILL DISPLAY A WARNING.
+                .CheckPathExists = True
+
+                'GET AND SET THE DEFAULT EXTENSION
+                .DefaultExt = "jpg"
+
+                'RETURN THE FILE LINKED TO THE LNK FILE
+                .DereferenceLinks = True
+
+                'SET THE FILE NAME TO EMPTY 
+                .FileName = ""
+
+                'FILTERING THE FILES
+                .Filter = "(*.jpg)|*.jpg|(*.png)|*.png|(*.jpg)|*.jpg|All files|*.*"
+                'SET THIS FOR ONE FILE SELECTION ONLY.
+                .Multiselect = False
+
+
+
+                'SET THIS TO PUT THE CURRENT FOLDER BACK TO WHERE IT HAS STARTED.
+                .RestoreDirectory = True
+
+                'SET THE TITLE OF THE DIALOG BOX.
+                .Title = "Select a file to open"
+
+                'ACCEPT ONLY THE VALID WIN32 FILE NAMES.
+                .ValidateNames = True
+
+                If .ShowDialog = DialogResult.OK Then
+                    Try
+                        PictureBox1.Image = Image.FromFile(OpenFileDialog1.FileName)
+                    Catch fileException As Exception
+                        Throw fileException
+                    End Try
+                End If
+
+            End With
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Exclamation, Me.Text)
+        End Try
+    End Sub
+
+    Private Sub PicClearButton_Click(sender As Object, e As EventArgs) Handles PicClearButton.Click
+        PictureBox1.Image = Nothing
+
+    End Sub
 End Class
