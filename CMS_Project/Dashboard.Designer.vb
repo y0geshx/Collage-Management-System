@@ -255,7 +255,7 @@ Partial Class Dashboard
         Me.AddUsersButton.ShadowDecoration.Parent = Me.AddUsersButton
         Me.AddUsersButton.Size = New System.Drawing.Size(199, 45)
         Me.AddUsersButton.TabIndex = 19
-        Me.AddUsersButton.Text = "ADD USERS"
+        Me.AddUsersButton.Text = "USERS"
         '
         'SearchButton
         '

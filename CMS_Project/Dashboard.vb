@@ -139,7 +139,7 @@ Public Class Dashboard
 
     Private Sub Dashboard_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Dim dialog As DialogResult
-        dialog = MessageBox.Show("Do you want close the app !", "EXIT", MessageBoxButtons.YesNo)
+        dialog = MessageBox.Show("Do you want close the app !", "EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If dialog = DialogResult.No Then
             e.Cancel = True
         Else

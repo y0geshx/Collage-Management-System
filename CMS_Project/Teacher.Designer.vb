@@ -25,13 +25,13 @@ Partial Class Teacher
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Teacher))
         Me.AddFacultyButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.LoadButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Guna2GradientButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.LoginButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.LoadButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Panel5.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -75,6 +75,29 @@ Partial Class Teacher
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(1152, 131)
         Me.Panel5.TabIndex = 6
+        '
+        'LoadButton1
+        '
+        Me.LoadButton1.AutoRoundedCorners = True
+        Me.LoadButton1.BorderRadius = 16
+        Me.LoadButton1.CheckedState.Parent = Me.LoadButton1
+        Me.LoadButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.LoadButton1.CustomImages.Parent = Me.LoadButton1
+        Me.LoadButton1.FillColor = System.Drawing.Color.SlateBlue
+        Me.LoadButton1.FillColor2 = System.Drawing.Color.Orchid
+        Me.LoadButton1.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LoadButton1.ForeColor = System.Drawing.Color.White
+        Me.LoadButton1.HoverState.FillColor = System.Drawing.Color.Orchid
+        Me.LoadButton1.HoverState.FillColor2 = System.Drawing.Color.SlateBlue
+        Me.LoadButton1.HoverState.Parent = Me.LoadButton1
+        Me.LoadButton1.Location = New System.Drawing.Point(461, 83)
+        Me.LoadButton1.Name = "LoadButton1"
+        Me.LoadButton1.PressedColor = System.Drawing.Color.Teal
+        Me.LoadButton1.PressedDepth = 50
+        Me.LoadButton1.ShadowDecoration.Parent = Me.LoadButton1
+        Me.LoadButton1.Size = New System.Drawing.Size(142, 35)
+        Me.LoadButton1.TabIndex = 19
+        Me.LoadButton1.Text = "Refresh"
         '
         'Label1
         '
@@ -162,29 +185,6 @@ Partial Class Teacher
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(1152, 523)
         Me.DataGridView1.TabIndex = 18
-        '
-        'LoadButton1
-        '
-        Me.LoadButton1.AutoRoundedCorners = True
-        Me.LoadButton1.BorderRadius = 16
-        Me.LoadButton1.CheckedState.Parent = Me.LoadButton1
-        Me.LoadButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.LoadButton1.CustomImages.Parent = Me.LoadButton1
-        Me.LoadButton1.FillColor = System.Drawing.Color.SlateBlue
-        Me.LoadButton1.FillColor2 = System.Drawing.Color.Orchid
-        Me.LoadButton1.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LoadButton1.ForeColor = System.Drawing.Color.White
-        Me.LoadButton1.HoverState.FillColor = System.Drawing.Color.Orchid
-        Me.LoadButton1.HoverState.FillColor2 = System.Drawing.Color.SlateBlue
-        Me.LoadButton1.HoverState.Parent = Me.LoadButton1
-        Me.LoadButton1.Location = New System.Drawing.Point(461, 83)
-        Me.LoadButton1.Name = "LoadButton1"
-        Me.LoadButton1.PressedColor = System.Drawing.Color.Teal
-        Me.LoadButton1.PressedDepth = 50
-        Me.LoadButton1.ShadowDecoration.Parent = Me.LoadButton1
-        Me.LoadButton1.Size = New System.Drawing.Size(142, 35)
-        Me.LoadButton1.TabIndex = 19
-        Me.LoadButton1.Text = "Refresh"
         '
         'Teacher
         '

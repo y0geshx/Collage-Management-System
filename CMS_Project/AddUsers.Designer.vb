@@ -34,7 +34,6 @@ Partial Class AddUsers
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.DeleteButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.SaveButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Showpass = New Guna.UI2.WinForms.Guna2CheckBox()
@@ -43,6 +42,10 @@ Partial Class AddUsers
         Me.Label7 = New System.Windows.Forms.Label()
         Me.RefreshButton = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.UpdateButton3 = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.UserID = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.ResetButton = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.DeleteButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2GradientPanel1.SuspendLayout()
@@ -80,7 +83,7 @@ Partial Class AddUsers
         Me.UserFirstName.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.UserFirstName.IconLeft = CType(resources.GetObject("UserFirstName.IconLeft"), System.Drawing.Image)
         Me.UserFirstName.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.UserFirstName.Location = New System.Drawing.Point(33, 142)
+        Me.UserFirstName.Location = New System.Drawing.Point(297, 148)
         Me.UserFirstName.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.UserFirstName.Name = "UserFirstName"
         Me.UserFirstName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -96,7 +99,7 @@ Partial Class AddUsers
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label2.Location = New System.Drawing.Point(27, 106)
+        Me.Label2.Location = New System.Drawing.Point(291, 112)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(142, 33)
         Me.Label2.TabIndex = 4
@@ -107,7 +110,7 @@ Partial Class AddUsers
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label3.Location = New System.Drawing.Point(291, 106)
+        Me.Label3.Location = New System.Drawing.Point(27, 208)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(139, 33)
         Me.Label3.TabIndex = 5
@@ -134,7 +137,7 @@ Partial Class AddUsers
         Me.UserLastNmae.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.UserLastNmae.IconLeft = CType(resources.GetObject("UserLastNmae.IconLeft"), System.Drawing.Image)
         Me.UserLastNmae.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.UserLastNmae.Location = New System.Drawing.Point(297, 142)
+        Me.UserLastNmae.Location = New System.Drawing.Point(33, 244)
         Me.UserLastNmae.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.UserLastNmae.Name = "UserLastNmae"
         Me.UserLastNmae.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -166,7 +169,7 @@ Partial Class AddUsers
         Me.UserEmail.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.UserEmail.IconLeft = CType(resources.GetObject("UserEmail.IconLeft"), System.Drawing.Image)
         Me.UserEmail.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.UserEmail.Location = New System.Drawing.Point(33, 248)
+        Me.UserEmail.Location = New System.Drawing.Point(297, 244)
         Me.UserEmail.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.UserEmail.Name = "UserEmail"
         Me.UserEmail.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -198,7 +201,7 @@ Partial Class AddUsers
         Me.UserNumber.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.UserNumber.IconLeft = CType(resources.GetObject("UserNumber.IconLeft"), System.Drawing.Image)
         Me.UserNumber.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.UserNumber.Location = New System.Drawing.Point(297, 248)
+        Me.UserNumber.Location = New System.Drawing.Point(33, 363)
         Me.UserNumber.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.UserNumber.Name = "UserNumber"
         Me.UserNumber.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -229,7 +232,7 @@ Partial Class AddUsers
         Me.UserPassword1.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.UserPassword1.IconLeft = CType(resources.GetObject("UserPassword1.IconLeft"), System.Drawing.Image)
         Me.UserPassword1.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.UserPassword1.Location = New System.Drawing.Point(33, 364)
+        Me.UserPassword1.Location = New System.Drawing.Point(297, 363)
         Me.UserPassword1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.UserPassword1.Name = "UserPassword1"
         Me.UserPassword1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -246,7 +249,7 @@ Partial Class AddUsers
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label4.Location = New System.Drawing.Point(27, 212)
+        Me.Label4.Location = New System.Drawing.Point(291, 208)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(179, 33)
         Me.Label4.TabIndex = 10
@@ -257,7 +260,7 @@ Partial Class AddUsers
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label5.Location = New System.Drawing.Point(291, 212)
+        Me.Label5.Location = New System.Drawing.Point(27, 327)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(197, 33)
         Me.Label5.TabIndex = 11
@@ -268,34 +271,11 @@ Partial Class AddUsers
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label6.Location = New System.Drawing.Point(27, 328)
+        Me.Label6.Location = New System.Drawing.Point(291, 327)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(128, 33)
         Me.Label6.TabIndex = 12
         Me.Label6.Text = "Password"
-        '
-        'DeleteButton1
-        '
-        Me.DeleteButton1.AutoRoundedCorners = True
-        Me.DeleteButton1.BorderRadius = 21
-        Me.DeleteButton1.CheckedState.Parent = Me.DeleteButton1
-        Me.DeleteButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.DeleteButton1.CustomImages.Parent = Me.DeleteButton1
-        Me.DeleteButton1.FillColor = System.Drawing.Color.Silver
-        Me.DeleteButton1.FillColor2 = System.Drawing.Color.Silver
-        Me.DeleteButton1.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DeleteButton1.ForeColor = System.Drawing.Color.Black
-        Me.DeleteButton1.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.DeleteButton1.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.DeleteButton1.HoverState.Parent = Me.DeleteButton1
-        Me.DeleteButton1.Location = New System.Drawing.Point(383, 481)
-        Me.DeleteButton1.Name = "DeleteButton1"
-        Me.DeleteButton1.PressedColor = System.Drawing.Color.Teal
-        Me.DeleteButton1.PressedDepth = 50
-        Me.DeleteButton1.ShadowDecoration.Parent = Me.DeleteButton1
-        Me.DeleteButton1.Size = New System.Drawing.Size(169, 45)
-        Me.DeleteButton1.TabIndex = 17
-        Me.DeleteButton1.Text = "Delete"
         '
         'SaveButton2
         '
@@ -312,7 +292,7 @@ Partial Class AddUsers
         Me.SaveButton2.HoverState.FillColor = System.Drawing.Color.Turquoise
         Me.SaveButton2.HoverState.FillColor2 = System.Drawing.Color.SlateBlue
         Me.SaveButton2.HoverState.Parent = Me.SaveButton2
-        Me.SaveButton2.Location = New System.Drawing.Point(27, 481)
+        Me.SaveButton2.Location = New System.Drawing.Point(12, 469)
         Me.SaveButton2.Name = "SaveButton2"
         Me.SaveButton2.PressedColor = System.Drawing.Color.Teal
         Me.SaveButton2.PressedDepth = 50
@@ -340,7 +320,7 @@ Partial Class AddUsers
         Me.Showpass.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Showpass.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Showpass.Font = New System.Drawing.Font("Open Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Showpass.Location = New System.Drawing.Point(58, 406)
+        Me.Showpass.Location = New System.Drawing.Point(297, 405)
         Me.Showpass.Name = "Showpass"
         Me.Showpass.Size = New System.Drawing.Size(148, 26)
         Me.Showpass.TabIndex = 21
@@ -354,9 +334,9 @@ Partial Class AddUsers
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(616, 139)
+        Me.DataGridView1.Location = New System.Drawing.Point(581, 137)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(575, 336)
+        Me.DataGridView1.Size = New System.Drawing.Size(551, 336)
         Me.DataGridView1.TabIndex = 22
         '
         'Guna2GradientPanel1
@@ -375,7 +355,7 @@ Partial Class AddUsers
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Open Sans Semibold", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label7.Location = New System.Drawing.Point(823, 96)
+        Me.Label7.Location = New System.Drawing.Point(764, 91)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(183, 43)
         Me.Label7.TabIndex = 24
@@ -395,7 +375,7 @@ Partial Class AddUsers
         Me.RefreshButton.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.RefreshButton.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.RefreshButton.HoverState.Parent = Me.RefreshButton
-        Me.RefreshButton.Location = New System.Drawing.Point(837, 481)
+        Me.RefreshButton.Location = New System.Drawing.Point(772, 479)
         Me.RefreshButton.Name = "RefreshButton"
         Me.RefreshButton.PressedColor = System.Drawing.Color.Teal
         Me.RefreshButton.PressedDepth = 50
@@ -419,7 +399,7 @@ Partial Class AddUsers
         Me.UpdateButton3.HoverState.FillColor = System.Drawing.Color.Turquoise
         Me.UpdateButton3.HoverState.FillColor2 = System.Drawing.Color.SlateBlue
         Me.UpdateButton3.HoverState.Parent = Me.UpdateButton3
-        Me.UpdateButton3.Location = New System.Drawing.Point(206, 481)
+        Me.UpdateButton3.Location = New System.Drawing.Point(205, 469)
         Me.UpdateButton3.Name = "UpdateButton3"
         Me.UpdateButton3.PressedColor = System.Drawing.Color.Teal
         Me.UpdateButton3.PressedDepth = 50
@@ -428,12 +408,106 @@ Partial Class AddUsers
         Me.UpdateButton3.TabIndex = 26
         Me.UpdateButton3.Text = "Update"
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label8.Location = New System.Drawing.Point(21, 112)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(100, 33)
+        Me.Label8.TabIndex = 27
+        Me.Label8.Text = "User ID"
+        '
+        'UserID
+        '
+        Me.UserID.Animated = True
+        Me.UserID.BorderColor = System.Drawing.Color.Silver
+        Me.UserID.BorderThickness = 2
+        Me.UserID.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.UserID.DefaultText = ""
+        Me.UserID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.UserID.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.UserID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UserID.DisabledState.Parent = Me.UserID
+        Me.UserID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UserID.FocusedState.BorderColor = System.Drawing.Color.Orchid
+        Me.UserID.FocusedState.Parent = Me.UserID
+        Me.UserID.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UserID.ForeColor = System.Drawing.Color.Black
+        Me.UserID.HoverState.BorderColor = System.Drawing.Color.MediumPurple
+        Me.UserID.HoverState.Parent = Me.UserID
+        Me.UserID.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
+        Me.UserID.IconLeft = CType(resources.GetObject("UserID.IconLeft"), System.Drawing.Image)
+        Me.UserID.IconLeftOffset = New System.Drawing.Point(4, 0)
+        Me.UserID.Location = New System.Drawing.Point(27, 148)
+        Me.UserID.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.UserID.Name = "UserID"
+        Me.UserID.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.UserID.PlaceholderForeColor = System.Drawing.Color.Black
+        Me.UserID.PlaceholderText = "User ID"
+        Me.UserID.SelectedText = ""
+        Me.UserID.ShadowDecoration.Parent = Me.UserID
+        Me.UserID.Size = New System.Drawing.Size(230, 36)
+        Me.UserID.TabIndex = 28
+        '
+        'ResetButton
+        '
+        Me.ResetButton.AutoRoundedCorners = True
+        Me.ResetButton.BorderRadius = 21
+        Me.ResetButton.CheckedState.Parent = Me.ResetButton
+        Me.ResetButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ResetButton.CustomImages.Parent = Me.ResetButton
+        Me.ResetButton.FillColor = System.Drawing.Color.Silver
+        Me.ResetButton.FillColor2 = System.Drawing.Color.Silver
+        Me.ResetButton.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ResetButton.ForeColor = System.Drawing.Color.Black
+        Me.ResetButton.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.ResetButton.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.ResetButton.HoverState.Parent = Me.ResetButton
+        Me.ResetButton.Location = New System.Drawing.Point(205, 531)
+        Me.ResetButton.Name = "ResetButton"
+        Me.ResetButton.PressedColor = System.Drawing.Color.Teal
+        Me.ResetButton.PressedDepth = 50
+        Me.ResetButton.ShadowDecoration.Parent = Me.ResetButton
+        Me.ResetButton.Size = New System.Drawing.Size(169, 45)
+        Me.ResetButton.TabIndex = 29
+        Me.ResetButton.Text = "Reset"
+        '
+        'DeleteButton1
+        '
+        Me.DeleteButton1.Animated = True
+        Me.DeleteButton1.AutoRoundedCorners = True
+        Me.DeleteButton1.BorderRadius = 21
+        Me.DeleteButton1.CheckedState.Parent = Me.DeleteButton1
+        Me.DeleteButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.DeleteButton1.CustomImages.Parent = Me.DeleteButton1
+        Me.DeleteButton1.FillColor = System.Drawing.Color.DarkSlateBlue
+        Me.DeleteButton1.FillColor2 = System.Drawing.Color.DarkTurquoise
+        Me.DeleteButton1.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DeleteButton1.ForeColor = System.Drawing.Color.White
+        Me.DeleteButton1.HoverState.FillColor = System.Drawing.Color.Turquoise
+        Me.DeleteButton1.HoverState.FillColor2 = System.Drawing.Color.SlateBlue
+        Me.DeleteButton1.HoverState.Parent = Me.DeleteButton1
+        Me.DeleteButton1.Location = New System.Drawing.Point(398, 469)
+        Me.DeleteButton1.Name = "DeleteButton1"
+        Me.DeleteButton1.PressedColor = System.Drawing.Color.Teal
+        Me.DeleteButton1.PressedDepth = 50
+        Me.DeleteButton1.ShadowDecoration.Parent = Me.DeleteButton1
+        Me.DeleteButton1.Size = New System.Drawing.Size(162, 45)
+        Me.DeleteButton1.TabIndex = 30
+        Me.DeleteButton1.Text = "Delete"
+        '
         'AddUsers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(1268, 588)
+        Me.Controls.Add(Me.DeleteButton1)
+        Me.Controls.Add(Me.ResetButton)
+        Me.Controls.Add(Me.UserID)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.UpdateButton3)
         Me.Controls.Add(Me.RefreshButton)
         Me.Controls.Add(Me.Label7)
@@ -441,7 +515,6 @@ Partial Class AddUsers
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Showpass)
         Me.Controls.Add(Me.SaveButton2)
-        Me.Controls.Add(Me.DeleteButton1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -478,7 +551,6 @@ Partial Class AddUsers
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents DeleteButton1 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents SaveButton2 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Showpass As Guna.UI2.WinForms.Guna2CheckBox
@@ -487,4 +559,8 @@ Partial Class AddUsers
     Friend WithEvents Label7 As Label
     Friend WithEvents RefreshButton As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents UpdateButton3 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents Label8 As Label
+    Friend WithEvents UserID As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents ResetButton As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents DeleteButton1 As Guna.UI2.WinForms.Guna2GradientButton
 End Class
