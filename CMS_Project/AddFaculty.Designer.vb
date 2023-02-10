@@ -414,6 +414,7 @@ Partial Class AddFaculty
         Me.FAddressTB.IconLeftOffset = New System.Drawing.Point(4, 0)
         Me.FAddressTB.Location = New System.Drawing.Point(534, 159)
         Me.FAddressTB.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.FAddressTB.Multiline = True
         Me.FAddressTB.Name = "FAddressTB"
         Me.FAddressTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.FAddressTB.PlaceholderForeColor = System.Drawing.Color.Black
@@ -434,12 +435,12 @@ Partial Class AddFaculty
         Me.FGenderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.FGenderComboBox.FocusedColor = System.Drawing.Color.Empty
         Me.FGenderComboBox.FocusedState.Parent = Me.FGenderComboBox
-        Me.FGenderComboBox.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.FGenderComboBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.FGenderComboBox.Font = New System.Drawing.Font("Open Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FGenderComboBox.ForeColor = System.Drawing.Color.Black
         Me.FGenderComboBox.FormattingEnabled = True
         Me.FGenderComboBox.HoverState.Parent = Me.FGenderComboBox
         Me.FGenderComboBox.ItemHeight = 30
-        Me.FGenderComboBox.Items.AddRange(New Object() {"male", "female", "other"})
+        Me.FGenderComboBox.Items.AddRange(New Object() {"Male", "Female", "Other"})
         Me.FGenderComboBox.ItemsAppearance.Parent = Me.FGenderComboBox
         Me.FGenderComboBox.Location = New System.Drawing.Point(411, 72)
         Me.FGenderComboBox.Name = "FGenderComboBox"
@@ -499,6 +500,7 @@ Partial Class AddFaculty
         Me.FDOBDateTimePicker.BorderThickness = 2
         Me.FDOBDateTimePicker.CheckedState.Parent = Me.FDOBDateTimePicker
         Me.FDOBDateTimePicker.FillColor = System.Drawing.Color.White
+        Me.FDOBDateTimePicker.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FDOBDateTimePicker.ForeColor = System.Drawing.Color.Black
         Me.FDOBDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.FDOBDateTimePicker.HoverState.Parent = Me.FDOBDateTimePicker

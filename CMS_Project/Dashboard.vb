@@ -64,23 +64,7 @@ Public Class Dashboard
         VarLabel1.Text = "Cources"
     End Sub
 
-    Private Sub EnterMarksButton_Click(sender As Object, e As EventArgs) Handles EnterMarksButton.Click
-        While Me.MainPanal.Controls.Count > 0
-            Me.MainPanal.Controls(0).Dispose()
-        End While
-
-        With EnterMarks
-            .TopLevel = False
-            .AutoSize = False
-            .Dock = DockStyle.Fill
-            MainPanal.Controls.Add(EnterMarks)
-            .BringToFront()
-            .Show()
-        End With
-        VarLabel1.Text = "Enter Marks"
-    End Sub
-
-    Private Sub SearchButton_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
+    Private Sub EmailButton_Click(sender As Object, e As EventArgs) Handles EmailButton.Click
         While Me.MainPanal.Controls.Count > 0
             Me.MainPanal.Controls(0).Dispose()
         End While
@@ -93,7 +77,7 @@ Public Class Dashboard
             .BringToFront()
             .Show()
         End With
-        VarLabel1.Text = "Search"
+        VarLabel1.Text = "Email"
     End Sub
     Private Sub AddUsersButton_Click(sender As Object, e As EventArgs) Handles AddUsersButton.Click
         While Me.MainPanal.Controls.Count > 0
@@ -110,12 +94,27 @@ Public Class Dashboard
         End With
         VarLabel1.Text = "Add Users"
     End Sub
+    Private Sub AboutButton_Click(sender As Object, e As EventArgs) Handles AboutButton.Click
+        While Me.MainPanal.Controls.Count > 0
+            Me.MainPanal.Controls(0).Dispose()
+        End While
+
+        With AboutBox1
+            .TopLevel = False
+            .AutoSize = False
+            .Dock = DockStyle.Fill
+            MainPanal.Controls.Add(AboutBox1)
+            .BringToFront()
+            .Show()
+        End With
+        VarLabel1.Text = "About"
+    End Sub
 
     Private Sub LogoutButton_Click(sender As Object, e As EventArgs) Handles LogoutButton.Click
         Dim result As DialogResult
         result = MessageBox.Show("Are you sure you want to logout", "LOGOUT", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If result = Windows.Forms.DialogResult.Yes Then
-            FacultyLogin.Show()
+            Login.Show()
             Me.Hide()
         End If
     End Sub
@@ -146,6 +145,8 @@ Public Class Dashboard
             Application.ExitThread()
         End If
     End Sub
+
+
 
     '' Private Sub MainPanal_Scroll(sender As Object, e As ScrollEventArgs) Handles MainPanal.Scroll
     ''If e.ScrollOrientation = ScrollOrientation.VerticalScroll Then

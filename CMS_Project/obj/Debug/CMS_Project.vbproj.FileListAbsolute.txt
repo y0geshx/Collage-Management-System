@@ -51,3 +51,5 @@ C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.Search.re
 C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.AddUsers.resources
 C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.AddStudent.resources
 C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.AddFaculty.resources
+C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.AboutBox1.resources
+C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.EditFaculty.resources

@@ -25,28 +25,28 @@ Partial Class Dashform
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashform))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.VarLabel1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.FacCount = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.DateLabel = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -70,32 +70,21 @@ Partial Class Dashform
         Me.Panel1.Size = New System.Drawing.Size(243, 199)
         Me.Panel1.TabIndex = 0
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(100, 136)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 17)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "NUM"
-        '
         'VarLabel1
         '
         Me.VarLabel1.AutoSize = True
         Me.VarLabel1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.VarLabel1.ForeColor = System.Drawing.Color.White
-        Me.VarLabel1.Location = New System.Drawing.Point(62, 83)
+        Me.VarLabel1.Location = New System.Drawing.Point(29, 124)
         Me.VarLabel1.Name = "VarLabel1"
-        Me.VarLabel1.Size = New System.Drawing.Size(113, 32)
+        Me.VarLabel1.Size = New System.Drawing.Size(134, 32)
         Me.VarLabel1.TabIndex = 2
-        Me.VarLabel1.Text = "Students"
+        Me.VarLabel1.Text = "Students : "
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(77, 13)
+        Me.PictureBox1.Location = New System.Drawing.Point(77, 24)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(86, 67)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -108,37 +97,26 @@ Partial Class Dashform
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.PictureBox2)
-        Me.Panel2.Location = New System.Drawing.Point(299, 183)
+        Me.Panel2.Location = New System.Drawing.Point(585, 183)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(243, 199)
         Me.Panel2.TabIndex = 1
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(100, 136)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 17)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "NUM"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(71, 83)
+        Me.Label3.Location = New System.Drawing.Point(48, 124)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(105, 32)
+        Me.Label3.Size = New System.Drawing.Size(119, 32)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Cources"
+        Me.Label3.Text = "Cources :"
         '
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(77, 13)
+        Me.PictureBox2.Location = New System.Drawing.Point(77, 24)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(90, 67)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -148,40 +126,42 @@ Partial Class Dashform
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.SlateBlue
-        Me.Panel3.Controls.Add(Me.Label4)
+        Me.Panel3.Controls.Add(Me.FacCount)
         Me.Panel3.Controls.Add(Me.Label5)
         Me.Panel3.Controls.Add(Me.PictureBox3)
-        Me.Panel3.Location = New System.Drawing.Point(573, 183)
+        Me.Panel3.Location = New System.Drawing.Point(311, 183)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(243, 199)
         Me.Panel3.TabIndex = 2
         '
-        'Label4
+        'FacCount
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(100, 136)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 17)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "NUM"
+        Me.FacCount.AutoSize = True
+        Me.FacCount.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FacCount.ForeColor = System.Drawing.Color.White
+        Me.FacCount.Location = New System.Drawing.Point(157, 121)
+        Me.FacCount.Name = "FacCount"
+        Me.FacCount.Size = New System.Drawing.Size(74, 32)
+        Me.FacCount.TabIndex = 3
+        Me.FacCount.Text = "NULL"
+        Me.FacCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(62, 83)
+        Me.Label5.Location = New System.Drawing.Point(38, 121)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(112, 32)
+        Me.Label5.Size = New System.Drawing.Size(126, 32)
         Me.Label5.TabIndex = 2
-        Me.Label5.Text = "Faculties"
+        Me.Label5.Text = "Faculties :"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(77, 13)
+        Me.PictureBox3.Location = New System.Drawing.Point(78, 24)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(86, 67)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -191,7 +171,7 @@ Partial Class Dashform
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.SlateBlue
-        Me.Panel4.Controls.Add(Me.Label6)
+        Me.Panel4.Controls.Add(Me.Label4)
         Me.Panel4.Controls.Add(Me.Label7)
         Me.Panel4.Controls.Add(Me.PictureBox4)
         Me.Panel4.Location = New System.Drawing.Point(859, 183)
@@ -199,32 +179,21 @@ Partial Class Dashform
         Me.Panel4.Size = New System.Drawing.Size(243, 199)
         Me.Panel4.TabIndex = 3
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(100, 136)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(39, 17)
-        Me.Label6.TabIndex = 3
-        Me.Label6.Text = "NUM"
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(62, 83)
+        Me.Label7.Location = New System.Drawing.Point(52, 124)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(109, 32)
+        Me.Label7.Size = New System.Drawing.Size(123, 32)
         Me.Label7.TabIndex = 2
-        Me.Label7.Text = "Subjects"
+        Me.Label7.Text = "Subjects :"
         '
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(77, 13)
+        Me.PictureBox4.Location = New System.Drawing.Point(74, 24)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(86, 67)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -278,6 +247,16 @@ Partial Class Dashform
         Me.Panel5.Size = New System.Drawing.Size(1127, 131)
         Me.Panel5.TabIndex = 4
         '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(73, 51)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox5.TabIndex = 8
+        Me.PictureBox5.TabStop = False
+        '
         'DateLabel
         '
         Me.DateLabel.AutoSize = True
@@ -292,15 +271,41 @@ Partial Class Dashform
         'Timer1
         '
         '
-        'PictureBox5
+        'Label1
         '
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(12, 12)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(73, 51)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox5.TabIndex = 8
-        Me.PictureBox5.TabStop = False
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(154, 124)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(74, 32)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "NULL"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(159, 124)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(74, 32)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "NULL"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(166, 124)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(74, 32)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "NULL"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Dashform
         '
@@ -340,18 +345,15 @@ Partial Class Dashform
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents VarLabel1 As Label
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents Label4 As Label
+    Friend WithEvents FacCount As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Label8 As Label
@@ -361,4 +363,7 @@ Partial Class Dashform
     Friend WithEvents Timer1 As Timer
     Friend WithEvents DateLabel As Label
     Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label4 As Label
 End Class

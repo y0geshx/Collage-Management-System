@@ -9,7 +9,7 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("CMS")>
-<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyDescription("Collage Mangement System")>
 <Assembly: AssemblyCompany("CMS")>
 <Assembly: AssemblyProduct("CMS_Project")>
 <Assembly: AssemblyCopyright("Copyright ©  2022")>

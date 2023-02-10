@@ -16,6 +16,7 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -28,7 +29,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -67,6 +67,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
@@ -151,6 +154,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AddFaculty.Designer.vb">
       <DependentUpon>AddFaculty.vb</DependentUpon>
     </Compile>
@@ -188,6 +197,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DTconnection\DTconnection.vb" />
+    <Compile Include="EditFaculty.Designer.vb">
+      <DependentUpon>EditFaculty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditFaculty.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EnterMarks.Designer.vb">
       <DependentUpon>EnterMarks.vb</DependentUpon>
     </Compile>
@@ -206,6 +221,7 @@
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MemoryStream.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -248,6 +264,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddFaculty.resx">
       <DependentUpon>AddFaculty.vb</DependentUpon>
     </EmbeddedResource>
@@ -265,6 +284,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashform.resx">
       <DependentUpon>Dashform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditFaculty.resx">
+      <DependentUpon>EditFaculty.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EnterMarks.resx">
       <DependentUpon>EnterMarks.vb</DependentUpon>
@@ -295,6 +317,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

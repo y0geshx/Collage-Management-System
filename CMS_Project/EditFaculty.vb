@@ -1,8 +1,9 @@
-﻿Imports System.ComponentModel
-Imports System.Text.RegularExpressions
+﻿Imports Microsoft.VisualBasic.ApplicationServices
 Imports MySql.Data.MySqlClient
+Imports System.ComponentModel
+Imports System.Text.RegularExpressions
 
-Public Class AddFaculty
+Public Class EditFaculty
     Dim myconnection As New DTconnection
     Dim objdatapter As New MySqlDataAdapter
     Dim dtable As New DataTable
@@ -78,77 +79,10 @@ Public Class AddFaculty
         End If
     End Sub
 
-    Private Sub FacultyResetButton_Click(sender As Object, e As EventArgs) Handles FacultyResetButton.Click
-        FLastNameTB.Clear()
-        FFirstNameTB.Clear()
-        FAgeTB.Clear()
-        FPhoneTB.Clear()
-        FemailTB.Clear()
-        FAddressTB.Clear()
-        FCityTB.Clear()
-        FStateTB.Clear()
-        FPINCodeTB.Clear()
-        FQualiTB.Clear()
-        FExpTB.Clear()
-        FPasswordTB.Clear()
-        FGenderComboBox.SelectedIndex = -1
-    End Sub
 
-    Private Sub FacultySaveButton_Click(sender As Object, e As EventArgs) Handles FacultySaveButton.Click
-        Dim filename As String = OpenFileDialog1.FileName + ".jpg"
-        Dim FileSize As UInt32
-        Dim mstream As New System.IO.MemoryStream()
-        PictureBox1.Image.Save(mstream, System.Drawing.Imaging.ImageFormat.Jpeg)
-        Dim arrImage() As Byte = mstream.GetBuffer()
-        FileSize = mstream.Length
-        mstream.Close()
 
-        Try
-            If FLastNameTB.Text = "" Or
-            FFirstNameTB.Text = "" Or
-            FAgeTB.Text = " " Or
-            FPhoneTB.Text = "" Or
-            FemailTB.Text = "" Or
-            FAddressTB.Text = "" Or
-            FCityTB.Text = "" Or
-            FStateTB.Text = "" Or
-            FPINCodeTB.Text = "" Or
-            FQualiTB.Text = "" Or
-            FExpTB.Text = "" Or
-            FPasswordTB.Text = "" Then
 
-                MessageBox.Show("Missing Information. Please fill all the fields ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Else
-
-                Dim query = "insert into faculties (facultyfirstname, facultylastname, gender, dob, age, contactnumber, emailid, address, city, state, pincode, qualification, experience, password, activestatus, joindate, profilepic )values
-                                               ('" & FFirstNameTB.Text & "','" & FLastNameTB.Text & "','" & FGenderComboBox.Text & "','" & FDOBDateTimePicker.Text & "','" & FAgeTB.Text & "','" & FPhoneTB.Text & "','" & FemailTB.Text & "','" & FAddressTB.Text & "', '" & FCityTB.Text & "','" & FStateTB.Text & "','" & FPINCodeTB.Text & "','" & FQualiTB.Text & "','" & FExpTB.Text & "','" & FPasswordTB.Text & "','" & "Active" & "','" & timelable.Text & "', @ImageFile ) "
-
-                Dim cmd As MySqlCommand
-                cmd = New MySqlCommand(query, myconnection.open)
-                cmd.Parameters.AddWithValue("@ImageFile", arrImage)
-                cmd.ExecuteNonQuery()
-                myconnection.close()
-                MsgBox("Successfully Saved in database", MsgBoxStyle.Information, "Record Saved")
-                FLastNameTB.Clear()
-                FFirstNameTB.Clear()
-                FAgeTB.Clear()
-                FPhoneTB.Clear()
-                FemailTB.Clear()
-                FAddressTB.Clear()
-                FCityTB.Clear()
-                FStateTB.Clear()
-                FPINCodeTB.Clear()
-                FQualiTB.Clear()
-                FExpTB.Clear()
-                FPasswordTB.Clear()
-                FGenderComboBox.SelectedIndex = -1
-            End If
-        Catch ex As Exception
-            MessageBox.Show(ex.Message.ToString(), "Data Error")
-        End Try
-    End Sub
-
-    Private Sub AddCloseButton1_Click(sender As Object, e As EventArgs) Handles AddCloseButton1.Click
+    Private Sub EditCloseButton1_Click(sender As Object, e As EventArgs) Handles EditCloseButton1.Click
         Me.Close()
     End Sub
 
@@ -203,5 +137,47 @@ Public Class AddFaculty
     Private Sub PicClearButton_Click(sender As Object, e As EventArgs) Handles PicClearButton.Click
         PictureBox1.Image = Nothing
 
+    End Sub
+
+    Private Sub FacultyDeleteButton_Click(sender As Object, e As EventArgs) Handles FacultyDeleteButton.Click
+        Try
+            If FID.Text = "" Or
+                    FFirstNameTB.Text = "" Or
+                    FLastNameTB.Text = "" Then
+                MessageBox.Show("Missing Information. Please load the data ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Else
+                Dim dialog As DialogResult
+                dialog = MessageBox.Show("Do you want Delete the Record !", "Record Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+                If dialog = DialogResult.Yes Then
+                    Dim query = "delete from cmsdbx.faculties where facultyid='" & FID.Text & "'"
+                    Dim cmd As MySqlCommand
+                    cmd = New MySqlCommand(query, myconnection.open)
+                    cmd.ExecuteNonQuery()
+                    myconnection.close()
+                    MsgBox("Successfully Deleted in database", MsgBoxStyle.Information, "Record Deleted")
+                    FID.Clear()
+                    FLastNameTB.Clear()
+                    FFirstNameTB.Clear()
+                    FAgeTB.Clear()
+                    FPhoneTB.Clear()
+                    FemailTB.Clear()
+                    FAddressTB.Clear()
+                    FCityTB.Clear()
+                    FStateTB.Clear()
+                    FPINCodeTB.Clear()
+                    FQualiTB.Clear()
+                    FExpTB.Clear()
+                    FPasswordTB.Clear()
+                    GenderComboBox.SelectedIndex = -1
+                    StatusComboBox.SelectedIndex = -1
+                Else
+                    MessageBox.Show("Operation Cancelled")
+                End If
+
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message.ToString(), "Data Error")
+        End Try
     End Sub
 End Class
