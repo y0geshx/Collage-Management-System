@@ -25,7 +25,7 @@ Partial Class Dashform
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashform))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.StuCount = New System.Windows.Forms.Label()
         Me.VarLabel1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -37,7 +37,7 @@ Partial Class Dashform
         Me.Label5 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.SubCount = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -68,7 +68,7 @@ Partial Class Dashform
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.SlateBlue
-        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.StuCount)
         Me.Panel1.Controls.Add(Me.VarLabel1)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Location = New System.Drawing.Point(28, 183)
@@ -76,17 +76,17 @@ Partial Class Dashform
         Me.Panel1.Size = New System.Drawing.Size(243, 199)
         Me.Panel1.TabIndex = 0
         '
-        'Label1
+        'StuCount
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(154, 124)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(74, 32)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "NULL"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.StuCount.AutoSize = True
+        Me.StuCount.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StuCount.ForeColor = System.Drawing.Color.White
+        Me.StuCount.Location = New System.Drawing.Point(154, 124)
+        Me.StuCount.Name = "StuCount"
+        Me.StuCount.Size = New System.Drawing.Size(74, 32)
+        Me.StuCount.TabIndex = 4
+        Me.StuCount.Text = "NULL"
+        Me.StuCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'VarLabel1
         '
@@ -201,7 +201,7 @@ Partial Class Dashform
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.SlateBlue
-        Me.Panel4.Controls.Add(Me.Label4)
+        Me.Panel4.Controls.Add(Me.SubCount)
         Me.Panel4.Controls.Add(Me.Label7)
         Me.Panel4.Controls.Add(Me.PictureBox4)
         Me.Panel4.Location = New System.Drawing.Point(859, 183)
@@ -209,17 +209,17 @@ Partial Class Dashform
         Me.Panel4.Size = New System.Drawing.Size(243, 199)
         Me.Panel4.TabIndex = 3
         '
-        'Label4
+        'SubCount
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(166, 124)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(74, 32)
-        Me.Label4.TabIndex = 4
-        Me.Label4.Text = "NULL"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.SubCount.AutoSize = True
+        Me.SubCount.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SubCount.ForeColor = System.Drawing.Color.White
+        Me.SubCount.Location = New System.Drawing.Point(166, 124)
+        Me.SubCount.Name = "SubCount"
+        Me.SubCount.Size = New System.Drawing.Size(74, 32)
+        Me.SubCount.TabIndex = 4
+        Me.SubCount.Text = "NULL"
+        Me.SubCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label7
         '
@@ -417,9 +417,9 @@ Partial Class Dashform
     Friend WithEvents Timer1 As Timer
     Friend WithEvents DateLabel As Label
     Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents StuCount As Label
     Friend WithEvents CouCount As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents SubCount As Label
     Friend WithEvents Panel6 As Panel
     Friend WithEvents UserCount As Label
     Friend WithEvents Label6 As Label

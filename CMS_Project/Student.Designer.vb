@@ -23,21 +23,18 @@ Partial Class Student
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Student))
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2GradientButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.AddStudentButton = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.LoginButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.RefreshButton = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LoginButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel5.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2GradientButton2
@@ -90,7 +87,7 @@ Partial Class Student
         '
         Me.Panel5.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Panel5.Controls.Add(Me.Label2)
-        Me.Panel5.Controls.Add(Me.LoginButton2)
+        Me.Panel5.Controls.Add(Me.RefreshButton)
         Me.Panel5.Controls.Add(Me.PictureBox1)
         Me.Panel5.Controls.Add(Me.Guna2GradientButton2)
         Me.Panel5.Controls.Add(Me.AddStudentButton)
@@ -113,29 +110,29 @@ Partial Class Student
         Me.Label2.TabIndex = 20
         Me.Label2.Text = "Student List"
         '
-        'LoginButton2
+        'RefreshButton
         '
-        Me.LoginButton2.Animated = True
-        Me.LoginButton2.AutoRoundedCorners = True
-        Me.LoginButton2.BorderRadius = 16
-        Me.LoginButton2.CheckedState.Parent = Me.LoginButton2
-        Me.LoginButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.LoginButton2.CustomImages.Parent = Me.LoginButton2
-        Me.LoginButton2.FillColor = System.Drawing.Color.DarkTurquoise
-        Me.LoginButton2.FillColor2 = System.Drawing.Color.RoyalBlue
-        Me.LoginButton2.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LoginButton2.ForeColor = System.Drawing.Color.White
-        Me.LoginButton2.HoverState.FillColor = System.Drawing.Color.Turquoise
-        Me.LoginButton2.HoverState.FillColor2 = System.Drawing.Color.SlateBlue
-        Me.LoginButton2.HoverState.Parent = Me.LoginButton2
-        Me.LoginButton2.Location = New System.Drawing.Point(429, 81)
-        Me.LoginButton2.Name = "LoginButton2"
-        Me.LoginButton2.PressedColor = System.Drawing.Color.Teal
-        Me.LoginButton2.PressedDepth = 50
-        Me.LoginButton2.ShadowDecoration.Parent = Me.LoginButton2
-        Me.LoginButton2.Size = New System.Drawing.Size(130, 35)
-        Me.LoginButton2.TabIndex = 13
-        Me.LoginButton2.Text = "Refresh"
+        Me.RefreshButton.Animated = True
+        Me.RefreshButton.AutoRoundedCorners = True
+        Me.RefreshButton.BorderRadius = 16
+        Me.RefreshButton.CheckedState.Parent = Me.RefreshButton
+        Me.RefreshButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.RefreshButton.CustomImages.Parent = Me.RefreshButton
+        Me.RefreshButton.FillColor = System.Drawing.Color.DarkTurquoise
+        Me.RefreshButton.FillColor2 = System.Drawing.Color.RoyalBlue
+        Me.RefreshButton.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RefreshButton.ForeColor = System.Drawing.Color.White
+        Me.RefreshButton.HoverState.FillColor = System.Drawing.Color.Turquoise
+        Me.RefreshButton.HoverState.FillColor2 = System.Drawing.Color.SlateBlue
+        Me.RefreshButton.HoverState.Parent = Me.RefreshButton
+        Me.RefreshButton.Location = New System.Drawing.Point(429, 81)
+        Me.RefreshButton.Name = "RefreshButton"
+        Me.RefreshButton.PressedColor = System.Drawing.Color.Teal
+        Me.RefreshButton.PressedDepth = 50
+        Me.RefreshButton.ShadowDecoration.Parent = Me.RefreshButton
+        Me.RefreshButton.Size = New System.Drawing.Size(130, 35)
+        Me.RefreshButton.TabIndex = 13
+        Me.RefreshButton.Text = "Refresh"
         '
         'PictureBox1
         '
@@ -181,63 +178,14 @@ Partial Class Student
         Me.Label8.TabIndex = 4
         Me.Label8.Text = "Students"
         '
-        'Guna2DataGridView1
+        'DataGridView1
         '
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
-        Me.Guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.Guna2DataGridView1.BackgroundColor = System.Drawing.Color.DarkGray
-        Me.Guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.Guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
-        Me.Guna2DataGridView1.ColumnHeadersHeight = 4
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle6
-        Me.Guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2DataGridView1.EnableHeadersVisualStyles = False
-        Me.Guna2DataGridView1.GridColor = System.Drawing.Color.Teal
-        Me.Guna2DataGridView1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
-        Me.Guna2DataGridView1.RowHeadersVisible = False
-        Me.Guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.Guna2DataGridView1.Size = New System.Drawing.Size(1100, 654)
-        Me.Guna2DataGridView1.TabIndex = 7
-        Me.Guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.DarkGray
-        Me.Guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.Teal
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4
-        Me.Guna2DataGridView1.ThemeStyle.ReadOnly = False
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 131)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(1100, 523)
+        Me.DataGridView1.TabIndex = 7
         '
         'Student
         '
@@ -245,8 +193,8 @@ Partial Class Student
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1100, 654)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Panel5)
-        Me.Controls.Add(Me.Guna2DataGridView1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Student"
         Me.Text = "Student"
@@ -254,7 +202,7 @@ Partial Class Student
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -264,8 +212,8 @@ Partial Class Student
     Friend WithEvents Panel5 As Panel
     Friend WithEvents LoginButton1 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Label8 As Label
-    Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents LoginButton2 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents RefreshButton As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Label2 As Label
+    Friend WithEvents DataGridView1 As DataGridView
 End Class
