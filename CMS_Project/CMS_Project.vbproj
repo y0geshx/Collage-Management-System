@@ -178,10 +178,16 @@
     <Compile Include="AddUsers.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cources.Designer.vb">
-      <DependentUpon>Cources.vb</DependentUpon>
+    <Compile Include="Attandance.Designer.vb">
+      <DependentUpon>Attandance.vb</DependentUpon>
     </Compile>
-    <Compile Include="Cources.vb">
+    <Compile Include="Attandance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Courses.Designer.vb">
+      <DependentUpon>Courses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Courses.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dashboard.Designer.vb">
@@ -256,6 +262,12 @@
     <Compile Include="Student.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Subject.Designer.vb">
+      <DependentUpon>Subject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Subject.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Teacher.Designer.vb">
       <DependentUpon>Teacher.vb</DependentUpon>
     </Compile>
@@ -276,8 +288,8 @@
     <EmbeddedResource Include="AddUsers.resx">
       <DependentUpon>AddUsers.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cources.resx">
-      <DependentUpon>Cources.vb</DependentUpon>
+    <EmbeddedResource Include="Courses.resx">
+      <DependentUpon>Courses.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
@@ -311,6 +323,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Student.resx">
       <DependentUpon>Student.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject.resx">
+      <DependentUpon>Subject.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher.resx">
       <DependentUpon>Teacher.vb</DependentUpon>

@@ -48,21 +48,38 @@ Public Class Dashboard
         End With
         VarLabel1.Text = "Faculty"
     End Sub
-    Private Sub CourceButton_Click(sender As Object, e As EventArgs) Handles CourceButton.Click
+    Private Sub CourseButton_Click(sender As Object, e As EventArgs) Handles CourseButton.Click
         While Me.MainPanal.Controls.Count > 0
             Me.MainPanal.Controls(0).Dispose()
         End While
 
-        With Cources
+        With Courses
             .TopLevel = False
             .AutoSize = False
             .Dock = DockStyle.Fill
-            MainPanal.Controls.Add(Cources)
+            MainPanal.Controls.Add(Courses)
             .BringToFront()
             .Show()
         End With
         VarLabel1.Text = "Cources"
     End Sub
+
+    Private Sub SubjectButton_Click(sender As Object, e As EventArgs) Handles SubjectButton.Click
+        While Me.MainPanal.Controls.Count > 0
+            Me.MainPanal.Controls(0).Dispose()
+        End While
+
+        With Subject
+            .TopLevel = False
+            .AutoSize = False
+            .Dock = DockStyle.Fill
+            MainPanal.Controls.Add(Subject)
+            .BringToFront()
+            .Show()
+        End With
+        VarLabel1.Text = "Subjects"
+    End Sub
+
 
     Private Sub EmailButton_Click(sender As Object, e As EventArgs) Handles EmailButton.Click
         While Me.MainPanal.Controls.Count > 0
@@ -145,8 +162,6 @@ Public Class Dashboard
             Application.ExitThread()
         End If
     End Sub
-
-
 
     '' Private Sub MainPanal_Scroll(sender As Object, e As ScrollEventArgs) Handles MainPanal.Scroll
     ''If e.ScrollOrientation = ScrollOrientation.VerticalScroll Then

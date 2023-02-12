@@ -62,7 +62,7 @@ Partial Class EditFaculty
         Me.FFirstNameTB = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.GenderComboBox = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.FGenderComboBox = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.FID = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.StatusComboBox = New Guna.UI2.WinForms.Guna2ComboBox()
@@ -406,6 +406,7 @@ Partial Class EditFaculty
         Me.PicClearButton.Size = New System.Drawing.Size(104, 37)
         Me.PicClearButton.TabIndex = 118
         Me.PicClearButton.Text = "Clear"
+        Me.PicClearButton.Visible = False
         '
         'PicSelectButton
         '
@@ -429,6 +430,7 @@ Partial Class EditFaculty
         Me.PicSelectButton.Size = New System.Drawing.Size(104, 36)
         Me.PicSelectButton.TabIndex = 117
         Me.PicSelectButton.Text = "Select"
+        Me.PicSelectButton.Visible = False
         '
         'Label13
         '
@@ -444,6 +446,7 @@ Partial Class EditFaculty
         'PictureBox1
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(782, 54)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(184, 155)
@@ -819,29 +822,29 @@ Partial Class EditFaculty
         Me.Label1.TabIndex = 96
         Me.Label1.Text = "First Name"
         '
-        'GenderComboBox
+        'FGenderComboBox
         '
-        Me.GenderComboBox.AutoRoundedCorners = True
-        Me.GenderComboBox.BackColor = System.Drawing.Color.Transparent
-        Me.GenderComboBox.BorderColor = System.Drawing.Color.Silver
-        Me.GenderComboBox.BorderRadius = 17
-        Me.GenderComboBox.BorderThickness = 2
-        Me.GenderComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.GenderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.GenderComboBox.FocusedColor = System.Drawing.Color.Empty
-        Me.GenderComboBox.FocusedState.Parent = Me.GenderComboBox
-        Me.GenderComboBox.Font = New System.Drawing.Font("Open Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GenderComboBox.ForeColor = System.Drawing.Color.Black
-        Me.GenderComboBox.FormattingEnabled = True
-        Me.GenderComboBox.HoverState.Parent = Me.GenderComboBox
-        Me.GenderComboBox.ItemHeight = 30
-        Me.GenderComboBox.Items.AddRange(New Object() {"Male", "Female", "Other"})
-        Me.GenderComboBox.ItemsAppearance.Parent = Me.GenderComboBox
-        Me.GenderComboBox.Location = New System.Drawing.Point(594, 54)
-        Me.GenderComboBox.Name = "GenderComboBox"
-        Me.GenderComboBox.ShadowDecoration.Parent = Me.GenderComboBox
-        Me.GenderComboBox.Size = New System.Drawing.Size(140, 36)
-        Me.GenderComboBox.TabIndex = 104
+        Me.FGenderComboBox.AutoRoundedCorners = True
+        Me.FGenderComboBox.BackColor = System.Drawing.Color.Transparent
+        Me.FGenderComboBox.BorderColor = System.Drawing.Color.Silver
+        Me.FGenderComboBox.BorderRadius = 17
+        Me.FGenderComboBox.BorderThickness = 2
+        Me.FGenderComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.FGenderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.FGenderComboBox.FocusedColor = System.Drawing.Color.Empty
+        Me.FGenderComboBox.FocusedState.Parent = Me.FGenderComboBox
+        Me.FGenderComboBox.Font = New System.Drawing.Font("Open Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FGenderComboBox.ForeColor = System.Drawing.Color.Black
+        Me.FGenderComboBox.FormattingEnabled = True
+        Me.FGenderComboBox.HoverState.Parent = Me.FGenderComboBox
+        Me.FGenderComboBox.ItemHeight = 30
+        Me.FGenderComboBox.Items.AddRange(New Object() {"Male", "Female", "Other"})
+        Me.FGenderComboBox.ItemsAppearance.Parent = Me.FGenderComboBox
+        Me.FGenderComboBox.Location = New System.Drawing.Point(594, 54)
+        Me.FGenderComboBox.Name = "FGenderComboBox"
+        Me.FGenderComboBox.ShadowDecoration.Parent = Me.FGenderComboBox
+        Me.FGenderComboBox.Size = New System.Drawing.Size(140, 36)
+        Me.FGenderComboBox.TabIndex = 104
         '
         'FID
         '
@@ -959,7 +962,7 @@ Partial Class EditFaculty
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.FAddressTB)
-        Me.Controls.Add(Me.GenderComboBox)
+        Me.Controls.Add(Me.FGenderComboBox)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.FPhoneTB)
         Me.Controls.Add(Me.FDOBDateTimePicker)
@@ -1016,7 +1019,7 @@ Partial Class EditFaculty
     Friend WithEvents FFirstNameTB As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents GenderComboBox As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents FGenderComboBox As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents FID As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents StatusComboBox As Guna.UI2.WinForms.Guna2ComboBox

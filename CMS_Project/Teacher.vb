@@ -56,7 +56,8 @@ Public Class Teacher
         End Try
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+    Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
         If e.RowIndex >= 0 Then
             Dim ef As New EditFaculty
             Dim row As DataGridViewRow
@@ -65,7 +66,7 @@ Public Class Teacher
             ef.FID.Text = row.Cells(0).Value.ToString
             ef.FFirstNameTB.Text = row.Cells(1).Value.ToString
             ef.FLastNameTB.Text = row.Cells(2).Value.ToString
-            ef.GenderComboBox.Text = row.Cells(3).Value.ToString
+            ef.FGenderComboBox.Text = row.Cells(3).Value.ToString
             ef.FDOBDateTimePicker.Text = row.Cells(4).Value.ToString
             ef.FAgeTB.Text = row.Cells(5).Value.ToString
             ef.FPhoneTB.Text = row.Cells(6).Value.ToString
@@ -78,13 +79,11 @@ Public Class Teacher
             ef.FExpTB.Text = row.Cells(13).Value.ToString
             ef.FPasswordTB.Text = row.Cells(15).Value.ToString
             ef.StatusComboBox.Text = row.Cells(16).Value.ToString
-            'Dim bytes As Byte() = DataGridView1 .CurrentRow .Cells(14).Value
-            'Using ms As New IO.MemoryStream(bytes)
-            'ef.PictureBox1.Image = Image.FromStream(ms)
-            'End Using
+            Dim bytes As Byte() = DataGridView1.CurrentRow.Cells(14).Value
+            Using ms As New IO.MemoryStream(bytes)
+                ef.PictureBox1.Image = Image.FromStream(ms)
+            End Using
             ef.ShowDialog()
         End If
-
     End Sub
-
 End Class

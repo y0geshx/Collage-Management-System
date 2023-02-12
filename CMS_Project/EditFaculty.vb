@@ -155,25 +155,70 @@ Public Class EditFaculty
                     cmd.ExecuteNonQuery()
                     myconnection.close()
                     MsgBox("Successfully Deleted in database", MsgBoxStyle.Information, "Record Deleted")
-                    FID.Clear()
-                    FLastNameTB.Clear()
-                    FFirstNameTB.Clear()
-                    FAgeTB.Clear()
-                    FPhoneTB.Clear()
-                    FemailTB.Clear()
-                    FAddressTB.Clear()
-                    FCityTB.Clear()
-                    FStateTB.Clear()
-                    FPINCodeTB.Clear()
-                    FQualiTB.Clear()
-                    FExpTB.Clear()
-                    FPasswordTB.Clear()
-                    GenderComboBox.SelectedIndex = -1
-                    StatusComboBox.SelectedIndex = -1
+                    Me.Close()
+                    'FID.Clear()
+                    'FLastNameTB.Clear()
+                    'FFirstNameTB.Clear()
+                    'FAgeTB.Clear()
+                    'FPhoneTB.Clear()
+                    'FemailTB.Clear()
+                    'FAddressTB.Clear()
+                    'FCityTB.Clear()
+                    'FStateTB.Clear()
+                    'FPINCodeTB.Clear()
+                    'FQualiTB.Clear()
+                    'FExpTB.Clear()
+                    'FPasswordTB.Clear()
+                    'FGenderComboBox.SelectedIndex = -1
+                    'StatusComboBox.SelectedIndex = -1
                 Else
                     MessageBox.Show("Operation Cancelled")
                 End If
 
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message.ToString(), "Data Error")
+        End Try
+    End Sub
+
+    Private Sub FacultyUpdateButton_Click(sender As Object, e As EventArgs) Handles FacultyUpdateButton.Click
+        Try
+            If FID.Text = "" Or
+            FLastNameTB.Text = "" Or
+            FFirstNameTB.Text = "" Then
+                MessageBox.Show("Missing Information. Please load the data ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Else
+                Dim dialog As DialogResult
+                dialog = MessageBox.Show("Do you want Update the Record !", "Record Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+                If dialog = DialogResult.Yes Then
+                    'Dim query = "update users set id='" & UserID.Text & "',username='" & UserFirstName.Text & "',lastname='" & UserLastNmae.Text & "',emailid='" & UserEmail.Text & "',phone='" & UserNumber.Text & "',password='" & UserPassword1.Text & "' where id='" & UserID.Text & "'"
+                    Dim query = "update faculties set facultyid='" & FID.Text & "',facultyfirstname='" & FFirstNameTB.Text & "', facultylastname='" & FLastNameTB.Text & "', gender='" & FGenderComboBox.Text & "', dob='" & FDOBDateTimePicker.Text & "', age='" & FAgeTB.Text & "', contactnumber='" & FPhoneTB.Text & "', emailid='" & FemailTB.Text & "', address='" & FAddressTB.Text & "', city='" & FCityTB.Text & "', state='" & FStateTB.Text & "', pincode='" & FPINCodeTB.Text & "', qualification='" & FQualiTB.Text & "', experience='" & FExpTB.Text & "', password='" & FPasswordTB.Text & "',activestatus='" & StatusComboBox.Text & "', joindate='" & timelable.Text & "' where facultyid='" & FID.Text & "'"
+                    Dim cmd As MySqlCommand
+                    cmd = New MySqlCommand(query, myconnection.open)
+                    cmd.ExecuteNonQuery()
+                    myconnection.close()
+                    MsgBox("Successfully Updated in database", MsgBoxStyle.Information, "Record Updated")
+                    Me.Close()
+                    'FID.Clear()
+                    'FLastNameTB.Clear()
+                    'FFirstNameTB.Clear()
+                    'FAgeTB.Clear()
+                    'FPhoneTB.Clear()
+                    'FemailTB.Clear()
+                    'FAddressTB.Clear()
+                    'FCityTB.Clear()
+                    'FStateTB.Clear()
+                    'FPINCodeTB.Clear()
+                    'FQualiTB.Clear()
+                    'FExpTB.Clear()
+                    'FPasswordTB.Clear()
+                    'FGenderComboBox.SelectedIndex = -1
+                    'StatusComboBox.SelectedIndex = -1
+
+                Else
+                    MessageBox.Show("Operation Cancelled")
+                End If
             End If
 
         Catch ex As Exception

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class AddStudent
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class AddStudent
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddStudent))
         Me.Username1 = New Guna.UI2.WinForms.Guna2TextBox()
@@ -277,7 +277,7 @@ Partial Class AddStudent
         Me.Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
         Me.Guna2DateTimePicker1.ShadowDecoration.Parent = Me.Guna2DateTimePicker1
-        Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(179, 36)
+        Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(194, 36)
         Me.Guna2DateTimePicker1.TabIndex = 15
         Me.Guna2DateTimePicker1.Value = New Date(2023, 2, 3, 0, 0, 0, 0)
         '
@@ -371,13 +371,14 @@ Partial Class AddStudent
         Me.Guna2TextBox5.IconLeftOffset = New System.Drawing.Point(4, 0)
         Me.Guna2TextBox5.Location = New System.Drawing.Point(35, 250)
         Me.Guna2TextBox5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Guna2TextBox5.Multiline = True
         Me.Guna2TextBox5.Name = "Guna2TextBox5"
         Me.Guna2TextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox5.PlaceholderForeColor = System.Drawing.Color.Black
         Me.Guna2TextBox5.PlaceholderText = "Address"
         Me.Guna2TextBox5.SelectedText = ""
         Me.Guna2TextBox5.ShadowDecoration.Parent = Me.Guna2TextBox5
-        Me.Guna2TextBox5.Size = New System.Drawing.Size(183, 79)
+        Me.Guna2TextBox5.Size = New System.Drawing.Size(246, 79)
         Me.Guna2TextBox5.TabIndex = 19
         '
         'Label8
@@ -385,7 +386,7 @@ Partial Class AddStudent
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label8.Location = New System.Drawing.Point(222, 214)
+        Me.Label8.Location = New System.Drawing.Point(283, 214)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(59, 33)
         Me.Label8.TabIndex = 20
@@ -396,7 +397,7 @@ Partial Class AddStudent
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label9.Location = New System.Drawing.Point(402, 214)
+        Me.Label9.Location = New System.Drawing.Point(463, 214)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(74, 33)
         Me.Label9.TabIndex = 21
@@ -424,7 +425,7 @@ Partial Class AddStudent
         Me.Guna2TextBox6.HoverState.Parent = Me.Guna2TextBox6
         Me.Guna2TextBox6.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.Guna2TextBox6.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.Guna2TextBox6.Location = New System.Drawing.Point(228, 250)
+        Me.Guna2TextBox6.Location = New System.Drawing.Point(289, 250)
         Me.Guna2TextBox6.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Guna2TextBox6.Name = "Guna2TextBox6"
         Me.Guna2TextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -457,7 +458,7 @@ Partial Class AddStudent
         Me.Guna2TextBox7.HoverState.Parent = Me.Guna2TextBox7
         Me.Guna2TextBox7.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.Guna2TextBox7.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.Guna2TextBox7.Location = New System.Drawing.Point(408, 250)
+        Me.Guna2TextBox7.Location = New System.Drawing.Point(469, 250)
         Me.Guna2TextBox7.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Guna2TextBox7.Name = "Guna2TextBox7"
         Me.Guna2TextBox7.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -569,7 +570,8 @@ Partial Class AddStudent
         '
         'PictureBox1
         '
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(830, 75)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(184, 155)
@@ -792,7 +794,7 @@ Partial Class AddStudent
         Me.Guna2TextBox10.HoverState.Parent = Me.Guna2TextBox10
         Me.Guna2TextBox10.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.Guna2TextBox10.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.Guna2TextBox10.Location = New System.Drawing.Point(698, 75)
+        Me.Guna2TextBox10.Location = New System.Drawing.Point(713, 75)
         Me.Guna2TextBox10.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Guna2TextBox10.Name = "Guna2TextBox10"
         Me.Guna2TextBox10.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -800,7 +802,7 @@ Partial Class AddStudent
         Me.Guna2TextBox10.PlaceholderText = "Age"
         Me.Guna2TextBox10.SelectedText = ""
         Me.Guna2TextBox10.ShadowDecoration.Parent = Me.Guna2TextBox10
-        Me.Guna2TextBox10.Size = New System.Drawing.Size(121, 36)
+        Me.Guna2TextBox10.Size = New System.Drawing.Size(110, 36)
         Me.Guna2TextBox10.TabIndex = 44
         '
         'Label17
@@ -808,7 +810,7 @@ Partial Class AddStudent
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label17.Location = New System.Drawing.Point(692, 39)
+        Me.Label17.Location = New System.Drawing.Point(707, 39)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(58, 33)
         Me.Label17.TabIndex = 45

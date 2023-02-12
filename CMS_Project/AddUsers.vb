@@ -125,7 +125,7 @@ Public Class AddUsers
         End Try
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+    Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
         If e.RowIndex >= 0 Then
             Dim row As DataGridViewRow
             row = Me.DataGridView1.Rows(e.RowIndex)
@@ -137,7 +137,6 @@ Public Class AddUsers
             UserPassword1.Text = row.Cells("password").Value.ToString
         End If
     End Sub
-
     Private Sub DeleteButton1_Click(sender As Object, e As EventArgs) Handles DeleteButton1.Click
         Try
             If UserFirstName.Text = "" Or
@@ -181,5 +180,6 @@ Public Class AddUsers
         UserNumber.Clear()
         UserPassword1.Clear()
     End Sub
+
 
 End Class

@@ -41,7 +41,7 @@ Partial Class Dashboard
         Me.MarksButton = New Guna.UI2.WinForms.Guna2Button()
         Me.AttendanceButton = New Guna.UI2.WinForms.Guna2Button()
         Me.SubjectButton = New Guna.UI2.WinForms.Guna2Button()
-        Me.CourceButton = New Guna.UI2.WinForms.Guna2Button()
+        Me.CourseButton = New Guna.UI2.WinForms.Guna2Button()
         Me.TeacherButton = New Guna.UI2.WinForms.Guna2Button()
         Me.StudentButton = New Guna.UI2.WinForms.Guna2Button()
         Me.DashBoardButton = New Guna.UI2.WinForms.Guna2Button()
@@ -160,7 +160,7 @@ Partial Class Dashboard
         Me.PanelMenu.Controls.Add(Me.MarksButton)
         Me.PanelMenu.Controls.Add(Me.AttendanceButton)
         Me.PanelMenu.Controls.Add(Me.SubjectButton)
-        Me.PanelMenu.Controls.Add(Me.CourceButton)
+        Me.PanelMenu.Controls.Add(Me.CourseButton)
         Me.PanelMenu.Controls.Add(Me.TeacherButton)
         Me.PanelMenu.Controls.Add(Me.StudentButton)
         Me.PanelMenu.Controls.Add(Me.DashBoardButton)
@@ -341,26 +341,26 @@ Partial Class Dashboard
         Me.SubjectButton.TabIndex = 15
         Me.SubjectButton.Text = "SUBJECTS"
         '
-        'CourceButton
+        'CourseButton
         '
-        Me.CourceButton.Animated = True
-        Me.CourceButton.CheckedState.Parent = Me.CourceButton
-        Me.CourceButton.CustomImages.Parent = Me.CourceButton
-        Me.CourceButton.Dock = System.Windows.Forms.DockStyle.Top
-        Me.CourceButton.FillColor = System.Drawing.Color.Transparent
-        Me.CourceButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CourceButton.ForeColor = System.Drawing.Color.White
-        Me.CourceButton.HoverState.FillColor = System.Drawing.Color.CornflowerBlue
-        Me.CourceButton.HoverState.Parent = Me.CourceButton
-        Me.CourceButton.Image = CType(resources.GetObject("CourceButton.Image"), System.Drawing.Image)
-        Me.CourceButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.CourceButton.ImageSize = New System.Drawing.Size(40, 40)
-        Me.CourceButton.Location = New System.Drawing.Point(0, 193)
-        Me.CourceButton.Name = "CourceButton"
-        Me.CourceButton.ShadowDecoration.Parent = Me.CourceButton
-        Me.CourceButton.Size = New System.Drawing.Size(199, 45)
-        Me.CourceButton.TabIndex = 14
-        Me.CourceButton.Text = "COURCES"
+        Me.CourseButton.Animated = True
+        Me.CourseButton.CheckedState.Parent = Me.CourseButton
+        Me.CourseButton.CustomImages.Parent = Me.CourseButton
+        Me.CourseButton.Dock = System.Windows.Forms.DockStyle.Top
+        Me.CourseButton.FillColor = System.Drawing.Color.Transparent
+        Me.CourseButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CourseButton.ForeColor = System.Drawing.Color.White
+        Me.CourseButton.HoverState.FillColor = System.Drawing.Color.CornflowerBlue
+        Me.CourseButton.HoverState.Parent = Me.CourseButton
+        Me.CourseButton.Image = CType(resources.GetObject("CourseButton.Image"), System.Drawing.Image)
+        Me.CourseButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.CourseButton.ImageSize = New System.Drawing.Size(40, 40)
+        Me.CourseButton.Location = New System.Drawing.Point(0, 193)
+        Me.CourseButton.Name = "CourseButton"
+        Me.CourseButton.ShadowDecoration.Parent = Me.CourseButton
+        Me.CourseButton.Size = New System.Drawing.Size(199, 45)
+        Me.CourseButton.TabIndex = 14
+        Me.CourseButton.Text = "COURSES"
         '
         'TeacherButton
         '
@@ -481,7 +481,7 @@ Partial Class Dashboard
     Friend WithEvents logo As PictureBox
     Friend WithEvents PanelMenu As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents DashBoardButton As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents CourceButton As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents CourseButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents TeacherButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents StudentButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents MainPanal As Panel

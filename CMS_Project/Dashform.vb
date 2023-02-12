@@ -14,10 +14,31 @@ Public Class Dashform
         FacCount.Text = FacNum
         myconnection.close()
     End Sub
-
+    Private Sub Course_Count()
+        Dim CouNum As String
+        Dim query As String
+        query = "SELECT COUNT(*) FROM  cmsdbx.courses"
+        Dim cmd As MySqlCommand
+        cmd = New MySqlCommand(query, myconnection.open)
+        CouNum = cmd.ExecuteScalar
+        CouCount.Text = CouNum
+        myconnection.close()
+    End Sub
+    Private Sub User_Count()
+        Dim UserNum As String
+        Dim query As String
+        query = "SELECT COUNT(*) FROM  cmsdbx.users"
+        Dim cmd As MySqlCommand
+        cmd = New MySqlCommand(query, myconnection.open)
+        UserNum = cmd.ExecuteScalar
+        UserCount.Text = UserNum
+        myconnection.close()
+    End Sub
     Private Sub Dashform_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Start()
         Facutly_Count()
+        Course_Count()
+        User_Count()
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
