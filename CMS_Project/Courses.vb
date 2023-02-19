@@ -25,6 +25,7 @@ Public Class Courses
     End Sub
     Private Sub Courses_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         load_Data()
+        CourseIDTB.Enabled = False
     End Sub
 
     Private Sub RefreshButton_Click(sender As Object, e As EventArgs) Handles RefreshButton.Click

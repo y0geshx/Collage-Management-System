@@ -26,6 +26,7 @@ Public Class AddUsers
     End Sub
     Private Sub AddUsers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         load_Data()
+        UserID.Enabled = False
     End Sub
     Private Sub Showpass_CheckedChanged(sender As Object, e As EventArgs) Handles Showpass.CheckedChanged
         If Showpass.Checked = True Then

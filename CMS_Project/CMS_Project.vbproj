@@ -184,6 +184,12 @@
     <Compile Include="Attandance.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ChangeCourse.Designer.vb">
+      <DependentUpon>ChangeCourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeCourse.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Courses.Designer.vb">
       <DependentUpon>Courses.vb</DependentUpon>
     </Compile>
@@ -207,6 +213,12 @@
       <DependentUpon>EditFaculty.vb</DependentUpon>
     </Compile>
     <Compile Include="EditFaculty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStudent.Designer.vb">
+      <DependentUpon>EditStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditStudent.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EnterMarks.Designer.vb">
@@ -243,12 +255,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="Search.Designer.vb">
-      <DependentUpon>Search.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Search.vb">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Splash.designer.vb">
       <DependentUpon>Splash.vb</DependentUpon>
@@ -288,6 +294,9 @@
     <EmbeddedResource Include="AddUsers.resx">
       <DependentUpon>AddUsers.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChangeCourse.resx">
+      <DependentUpon>ChangeCourse.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Courses.resx">
       <DependentUpon>Courses.vb</DependentUpon>
     </EmbeddedResource>
@@ -299,6 +308,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditFaculty.resx">
       <DependentUpon>EditFaculty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStudent.resx">
+      <DependentUpon>EditStudent.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EnterMarks.resx">
       <DependentUpon>EnterMarks.vb</DependentUpon>
@@ -314,9 +326,6 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Search.resx">
-      <DependentUpon>Search.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Splash.resx">
       <DependentUpon>Splash.vb</DependentUpon>

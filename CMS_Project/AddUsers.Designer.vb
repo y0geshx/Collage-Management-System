@@ -58,9 +58,9 @@ Partial Class AddUsers
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(67, 26)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(266, 43)
+        Me.Label1.Size = New System.Drawing.Size(261, 43)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Add New Admin"
+        Me.Label1.Text = "Add/Edit Admin"
         '
         'UserFirstName
         '

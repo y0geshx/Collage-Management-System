@@ -255,11 +255,11 @@ Partial Class Courses
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Open Sans Semibold", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label2.Location = New System.Drawing.Point(735, 91)
+        Me.Label2.Location = New System.Drawing.Point(727, 91)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(273, 43)
+        Me.Label2.Size = New System.Drawing.Size(268, 43)
         Me.Label2.TabIndex = 70
-        Me.Label2.Text = "Add New Course"
+        Me.Label2.Text = "Add/Edit Course"
         '
         'DataGridView1
         '

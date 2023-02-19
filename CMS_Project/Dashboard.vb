@@ -81,21 +81,21 @@ Public Class Dashboard
     End Sub
 
 
-    Private Sub EmailButton_Click(sender As Object, e As EventArgs) Handles EmailButton.Click
-        While Me.MainPanal.Controls.Count > 0
-            Me.MainPanal.Controls(0).Dispose()
-        End While
+    'Private Sub EmailButton_Click(sender As Object, e As EventArgs) Handles EmailButton.Click
+    'While Me.MainPanal.Controls.Count > 0
+    'Me.MainPanal.Controls(0).Dispose()
+    'End While
 
-        With Search
-            .TopLevel = False
-            .AutoSize = False
-            .Dock = DockStyle.Fill
-            MainPanal.Controls.Add(Search)
-            .BringToFront()
-            .Show()
-        End With
-        VarLabel1.Text = "Email"
-    End Sub
+    'With Search
+    '.TopLevel = False
+    '.AutoSize = False
+    '.Dock = DockStyle.Fill
+    'MainPanal.Controls.Add(Search)
+    '.BringToFront()
+    '.Show()
+    ' End With
+    '   VarLabel1.Text = "Email"
+    'adEnd Sub
     Private Sub AddUsersButton_Click(sender As Object, e As EventArgs) Handles AddUsersButton.Click
         While Me.MainPanal.Controls.Count > 0
             Me.MainPanal.Controls(0).Dispose()

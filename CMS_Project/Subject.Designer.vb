@@ -93,11 +93,11 @@ Partial Class Subject
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Open Sans Semibold", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(434, 45)
+        Me.Label2.Location = New System.Drawing.Point(423, 45)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(279, 43)
+        Me.Label2.Size = New System.Drawing.Size(274, 43)
         Me.Label2.TabIndex = 71
-        Me.Label2.Text = "Add New Subject"
+        Me.Label2.Text = "Add/Edit Subject"
         '
         'Label3
         '

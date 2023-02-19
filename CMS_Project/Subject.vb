@@ -44,6 +44,7 @@ Public Class Subject
     Private Sub Subject_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Course_load()
         load_Data()
+        SubjectIDTB.Enabled = False
     End Sub
 
     Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click

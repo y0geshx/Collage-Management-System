@@ -37,7 +37,6 @@ Public Class Teacher
     Private Sub LoadButton1_Click(sender As Object, e As EventArgs) Handles LoadButton1.Click
         dtable.Rows.Clear()
         dtable.Columns.Clear()
-
         Try
             Dim query As String
             query = "SELECT * FROM cmsdbx.faculties"
