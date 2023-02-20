@@ -55,3 +55,7 @@ C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.Courses.r
 C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.Subject.resources
 C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.EditStudent.resources
 C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.ChangeCourse.resources
+C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.Attandance.resources
+C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.Marks.resources
+C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.EmailWeb.resources
+C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.ViewMarks.resources

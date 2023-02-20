@@ -68,7 +68,7 @@ Partial Class Dashboard
         Me.TopPanel.Location = New System.Drawing.Point(199, 0)
         Me.TopPanel.Name = "TopPanel"
         Me.TopPanel.ShadowDecoration.Parent = Me.TopPanel
-        Me.TopPanel.Size = New System.Drawing.Size(1112, 58)
+        Me.TopPanel.Size = New System.Drawing.Size(1112, 52)
         Me.TopPanel.TabIndex = 2
         '
         'DateLabel2
@@ -76,7 +76,7 @@ Partial Class Dashboard
         Me.DateLabel2.AutoSize = True
         Me.DateLabel2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateLabel2.ForeColor = System.Drawing.Color.GhostWhite
-        Me.DateLabel2.Location = New System.Drawing.Point(983, 32)
+        Me.DateLabel2.Location = New System.Drawing.Point(983, 26)
         Me.DateLabel2.Name = "DateLabel2"
         Me.DateLabel2.Size = New System.Drawing.Size(40, 20)
         Me.DateLabel2.TabIndex = 8
@@ -87,7 +87,7 @@ Partial Class Dashboard
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(982, 10)
+        Me.Label2.Location = New System.Drawing.Point(982, 3)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(71, 25)
         Me.Label2.TabIndex = 3
@@ -96,7 +96,7 @@ Partial Class Dashboard
         'Guna2CirclePictureBox1
         '
         Me.Guna2CirclePictureBox1.Image = CType(resources.GetObject("Guna2CirclePictureBox1.Image"), System.Drawing.Image)
-        Me.Guna2CirclePictureBox1.Location = New System.Drawing.Point(921, 10)
+        Me.Guna2CirclePictureBox1.Location = New System.Drawing.Point(921, 3)
         Me.Guna2CirclePictureBox1.Name = "Guna2CirclePictureBox1"
         Me.Guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.Guna2CirclePictureBox1.ShadowDecoration.Parent = Me.Guna2CirclePictureBox1
@@ -110,7 +110,7 @@ Partial Class Dashboard
         Me.VarLabel1.AutoSize = True
         Me.VarLabel1.Font = New System.Drawing.Font("Segoe UI", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.VarLabel1.ForeColor = System.Drawing.Color.White
-        Me.VarLabel1.Location = New System.Drawing.Point(18, 15)
+        Me.VarLabel1.Location = New System.Drawing.Point(18, 10)
         Me.VarLabel1.Name = "VarLabel1"
         Me.VarLabel1.Size = New System.Drawing.Size(100, 40)
         Me.VarLabel1.TabIndex = 1
@@ -125,7 +125,7 @@ Partial Class Dashboard
         Me.PanelLogo.Location = New System.Drawing.Point(0, 0)
         Me.PanelLogo.Name = "PanelLogo"
         Me.PanelLogo.ShadowDecoration.Parent = Me.PanelLogo
-        Me.PanelLogo.Size = New System.Drawing.Size(199, 58)
+        Me.PanelLogo.Size = New System.Drawing.Size(199, 52)
         Me.PanelLogo.TabIndex = 0
         '
         'Label1
@@ -133,7 +133,7 @@ Partial Class Dashboard
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(71, 25)
+        Me.Label1.Location = New System.Drawing.Point(59, 16)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(55, 30)
         Me.Label1.TabIndex = 1
@@ -142,9 +142,9 @@ Partial Class Dashboard
         'logo
         '
         Me.logo.Image = CType(resources.GetObject("logo.Image"), System.Drawing.Image)
-        Me.logo.Location = New System.Drawing.Point(3, 5)
+        Me.logo.Location = New System.Drawing.Point(3, 0)
         Me.logo.Name = "logo"
-        Me.logo.Size = New System.Drawing.Size(73, 50)
+        Me.logo.Size = New System.Drawing.Size(62, 46)
         Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.logo.TabIndex = 0
         Me.logo.TabStop = False
@@ -187,7 +187,7 @@ Partial Class Dashboard
         Me.ExitButton.Image = CType(resources.GetObject("ExitButton.Image"), System.Drawing.Image)
         Me.ExitButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.ExitButton.ImageSize = New System.Drawing.Size(40, 40)
-        Me.ExitButton.Location = New System.Drawing.Point(0, 553)
+        Me.ExitButton.Location = New System.Drawing.Point(0, 547)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.ShadowDecoration.Parent = Me.ExitButton
         Me.ExitButton.Size = New System.Drawing.Size(199, 45)
@@ -208,7 +208,7 @@ Partial Class Dashboard
         Me.LogoutButton.Image = CType(resources.GetObject("LogoutButton.Image"), System.Drawing.Image)
         Me.LogoutButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.LogoutButton.ImageSize = New System.Drawing.Size(40, 40)
-        Me.LogoutButton.Location = New System.Drawing.Point(0, 508)
+        Me.LogoutButton.Location = New System.Drawing.Point(0, 502)
         Me.LogoutButton.Name = "LogoutButton"
         Me.LogoutButton.ShadowDecoration.Parent = Me.LogoutButton
         Me.LogoutButton.Size = New System.Drawing.Size(199, 45)
@@ -229,7 +229,7 @@ Partial Class Dashboard
         Me.AboutButton.Image = CType(resources.GetObject("AboutButton.Image"), System.Drawing.Image)
         Me.AboutButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.AboutButton.ImageSize = New System.Drawing.Size(40, 40)
-        Me.AboutButton.Location = New System.Drawing.Point(0, 463)
+        Me.AboutButton.Location = New System.Drawing.Point(0, 457)
         Me.AboutButton.Name = "AboutButton"
         Me.AboutButton.ShadowDecoration.Parent = Me.AboutButton
         Me.AboutButton.Size = New System.Drawing.Size(199, 45)
@@ -250,7 +250,7 @@ Partial Class Dashboard
         Me.AddUsersButton.Image = CType(resources.GetObject("AddUsersButton.Image"), System.Drawing.Image)
         Me.AddUsersButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.AddUsersButton.ImageSize = New System.Drawing.Size(40, 40)
-        Me.AddUsersButton.Location = New System.Drawing.Point(0, 418)
+        Me.AddUsersButton.Location = New System.Drawing.Point(0, 412)
         Me.AddUsersButton.Name = "AddUsersButton"
         Me.AddUsersButton.ShadowDecoration.Parent = Me.AddUsersButton
         Me.AddUsersButton.Size = New System.Drawing.Size(199, 45)
@@ -271,7 +271,7 @@ Partial Class Dashboard
         Me.EmailButton.Image = CType(resources.GetObject("EmailButton.Image"), System.Drawing.Image)
         Me.EmailButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.EmailButton.ImageSize = New System.Drawing.Size(40, 40)
-        Me.EmailButton.Location = New System.Drawing.Point(0, 373)
+        Me.EmailButton.Location = New System.Drawing.Point(0, 367)
         Me.EmailButton.Name = "EmailButton"
         Me.EmailButton.ShadowDecoration.Parent = Me.EmailButton
         Me.EmailButton.Size = New System.Drawing.Size(199, 45)
@@ -292,7 +292,7 @@ Partial Class Dashboard
         Me.MarksButton.Image = CType(resources.GetObject("MarksButton.Image"), System.Drawing.Image)
         Me.MarksButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.MarksButton.ImageSize = New System.Drawing.Size(40, 40)
-        Me.MarksButton.Location = New System.Drawing.Point(0, 328)
+        Me.MarksButton.Location = New System.Drawing.Point(0, 322)
         Me.MarksButton.Name = "MarksButton"
         Me.MarksButton.ShadowDecoration.Parent = Me.MarksButton
         Me.MarksButton.Size = New System.Drawing.Size(199, 45)
@@ -313,7 +313,7 @@ Partial Class Dashboard
         Me.AttendanceButton.Image = CType(resources.GetObject("AttendanceButton.Image"), System.Drawing.Image)
         Me.AttendanceButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.AttendanceButton.ImageSize = New System.Drawing.Size(40, 40)
-        Me.AttendanceButton.Location = New System.Drawing.Point(0, 283)
+        Me.AttendanceButton.Location = New System.Drawing.Point(0, 277)
         Me.AttendanceButton.Name = "AttendanceButton"
         Me.AttendanceButton.ShadowDecoration.Parent = Me.AttendanceButton
         Me.AttendanceButton.Size = New System.Drawing.Size(199, 45)
@@ -334,7 +334,7 @@ Partial Class Dashboard
         Me.SubjectButton.Image = CType(resources.GetObject("SubjectButton.Image"), System.Drawing.Image)
         Me.SubjectButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.SubjectButton.ImageSize = New System.Drawing.Size(40, 40)
-        Me.SubjectButton.Location = New System.Drawing.Point(0, 238)
+        Me.SubjectButton.Location = New System.Drawing.Point(0, 232)
         Me.SubjectButton.Name = "SubjectButton"
         Me.SubjectButton.ShadowDecoration.Parent = Me.SubjectButton
         Me.SubjectButton.Size = New System.Drawing.Size(199, 45)
@@ -355,7 +355,7 @@ Partial Class Dashboard
         Me.CourseButton.Image = CType(resources.GetObject("CourseButton.Image"), System.Drawing.Image)
         Me.CourseButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.CourseButton.ImageSize = New System.Drawing.Size(40, 40)
-        Me.CourseButton.Location = New System.Drawing.Point(0, 193)
+        Me.CourseButton.Location = New System.Drawing.Point(0, 187)
         Me.CourseButton.Name = "CourseButton"
         Me.CourseButton.ShadowDecoration.Parent = Me.CourseButton
         Me.CourseButton.Size = New System.Drawing.Size(199, 45)
@@ -376,7 +376,7 @@ Partial Class Dashboard
         Me.TeacherButton.Image = CType(resources.GetObject("TeacherButton.Image"), System.Drawing.Image)
         Me.TeacherButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.TeacherButton.ImageSize = New System.Drawing.Size(40, 40)
-        Me.TeacherButton.Location = New System.Drawing.Point(0, 148)
+        Me.TeacherButton.Location = New System.Drawing.Point(0, 142)
         Me.TeacherButton.Name = "TeacherButton"
         Me.TeacherButton.ShadowDecoration.Parent = Me.TeacherButton
         Me.TeacherButton.Size = New System.Drawing.Size(199, 45)
@@ -397,7 +397,7 @@ Partial Class Dashboard
         Me.StudentButton.Image = CType(resources.GetObject("StudentButton.Image"), System.Drawing.Image)
         Me.StudentButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.StudentButton.ImageSize = New System.Drawing.Size(40, 40)
-        Me.StudentButton.Location = New System.Drawing.Point(0, 103)
+        Me.StudentButton.Location = New System.Drawing.Point(0, 97)
         Me.StudentButton.Name = "StudentButton"
         Me.StudentButton.ShadowDecoration.Parent = Me.StudentButton
         Me.StudentButton.Size = New System.Drawing.Size(199, 45)
@@ -418,7 +418,7 @@ Partial Class Dashboard
         Me.DashBoardButton.Image = CType(resources.GetObject("DashBoardButton.Image"), System.Drawing.Image)
         Me.DashBoardButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.DashBoardButton.ImageSize = New System.Drawing.Size(40, 40)
-        Me.DashBoardButton.Location = New System.Drawing.Point(0, 58)
+        Me.DashBoardButton.Location = New System.Drawing.Point(0, 52)
         Me.DashBoardButton.Name = "DashBoardButton"
         Me.DashBoardButton.ShadowDecoration.Parent = Me.DashBoardButton
         Me.DashBoardButton.Size = New System.Drawing.Size(199, 45)
@@ -431,15 +431,14 @@ Partial Class Dashboard
         Me.MainPanal.BackColor = System.Drawing.Color.White
         Me.MainPanal.Controls.Add(Me.PictureBox1)
         Me.MainPanal.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MainPanal.Location = New System.Drawing.Point(199, 58)
+        Me.MainPanal.Location = New System.Drawing.Point(199, 52)
         Me.MainPanal.Name = "MainPanal"
-        Me.MainPanal.Size = New System.Drawing.Size(1112, 545)
+        Me.MainPanal.Size = New System.Drawing.Size(1112, 551)
         Me.MainPanal.TabIndex = 3
         '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"

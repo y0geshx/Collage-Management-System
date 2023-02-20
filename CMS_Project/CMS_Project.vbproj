@@ -221,6 +221,12 @@
     <Compile Include="EditStudent.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EmailWeb.Designer.vb">
+      <DependentUpon>EmailWeb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmailWeb.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EnterMarks.Designer.vb">
       <DependentUpon>EnterMarks.vb</DependentUpon>
     </Compile>
@@ -237,6 +243,12 @@
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
     <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marks.Designer.vb">
+      <DependentUpon>Marks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Marks.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MemoryStream.vb" />
@@ -280,6 +292,12 @@
     <Compile Include="Teacher.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ViewMarks.Designer.vb">
+      <DependentUpon>ViewMarks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMarks.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AboutBox1.resx">
@@ -293,6 +311,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddUsers.resx">
       <DependentUpon>AddUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attandance.resx">
+      <DependentUpon>Attandance.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangeCourse.resx">
       <DependentUpon>ChangeCourse.vb</DependentUpon>
@@ -312,6 +333,9 @@
     <EmbeddedResource Include="EditStudent.resx">
       <DependentUpon>EditStudent.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmailWeb.resx">
+      <DependentUpon>EmailWeb.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EnterMarks.resx">
       <DependentUpon>EnterMarks.vb</DependentUpon>
     </EmbeddedResource>
@@ -320,6 +344,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marks.resx">
+      <DependentUpon>Marks.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -338,6 +365,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher.resx">
       <DependentUpon>Teacher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMarks.resx">
+      <DependentUpon>ViewMarks.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

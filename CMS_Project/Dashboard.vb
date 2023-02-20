@@ -80,6 +80,53 @@ Public Class Dashboard
         VarLabel1.Text = "Subjects"
     End Sub
 
+    Private Sub AttendanceButton_Click(sender As Object, e As EventArgs) Handles AttendanceButton.Click
+        While Me.MainPanal.Controls.Count > 0
+            Me.MainPanal.Controls(0).Dispose()
+        End While
+
+        With Attandance
+            .TopLevel = False
+            .AutoSize = False
+            .Dock = DockStyle.Fill
+            MainPanal.Controls.Add(Attandance)
+            .BringToFront()
+            .Show()
+        End With
+        VarLabel1.Text = "Attandance"
+    End Sub
+
+    Private Sub MarksButton_Click(sender As Object, e As EventArgs) Handles MarksButton.Click
+        While Me.MainPanal.Controls.Count > 0
+            Me.MainPanal.Controls(0).Dispose()
+        End While
+
+        With Marks
+            .TopLevel = False
+            .AutoSize = False
+            .Dock = DockStyle.Fill
+            MainPanal.Controls.Add(Marks)
+            .BringToFront()
+            .Show()
+        End With
+        VarLabel1.Text = "Marks"
+    End Sub
+
+    Private Sub EmailButton_Click(sender As Object, e As EventArgs) Handles EmailButton.Click
+        While Me.MainPanal.Controls.Count > 0
+            Me.MainPanal.Controls(0).Dispose()
+        End While
+
+        With EmailWeb
+            .TopLevel = False
+            .AutoSize = False
+            .Dock = DockStyle.Fill
+            MainPanal.Controls.Add(EmailWeb)
+            .BringToFront()
+            .Show()
+        End With
+        VarLabel1.Text = "Email"
+    End Sub
 
     'Private Sub EmailButton_Click(sender As Object, e As EventArgs) Handles EmailButton.Click
     'While Me.MainPanal.Controls.Count > 0
@@ -162,6 +209,8 @@ Public Class Dashboard
             Application.ExitThread()
         End If
     End Sub
+
+
 
     '' Private Sub MainPanal_Scroll(sender As Object, e As ScrollEventArgs) Handles MainPanal.Scroll
     ''If e.ScrollOrientation = ScrollOrientation.VerticalScroll Then
