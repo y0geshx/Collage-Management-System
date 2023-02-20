@@ -29,7 +29,6 @@ Partial Class Teacher
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Guna2GradientButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.LoginButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel5.SuspendLayout()
@@ -51,7 +50,7 @@ Partial Class Teacher
         Me.AddFacultyButton1.HoverState.FillColor = System.Drawing.Color.Orchid
         Me.AddFacultyButton1.HoverState.FillColor2 = System.Drawing.Color.Orchid
         Me.AddFacultyButton1.HoverState.Parent = Me.AddFacultyButton1
-        Me.AddFacultyButton1.Location = New System.Drawing.Point(669, 81)
+        Me.AddFacultyButton1.Location = New System.Drawing.Point(737, 81)
         Me.AddFacultyButton1.Name = "AddFacultyButton1"
         Me.AddFacultyButton1.PressedColor = System.Drawing.Color.Turquoise
         Me.AddFacultyButton1.PressedDepth = 100
@@ -68,7 +67,6 @@ Partial Class Teacher
         Me.Panel5.Controls.Add(Me.PictureBox1)
         Me.Panel5.Controls.Add(Me.Guna2GradientButton2)
         Me.Panel5.Controls.Add(Me.AddFacultyButton1)
-        Me.Panel5.Controls.Add(Me.LoginButton1)
         Me.Panel5.Controls.Add(Me.Label8)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
@@ -134,7 +132,7 @@ Partial Class Teacher
         Me.Guna2GradientButton2.HoverState.FillColor = System.Drawing.Color.Orchid
         Me.Guna2GradientButton2.HoverState.FillColor2 = System.Drawing.Color.Orchid
         Me.Guna2GradientButton2.HoverState.Parent = Me.Guna2GradientButton2
-        Me.Guna2GradientButton2.Location = New System.Drawing.Point(832, 81)
+        Me.Guna2GradientButton2.Location = New System.Drawing.Point(900, 81)
         Me.Guna2GradientButton2.Name = "Guna2GradientButton2"
         Me.Guna2GradientButton2.PressedColor = System.Drawing.Color.Turquoise
         Me.Guna2GradientButton2.PressedDepth = 100
@@ -142,29 +140,7 @@ Partial Class Teacher
         Me.Guna2GradientButton2.Size = New System.Drawing.Size(157, 37)
         Me.Guna2GradientButton2.TabIndex = 8
         Me.Guna2GradientButton2.Text = "EDIT"
-        '
-        'LoginButton1
-        '
-        Me.LoginButton1.AutoRoundedCorners = True
-        Me.LoginButton1.BorderRadius = 17
-        Me.LoginButton1.CheckedState.Parent = Me.LoginButton1
-        Me.LoginButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.LoginButton1.CustomImages.Parent = Me.LoginButton1
-        Me.LoginButton1.FillColor = System.Drawing.Color.SlateBlue
-        Me.LoginButton1.FillColor2 = System.Drawing.Color.SlateBlue
-        Me.LoginButton1.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LoginButton1.ForeColor = System.Drawing.Color.White
-        Me.LoginButton1.HoverState.FillColor = System.Drawing.Color.Orchid
-        Me.LoginButton1.HoverState.FillColor2 = System.Drawing.Color.Orchid
-        Me.LoginButton1.HoverState.Parent = Me.LoginButton1
-        Me.LoginButton1.Location = New System.Drawing.Point(992, 81)
-        Me.LoginButton1.Name = "LoginButton1"
-        Me.LoginButton1.PressedColor = System.Drawing.Color.Turquoise
-        Me.LoginButton1.PressedDepth = 100
-        Me.LoginButton1.ShadowDecoration.Parent = Me.LoginButton1
-        Me.LoginButton1.Size = New System.Drawing.Size(157, 37)
-        Me.LoginButton1.TabIndex = 6
-        Me.LoginButton1.Text = "DELETE"
+        Me.Guna2GradientButton2.Visible = False
         '
         'Label8
         '
@@ -209,7 +185,6 @@ Partial Class Teacher
     Friend WithEvents AddFacultyButton1 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Guna2GradientButton2 As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents LoginButton1 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Label8 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label

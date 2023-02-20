@@ -6,7 +6,7 @@ Public Class FacultyLogin
     Dim dtable As New DataTable
 
     Private Sub LoginButton2_Click(sender As Object, e As EventArgs) Handles LoginButton2.Click
-        objdatapter = New MySqlDataAdapter("select username,password from users where username='" & Username2.Text & "' AND password='" & Password2.Text & "'", myconnection.open)
+        objdatapter = New MySqlDataAdapter("select facultyfirstname,password from faculties where facultyfirstname='" & Username2.Text & "' AND password='" & Password2.Text & "'", myconnection.open)
         dtable.Clear()
         objdatapter.Fill(dtable)
         If Username2.Text = "" Or Password2.Text = "" Then
@@ -14,7 +14,7 @@ Public Class FacultyLogin
         ElseIf dtable.Rows.Count = Nothing Then
             MsgBox("Invalid Username or Password !")
         Else
-            Dim obj = New Dashboard
+            Dim obj = New FacultyDashBoard
             obj.Show()
             Me.Hide()
         End If

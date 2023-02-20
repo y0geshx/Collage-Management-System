@@ -79,6 +79,8 @@ Partial Class ViewMarks
         Me.SubTB2 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.SubTB1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.UpdateButton = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.DeleteButton = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.CalcalculateMarks = New Guna.UI2.WinForms.Guna2GradientButton()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2GradientPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -97,7 +99,7 @@ Partial Class ViewMarks
         Me.CloseButton.HoverState.FillColor = System.Drawing.Color.Gray
         Me.CloseButton.HoverState.FillColor2 = System.Drawing.Color.Gray
         Me.CloseButton.HoverState.Parent = Me.CloseButton
-        Me.CloseButton.Location = New System.Drawing.Point(731, 566)
+        Me.CloseButton.Location = New System.Drawing.Point(631, 566)
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.PressedColor = System.Drawing.Color.Teal
         Me.CloseButton.PressedDepth = 50
@@ -121,7 +123,7 @@ Partial Class ViewMarks
         Me.PrintButton.HoverState.FillColor = System.Drawing.Color.Turquoise
         Me.PrintButton.HoverState.FillColor2 = System.Drawing.Color.SlateBlue
         Me.PrintButton.HoverState.Parent = Me.PrintButton
-        Me.PrintButton.Location = New System.Drawing.Point(479, 566)
+        Me.PrintButton.Location = New System.Drawing.Point(850, 566)
         Me.PrintButton.Name = "PrintButton"
         Me.PrintButton.PressedColor = System.Drawing.Color.Teal
         Me.PrintButton.PressedDepth = 50
@@ -427,7 +429,7 @@ Partial Class ViewMarks
         Me.TotalObtainMarks.HoverState.Parent = Me.TotalObtainMarks
         Me.TotalObtainMarks.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.TotalObtainMarks.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.TotalObtainMarks.Location = New System.Drawing.Point(610, 510)
+        Me.TotalObtainMarks.Location = New System.Drawing.Point(415, 501)
         Me.TotalObtainMarks.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TotalObtainMarks.Name = "TotalObtainMarks"
         Me.TotalObtainMarks.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -460,7 +462,7 @@ Partial Class ViewMarks
         Me.SubOMarks6.HoverState.Parent = Me.SubOMarks6
         Me.SubOMarks6.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubOMarks6.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubOMarks6.Location = New System.Drawing.Point(610, 468)
+        Me.SubOMarks6.Location = New System.Drawing.Point(415, 459)
         Me.SubOMarks6.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubOMarks6.Name = "SubOMarks6"
         Me.SubOMarks6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -493,7 +495,7 @@ Partial Class ViewMarks
         Me.SubOMarks5.HoverState.Parent = Me.SubOMarks5
         Me.SubOMarks5.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubOMarks5.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubOMarks5.Location = New System.Drawing.Point(610, 424)
+        Me.SubOMarks5.Location = New System.Drawing.Point(415, 417)
         Me.SubOMarks5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubOMarks5.Name = "SubOMarks5"
         Me.SubOMarks5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -526,7 +528,7 @@ Partial Class ViewMarks
         Me.SubOMarks4.HoverState.Parent = Me.SubOMarks4
         Me.SubOMarks4.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubOMarks4.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubOMarks4.Location = New System.Drawing.Point(610, 382)
+        Me.SubOMarks4.Location = New System.Drawing.Point(415, 375)
         Me.SubOMarks4.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubOMarks4.Name = "SubOMarks4"
         Me.SubOMarks4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -559,7 +561,7 @@ Partial Class ViewMarks
         Me.SubOMarks3.HoverState.Parent = Me.SubOMarks3
         Me.SubOMarks3.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubOMarks3.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubOMarks3.Location = New System.Drawing.Point(610, 340)
+        Me.SubOMarks3.Location = New System.Drawing.Point(415, 333)
         Me.SubOMarks3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubOMarks3.Name = "SubOMarks3"
         Me.SubOMarks3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -592,7 +594,7 @@ Partial Class ViewMarks
         Me.SubOMarks2.HoverState.Parent = Me.SubOMarks2
         Me.SubOMarks2.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubOMarks2.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubOMarks2.Location = New System.Drawing.Point(610, 293)
+        Me.SubOMarks2.Location = New System.Drawing.Point(415, 291)
         Me.SubOMarks2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubOMarks2.Name = "SubOMarks2"
         Me.SubOMarks2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -625,7 +627,7 @@ Partial Class ViewMarks
         Me.SubOMarks1.HoverState.Parent = Me.SubOMarks1
         Me.SubOMarks1.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubOMarks1.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubOMarks1.Location = New System.Drawing.Point(610, 251)
+        Me.SubOMarks1.Location = New System.Drawing.Point(415, 249)
         Me.SubOMarks1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubOMarks1.Name = "SubOMarks1"
         Me.SubOMarks1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -658,7 +660,7 @@ Partial Class ViewMarks
         Me.TotalPractical.HoverState.Parent = Me.TotalPractical
         Me.TotalPractical.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.TotalPractical.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.TotalPractical.Location = New System.Drawing.Point(417, 510)
+        Me.TotalPractical.Location = New System.Drawing.Point(624, 501)
         Me.TotalPractical.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TotalPractical.Name = "TotalPractical"
         Me.TotalPractical.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -691,7 +693,7 @@ Partial Class ViewMarks
         Me.SubPMax6.HoverState.Parent = Me.SubPMax6
         Me.SubPMax6.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubPMax6.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubPMax6.Location = New System.Drawing.Point(417, 468)
+        Me.SubPMax6.Location = New System.Drawing.Point(624, 459)
         Me.SubPMax6.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubPMax6.Name = "SubPMax6"
         Me.SubPMax6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -724,7 +726,7 @@ Partial Class ViewMarks
         Me.SubPMax5.HoverState.Parent = Me.SubPMax5
         Me.SubPMax5.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubPMax5.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubPMax5.Location = New System.Drawing.Point(417, 424)
+        Me.SubPMax5.Location = New System.Drawing.Point(624, 417)
         Me.SubPMax5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubPMax5.Name = "SubPMax5"
         Me.SubPMax5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -757,7 +759,7 @@ Partial Class ViewMarks
         Me.SubPMax4.HoverState.Parent = Me.SubPMax4
         Me.SubPMax4.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubPMax4.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubPMax4.Location = New System.Drawing.Point(417, 382)
+        Me.SubPMax4.Location = New System.Drawing.Point(624, 375)
         Me.SubPMax4.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubPMax4.Name = "SubPMax4"
         Me.SubPMax4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -790,7 +792,7 @@ Partial Class ViewMarks
         Me.SubPMax3.HoverState.Parent = Me.SubPMax3
         Me.SubPMax3.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubPMax3.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubPMax3.Location = New System.Drawing.Point(417, 340)
+        Me.SubPMax3.Location = New System.Drawing.Point(624, 333)
         Me.SubPMax3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubPMax3.Name = "SubPMax3"
         Me.SubPMax3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -823,7 +825,7 @@ Partial Class ViewMarks
         Me.SubPMax2.HoverState.Parent = Me.SubPMax2
         Me.SubPMax2.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubPMax2.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubPMax2.Location = New System.Drawing.Point(417, 293)
+        Me.SubPMax2.Location = New System.Drawing.Point(624, 291)
         Me.SubPMax2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubPMax2.Name = "SubPMax2"
         Me.SubPMax2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -856,7 +858,7 @@ Partial Class ViewMarks
         Me.SubPMax1.HoverState.Parent = Me.SubPMax1
         Me.SubPMax1.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubPMax1.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubPMax1.Location = New System.Drawing.Point(417, 251)
+        Me.SubPMax1.Location = New System.Drawing.Point(624, 249)
         Me.SubPMax1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubPMax1.Name = "SubPMax1"
         Me.SubPMax1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -889,7 +891,7 @@ Partial Class ViewMarks
         Me.TotalTheory.HoverState.Parent = Me.TotalTheory
         Me.TotalTheory.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.TotalTheory.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.TotalTheory.Location = New System.Drawing.Point(211, 508)
+        Me.TotalTheory.Location = New System.Drawing.Point(211, 501)
         Me.TotalTheory.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TotalTheory.Name = "TotalTheory"
         Me.TotalTheory.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -922,7 +924,7 @@ Partial Class ViewMarks
         Me.SubTMax6.HoverState.Parent = Me.SubTMax6
         Me.SubTMax6.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubTMax6.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubTMax6.Location = New System.Drawing.Point(211, 466)
+        Me.SubTMax6.Location = New System.Drawing.Point(211, 459)
         Me.SubTMax6.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubTMax6.Name = "SubTMax6"
         Me.SubTMax6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -955,7 +957,7 @@ Partial Class ViewMarks
         Me.SubTMax5.HoverState.Parent = Me.SubTMax5
         Me.SubTMax5.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubTMax5.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubTMax5.Location = New System.Drawing.Point(211, 422)
+        Me.SubTMax5.Location = New System.Drawing.Point(211, 417)
         Me.SubTMax5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubTMax5.Name = "SubTMax5"
         Me.SubTMax5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -988,7 +990,7 @@ Partial Class ViewMarks
         Me.SubTMax4.HoverState.Parent = Me.SubTMax4
         Me.SubTMax4.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubTMax4.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubTMax4.Location = New System.Drawing.Point(211, 380)
+        Me.SubTMax4.Location = New System.Drawing.Point(211, 375)
         Me.SubTMax4.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubTMax4.Name = "SubTMax4"
         Me.SubTMax4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -1021,7 +1023,7 @@ Partial Class ViewMarks
         Me.SubTMax3.HoverState.Parent = Me.SubTMax3
         Me.SubTMax3.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubTMax3.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubTMax3.Location = New System.Drawing.Point(211, 338)
+        Me.SubTMax3.Location = New System.Drawing.Point(211, 333)
         Me.SubTMax3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubTMax3.Name = "SubTMax3"
         Me.SubTMax3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -1114,7 +1116,7 @@ Partial Class ViewMarks
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Open Sans", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label9.Location = New System.Drawing.Point(613, 218)
+        Me.Label9.Location = New System.Drawing.Point(418, 216)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(169, 28)
         Me.Label9.TabIndex = 247
@@ -1125,7 +1127,7 @@ Partial Class ViewMarks
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Open Sans", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label11.Location = New System.Drawing.Point(428, 218)
+        Me.Label11.Location = New System.Drawing.Point(635, 216)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(161, 28)
         Me.Label11.TabIndex = 246
@@ -1147,11 +1149,11 @@ Partial Class ViewMarks
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Open Sans Semibold", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(67, 26)
+        Me.Label2.Location = New System.Drawing.Point(76, 26)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(207, 43)
+        Me.Label2.Size = New System.Drawing.Size(269, 43)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Enter Marks"
+        Me.Label2.Text = "View\Edit Marks"
         '
         'PictureBox2
         '
@@ -1334,7 +1336,7 @@ Partial Class ViewMarks
         Me.StudentID.Name = "StudentID"
         Me.StudentID.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.StudentID.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.StudentID.PlaceholderText = "Student Name"
+        Me.StudentID.PlaceholderText = ""
         Me.StudentID.SelectedText = ""
         Me.StudentID.ShadowDecoration.Parent = Me.StudentID
         Me.StudentID.Size = New System.Drawing.Size(188, 36)
@@ -1367,7 +1369,7 @@ Partial Class ViewMarks
         Me.SemorYear.Name = "SemorYear"
         Me.SemorYear.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.SemorYear.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.SemorYear.PlaceholderText = "Student Name"
+        Me.SemorYear.PlaceholderText = ""
         Me.SemorYear.SelectedText = ""
         Me.SemorYear.ShadowDecoration.Parent = Me.SemorYear
         Me.SemorYear.Size = New System.Drawing.Size(172, 36)
@@ -1395,7 +1397,7 @@ Partial Class ViewMarks
         Me.SubTB6.HoverState.Parent = Me.SubTB6
         Me.SubTB6.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubTB6.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubTB6.Location = New System.Drawing.Point(16, 466)
+        Me.SubTB6.Location = New System.Drawing.Point(16, 459)
         Me.SubTB6.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubTB6.Name = "SubTB6"
         Me.SubTB6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -1428,7 +1430,7 @@ Partial Class ViewMarks
         Me.SubTB5.HoverState.Parent = Me.SubTB5
         Me.SubTB5.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubTB5.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubTB5.Location = New System.Drawing.Point(16, 422)
+        Me.SubTB5.Location = New System.Drawing.Point(16, 417)
         Me.SubTB5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubTB5.Name = "SubTB5"
         Me.SubTB5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -1461,7 +1463,7 @@ Partial Class ViewMarks
         Me.SubTB4.HoverState.Parent = Me.SubTB4
         Me.SubTB4.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubTB4.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubTB4.Location = New System.Drawing.Point(16, 380)
+        Me.SubTB4.Location = New System.Drawing.Point(16, 375)
         Me.SubTB4.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubTB4.Name = "SubTB4"
         Me.SubTB4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -1494,7 +1496,7 @@ Partial Class ViewMarks
         Me.SubTB3.HoverState.Parent = Me.SubTB3
         Me.SubTB3.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.SubTB3.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.SubTB3.Location = New System.Drawing.Point(16, 338)
+        Me.SubTB3.Location = New System.Drawing.Point(16, 333)
         Me.SubTB3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SubTB3.Name = "SubTB3"
         Me.SubTB3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -1586,7 +1588,7 @@ Partial Class ViewMarks
         Me.UpdateButton.HoverState.FillColor = System.Drawing.Color.Turquoise
         Me.UpdateButton.HoverState.FillColor2 = System.Drawing.Color.SlateBlue
         Me.UpdateButton.HoverState.Parent = Me.UpdateButton
-        Me.UpdateButton.Location = New System.Drawing.Point(211, 566)
+        Me.UpdateButton.Location = New System.Drawing.Point(259, 566)
         Me.UpdateButton.Name = "UpdateButton"
         Me.UpdateButton.PressedColor = System.Drawing.Color.Teal
         Me.UpdateButton.PressedDepth = 50
@@ -1595,11 +1597,61 @@ Partial Class ViewMarks
         Me.UpdateButton.TabIndex = 297
         Me.UpdateButton.Text = "Update"
         '
+        'DeleteButton
+        '
+        Me.DeleteButton.Animated = True
+        Me.DeleteButton.AutoRoundedCorners = True
+        Me.DeleteButton.BorderRadius = 21
+        Me.DeleteButton.CheckedState.Parent = Me.DeleteButton
+        Me.DeleteButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.DeleteButton.CustomImages.Parent = Me.DeleteButton
+        Me.DeleteButton.FillColor = System.Drawing.Color.DarkSlateBlue
+        Me.DeleteButton.FillColor2 = System.Drawing.Color.DarkTurquoise
+        Me.DeleteButton.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DeleteButton.ForeColor = System.Drawing.Color.White
+        Me.DeleteButton.HoverState.FillColor = System.Drawing.Color.Turquoise
+        Me.DeleteButton.HoverState.FillColor2 = System.Drawing.Color.SlateBlue
+        Me.DeleteButton.HoverState.Parent = Me.DeleteButton
+        Me.DeleteButton.Location = New System.Drawing.Point(445, 566)
+        Me.DeleteButton.Name = "DeleteButton"
+        Me.DeleteButton.PressedColor = System.Drawing.Color.Teal
+        Me.DeleteButton.PressedDepth = 50
+        Me.DeleteButton.ShadowDecoration.Parent = Me.DeleteButton
+        Me.DeleteButton.Size = New System.Drawing.Size(180, 45)
+        Me.DeleteButton.TabIndex = 298
+        Me.DeleteButton.Text = "Delete"
+        '
+        'CalcalculateMarks
+        '
+        Me.CalcalculateMarks.Animated = True
+        Me.CalcalculateMarks.AutoRoundedCorners = True
+        Me.CalcalculateMarks.BorderRadius = 21
+        Me.CalcalculateMarks.CheckedState.Parent = Me.CalcalculateMarks
+        Me.CalcalculateMarks.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CalcalculateMarks.CustomImages.Parent = Me.CalcalculateMarks
+        Me.CalcalculateMarks.FillColor = System.Drawing.Color.DarkSlateBlue
+        Me.CalcalculateMarks.FillColor2 = System.Drawing.Color.DarkTurquoise
+        Me.CalcalculateMarks.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CalcalculateMarks.ForeColor = System.Drawing.Color.White
+        Me.CalcalculateMarks.HoverState.FillColor = System.Drawing.Color.Turquoise
+        Me.CalcalculateMarks.HoverState.FillColor2 = System.Drawing.Color.SlateBlue
+        Me.CalcalculateMarks.HoverState.Parent = Me.CalcalculateMarks
+        Me.CalcalculateMarks.Location = New System.Drawing.Point(21, 566)
+        Me.CalcalculateMarks.Name = "CalcalculateMarks"
+        Me.CalcalculateMarks.PressedColor = System.Drawing.Color.Teal
+        Me.CalcalculateMarks.PressedDepth = 50
+        Me.CalcalculateMarks.ShadowDecoration.Parent = Me.CalcalculateMarks
+        Me.CalcalculateMarks.Size = New System.Drawing.Size(167, 45)
+        Me.CalcalculateMarks.TabIndex = 299
+        Me.CalcalculateMarks.Text = "Calculate Total"
+        '
         'ViewMarks
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1138, 631)
+        Me.Controls.Add(Me.CalcalculateMarks)
+        Me.Controls.Add(Me.DeleteButton)
         Me.Controls.Add(Me.UpdateButton)
         Me.Controls.Add(Me.SubTB6)
         Me.Controls.Add(Me.SubTB5)
@@ -1654,7 +1706,9 @@ Partial Class ViewMarks
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label4)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ViewMarks"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ViewMarks"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2GradientPanel1.ResumeLayout(False)
@@ -1720,4 +1774,6 @@ Partial Class ViewMarks
     Friend WithEvents SubTB2 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents SubTB1 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents UpdateButton As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents DeleteButton As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents CalcalculateMarks As Guna.UI2.WinForms.Guna2GradientButton
 End Class

@@ -24,11 +24,10 @@ Partial Class Marks
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Marks))
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.RefreshButton = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.Guna2GradientButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.AddStudentButton = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Guna2GradientPanel1.SuspendLayout()
@@ -38,12 +37,11 @@ Partial Class Marks
         '
         'Guna2GradientPanel1
         '
-        Me.Guna2GradientPanel1.BackColor = System.Drawing.Color.Teal
+        Me.Guna2GradientPanel1.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Guna2GradientPanel1.Controls.Add(Me.Label1)
         Me.Guna2GradientPanel1.Controls.Add(Me.Label2)
         Me.Guna2GradientPanel1.Controls.Add(Me.RefreshButton)
         Me.Guna2GradientPanel1.Controls.Add(Me.PictureBox2)
-        Me.Guna2GradientPanel1.Controls.Add(Me.Guna2GradientButton2)
         Me.Guna2GradientPanel1.Controls.Add(Me.AddStudentButton)
         Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 0)
@@ -51,27 +49,6 @@ Partial Class Marks
         Me.Guna2GradientPanel1.ShadowDecoration.Parent = Me.Guna2GradientPanel1
         Me.Guna2GradientPanel1.Size = New System.Drawing.Size(997, 115)
         Me.Guna2GradientPanel1.TabIndex = 154
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Open Sans Semibold", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(67, 26)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(116, 43)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Marks"
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(9, 11)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(61, 58)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 20
-        Me.PictureBox2.TabStop = False
         '
         'Label1
         '
@@ -83,6 +60,17 @@ Partial Class Marks
         Me.Label1.Size = New System.Drawing.Size(148, 37)
         Me.Label1.TabIndex = 158
         Me.Label1.Text = "Marks List"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Open Sans Semibold", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(67, 26)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(116, 43)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Marks"
         '
         'RefreshButton
         '
@@ -108,28 +96,15 @@ Partial Class Marks
         Me.RefreshButton.TabIndex = 157
         Me.RefreshButton.Text = "Refresh"
         '
-        'Guna2GradientButton2
+        'PictureBox2
         '
-        Me.Guna2GradientButton2.AutoRoundedCorners = True
-        Me.Guna2GradientButton2.BorderRadius = 17
-        Me.Guna2GradientButton2.CheckedState.Parent = Me.Guna2GradientButton2
-        Me.Guna2GradientButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton2.CustomImages.Parent = Me.Guna2GradientButton2
-        Me.Guna2GradientButton2.FillColor = System.Drawing.Color.SlateBlue
-        Me.Guna2GradientButton2.FillColor2 = System.Drawing.Color.SlateBlue
-        Me.Guna2GradientButton2.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GradientButton2.ForeColor = System.Drawing.Color.White
-        Me.Guna2GradientButton2.HoverState.FillColor = System.Drawing.Color.Orchid
-        Me.Guna2GradientButton2.HoverState.FillColor2 = System.Drawing.Color.Orchid
-        Me.Guna2GradientButton2.HoverState.Parent = Me.Guna2GradientButton2
-        Me.Guna2GradientButton2.Location = New System.Drawing.Point(769, 70)
-        Me.Guna2GradientButton2.Name = "Guna2GradientButton2"
-        Me.Guna2GradientButton2.PressedColor = System.Drawing.Color.Turquoise
-        Me.Guna2GradientButton2.PressedDepth = 100
-        Me.Guna2GradientButton2.ShadowDecoration.Parent = Me.Guna2GradientButton2
-        Me.Guna2GradientButton2.Size = New System.Drawing.Size(157, 37)
-        Me.Guna2GradientButton2.TabIndex = 156
-        Me.Guna2GradientButton2.Text = "EDIT"
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(9, 11)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(61, 58)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 20
+        Me.PictureBox2.TabStop = False
         '
         'AddStudentButton
         '
@@ -145,7 +120,7 @@ Partial Class Marks
         Me.AddStudentButton.HoverState.FillColor = System.Drawing.Color.Orchid
         Me.AddStudentButton.HoverState.FillColor2 = System.Drawing.Color.Orchid
         Me.AddStudentButton.HoverState.Parent = Me.AddStudentButton
-        Me.AddStudentButton.Location = New System.Drawing.Point(606, 70)
+        Me.AddStudentButton.Location = New System.Drawing.Point(694, 70)
         Me.AddStudentButton.Name = "AddStudentButton"
         Me.AddStudentButton.PressedColor = System.Drawing.Color.Turquoise
         Me.AddStudentButton.PressedDepth = 100
@@ -188,7 +163,6 @@ Partial Class Marks
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents RefreshButton As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents Guna2GradientButton2 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents AddStudentButton As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents DataGridView1 As DataGridView
 End Class

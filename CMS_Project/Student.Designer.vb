@@ -29,7 +29,6 @@ Partial Class Student
         Me.Label2 = New System.Windows.Forms.Label()
         Me.RefreshButton = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.LoginButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel5.SuspendLayout()
@@ -51,7 +50,7 @@ Partial Class Student
         Me.Guna2GradientButton2.HoverState.FillColor = System.Drawing.Color.Orchid
         Me.Guna2GradientButton2.HoverState.FillColor2 = System.Drawing.Color.Orchid
         Me.Guna2GradientButton2.HoverState.Parent = Me.Guna2GradientButton2
-        Me.Guna2GradientButton2.Location = New System.Drawing.Point(766, 79)
+        Me.Guna2GradientButton2.Location = New System.Drawing.Point(825, 81)
         Me.Guna2GradientButton2.Name = "Guna2GradientButton2"
         Me.Guna2GradientButton2.PressedColor = System.Drawing.Color.Turquoise
         Me.Guna2GradientButton2.PressedDepth = 100
@@ -59,6 +58,7 @@ Partial Class Student
         Me.Guna2GradientButton2.Size = New System.Drawing.Size(157, 37)
         Me.Guna2GradientButton2.TabIndex = 8
         Me.Guna2GradientButton2.Text = "EDIT"
+        Me.Guna2GradientButton2.Visible = False
         '
         'AddStudentButton
         '
@@ -74,7 +74,7 @@ Partial Class Student
         Me.AddStudentButton.HoverState.FillColor = System.Drawing.Color.Orchid
         Me.AddStudentButton.HoverState.FillColor2 = System.Drawing.Color.Orchid
         Me.AddStudentButton.HoverState.Parent = Me.AddStudentButton
-        Me.AddStudentButton.Location = New System.Drawing.Point(603, 79)
+        Me.AddStudentButton.Location = New System.Drawing.Point(662, 81)
         Me.AddStudentButton.Name = "AddStudentButton"
         Me.AddStudentButton.PressedColor = System.Drawing.Color.Turquoise
         Me.AddStudentButton.PressedDepth = 100
@@ -91,7 +91,6 @@ Partial Class Student
         Me.Panel5.Controls.Add(Me.PictureBox1)
         Me.Panel5.Controls.Add(Me.Guna2GradientButton2)
         Me.Panel5.Controls.Add(Me.AddStudentButton)
-        Me.Panel5.Controls.Add(Me.LoginButton1)
         Me.Panel5.Controls.Add(Me.Label8)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
@@ -104,7 +103,7 @@ Partial Class Student
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.GhostWhite
-        Me.Label2.Location = New System.Drawing.Point(412, 41)
+        Me.Label2.Location = New System.Drawing.Point(421, 41)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(169, 37)
         Me.Label2.TabIndex = 20
@@ -143,29 +142,6 @@ Partial Class Student
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
-        '
-        'LoginButton1
-        '
-        Me.LoginButton1.AutoRoundedCorners = True
-        Me.LoginButton1.BorderRadius = 17
-        Me.LoginButton1.CheckedState.Parent = Me.LoginButton1
-        Me.LoginButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.LoginButton1.CustomImages.Parent = Me.LoginButton1
-        Me.LoginButton1.FillColor = System.Drawing.Color.SlateBlue
-        Me.LoginButton1.FillColor2 = System.Drawing.Color.SlateBlue
-        Me.LoginButton1.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LoginButton1.ForeColor = System.Drawing.Color.White
-        Me.LoginButton1.HoverState.FillColor = System.Drawing.Color.Orchid
-        Me.LoginButton1.HoverState.FillColor2 = System.Drawing.Color.Orchid
-        Me.LoginButton1.HoverState.Parent = Me.LoginButton1
-        Me.LoginButton1.Location = New System.Drawing.Point(929, 79)
-        Me.LoginButton1.Name = "LoginButton1"
-        Me.LoginButton1.PressedColor = System.Drawing.Color.Turquoise
-        Me.LoginButton1.PressedDepth = 100
-        Me.LoginButton1.ShadowDecoration.Parent = Me.LoginButton1
-        Me.LoginButton1.Size = New System.Drawing.Size(157, 37)
-        Me.LoginButton1.TabIndex = 6
-        Me.LoginButton1.Text = "DELETE"
         '
         'Label8
         '
@@ -210,7 +186,6 @@ Partial Class Student
     Friend WithEvents Guna2GradientButton2 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents AddStudentButton As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents LoginButton1 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Label8 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents RefreshButton As Guna.UI2.WinForms.Guna2GradientButton

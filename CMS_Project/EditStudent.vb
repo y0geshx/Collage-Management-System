@@ -203,7 +203,7 @@ Public Class EditStudent
                 Dim dialog As DialogResult
                 dialog = MessageBox.Show("Do you want Update the Record !", "Record Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
                 If dialog = DialogResult.Yes Then
-                    'Dim query = "update users set id='" & UserID.Text & "',username='" & UserFirstName.Text & "',lastname='" & UserLastNmae.Text & "',emailid='" & UserEmail.Text & "',phone='" & UserNumber.Text & "',password='" & UserPassword1.Text & "' where id='" & UserID.Text & "'"
+
                     Dim query = "update students set studentid='" & SID.Text & "',firstname='" & StuFirstNameTB.Text & "', lastname='" & StuLastNameTB.Text & "', gender='" & StuGenderCB.Text & "', dob='" & StuDateTimePicker.Text & "', age='" & StuAgeTB.Text & "', fathername='" & StuFatherTB.Text & "', mothername='" & StuMotherTB.Text & "', contactnumber='" & StuPhoneTB.Text & "', emailid='" & StuEmaliTB.Text & "', address='" & StuAddressTB.Text & "', city='" & StuCityTB.Text & "', state='" & StuStateTB.Text & "', pincode='" & StuPINTB.Text & "', coursename='" & CourseTB.Text & "', admissiondate='" & StuAdmissionTB.Text & "',activestatus='" & StatusComboBox.Text & "' where studentid='" & SID.Text & "'"
                     Dim cmd As MySqlCommand
                     cmd = New MySqlCommand(query, myconnection.open)

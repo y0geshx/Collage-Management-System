@@ -204,8 +204,8 @@ Public Class EnterMarks
                 Dim dialog As DialogResult
                 dialog = MessageBox.Show("Do you want Save the Record !", "Record Save", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
                 If dialog = DialogResult.Yes Then
-                    Dim query = "insert into marks ( studentid, firstname, lastname, coursename, semoryear, subject1, subject1_theory_marks, subject1_practical_marks, subject2, subject2_theory_marks, subject2_practical_marks, subject3, subject3_theory_marks, subject3_practical_marks, subject4, subject4_theory_marks, subject4_practical_marks, subject5, subject5_theory_marks, subject5_practical_marks, subject6, subject6_theory_marks, subject6_practical_marks, total_theory_marks, total_practical_marks )value
-                                                 ('" & StudentIDCB.Text & "','" & StuNameTB.Text & "','" & stuLastNameTB.Text & "','" & CourseTB.Text & "','" & SemYearCB.Text & "','" & SubComboBox1.Text & "','" & SubOMarks1.Text & "','" & SubOPMarks1.Text & "','" & SubComboBox2.Text & "','" & SubOMarks2.Text & "','" & SubOPMarks2.Text & "','" & SubComboBox3.Text & "','" & SubOMarks3.Text & "','" & SubOPMarks3.Text & "','" & SubComboBox4.Text & "','" & SubOMarks4.Text & "','" & SubOPMarks4.Text & "','" & SubComboBox5.Text & "','" & SubOMarks5.Text & "','" & SubOPMarks5.Text & "','" & SubComboBox6.Text & "','" & SubOMarks6.Text & "','" & SubOPMarks6.Text & "','" & TotalObtainMarks.Text & "','" & TotalObtinedPMarks.Text & "')"
+                    Dim query = "insert into marks ( studentid, firstname, lastname, coursename, semoryear, subject1, subject1_max_theory_marks, subject1_theory_marks, subject1_max_practical_marks, subject1_practical_marks, subject2, subject2_max_theory_marks, subject2_theory_marks,  subject2_max_practical_marks, subject2_practical_marks, subject3, subject3_max_theory_marks, subject3_theory_marks,  subject3_max_practical_marks, subject3_practical_marks, subject4, subject4_max_theory_marks, subject4_theory_marks,  subject4_max_practical_marks, subject4_practical_marks, subject5, subject5_max_theory_marks, subject5_theory_marks,  subject5_max_practical_marks, subject5_practical_marks, subject6, subject6_max_theory_marks, subject6_theory_marks,  subject6_max_practical_marks, subject6_practical_marks, total_max_theory_marks, total_theory_marks, total_max_practical_marks, total_practical_marks )value
+                                                 ('" & StudentIDCB.Text & "','" & StuNameTB.Text & "','" & stuLastNameTB.Text & "','" & CourseTB.Text & "','" & SemYearCB.Text & "','" & SubComboBox1.Text & "','" & SubTMax1.Text & "','" & SubOMarks1.Text & "','" & SubPMax1.Text & "','" & SubOPMarks1.Text & "','" & SubComboBox2.Text & "','" & SubTMax2.Text & "','" & SubOMarks2.Text & "','" & SubPMax2.Text & "','" & SubOPMarks2.Text & "','" & SubComboBox3.Text & "','" & SubTMax3.Text & "','" & SubOMarks3.Text & "','" & SubPMax3.Text & "','" & SubOPMarks3.Text & "','" & SubComboBox4.Text & "','" & SubTMax4.Text & "','" & SubOMarks4.Text & "','" & SubPMax4.Text & "','" & SubOPMarks4.Text & "','" & SubComboBox5.Text & "','" & SubTMax5.Text & "','" & SubOMarks5.Text & "','" & SubPMax5.Text & "','" & SubOPMarks5.Text & "','" & SubComboBox6.Text & "','" & SubTMax6.Text & "','" & SubOMarks6.Text & "','" & SubPMax6.Text & "','" & SubOPMarks6.Text & "','" & TotalTheory.Text & "','" & TotalObtainMarks.Text & "','" & TotalPractical.Text & "','" & TotalObtinedPMarks.Text & "')"
                     Dim cmd As MySqlCommand
                     cmd = New MySqlCommand(query, myconnection.open)
                     cmd.ExecuteNonQuery()
@@ -225,4 +225,47 @@ Public Class EnterMarks
     Private Sub CloseButton_Click(sender As Object, e As EventArgs) Handles CloseButton.Click
         Me.Close()
     End Sub
+
+    Private Sub ResetButton_Click(sender As Object, e As EventArgs) Handles ResetButton.Click
+        SemYearCB.SelectedIndex = -1
+        StudentIDCB.SelectedIndex = -1
+        SubComboBox1.SelectedIndex = -1
+        SubComboBox2.SelectedIndex = -1
+        SubComboBox3.SelectedIndex = -1
+        SubComboBox4.SelectedIndex = -1
+        SubComboBox5.SelectedIndex = -1
+        SubComboBox6.SelectedIndex = -1
+        stuLastNameTB.Clear()
+        StuNameTB.Clear()
+        CourseTB.Clear()
+        SubTMax1.Clear()
+        SubTMax2.Clear()
+        SubTMax3.Clear()
+        SubTMax4.Clear()
+        SubTMax5.Clear()
+        SubTMax6.Clear()
+        SubPMax1.Clear()
+        SubPMax2.Clear()
+        SubPMax3.Clear()
+        SubPMax4.Clear()
+        SubPMax5.Clear()
+        SubPMax6.Clear()
+        SubOMarks1.Clear()
+        SubOMarks2.Clear()
+        SubOMarks3.Clear()
+        SubOMarks4.Clear()
+        SubOMarks5.Clear()
+        SubOMarks6.Clear()
+        SubOPMarks1.Clear()
+        SubOPMarks2.Clear()
+        SubOPMarks3.Clear()
+        SubOPMarks4.Clear()
+        SubOPMarks5.Clear()
+        SubOPMarks6.Clear()
+        TotalTheory.Clear()
+        TotalPractical.Clear()
+        TotalObtainMarks.Clear()
+        TotalObtinedPMarks.Clear()
+    End Sub
+
 End Class

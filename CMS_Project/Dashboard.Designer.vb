@@ -170,7 +170,7 @@ Partial Class Dashboard
         Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.ShadowDecoration.Parent = Me.PanelMenu
-        Me.PanelMenu.Size = New System.Drawing.Size(199, 603)
+        Me.PanelMenu.Size = New System.Drawing.Size(199, 620)
         Me.PanelMenu.TabIndex = 1
         '
         'ExitButton
@@ -433,16 +433,17 @@ Partial Class Dashboard
         Me.MainPanal.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MainPanal.Location = New System.Drawing.Point(199, 52)
         Me.MainPanal.Name = "MainPanal"
-        Me.MainPanal.Size = New System.Drawing.Size(1112, 551)
+        Me.MainPanal.Size = New System.Drawing.Size(1112, 568)
         Me.MainPanal.TabIndex = 3
         '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1112, 545)
+        Me.PictureBox1.Size = New System.Drawing.Size(1112, 568)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -454,7 +455,7 @@ Partial Class Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1311, 603)
+        Me.ClientSize = New System.Drawing.Size(1311, 620)
         Me.Controls.Add(Me.MainPanal)
         Me.Controls.Add(Me.TopPanel)
         Me.Controls.Add(Me.PanelMenu)

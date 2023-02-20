@@ -233,6 +233,12 @@
     <Compile Include="EnterMarks.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FacultyDashBoard.Designer.vb">
+      <DependentUpon>FacultyDashBoard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyDashBoard.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FacultyLogin.Designer.vb">
       <DependentUpon>FacultyLogin.vb</DependentUpon>
     </Compile>
@@ -338,6 +344,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EnterMarks.resx">
       <DependentUpon>EnterMarks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacultyDashBoard.resx">
+      <DependentUpon>FacultyDashBoard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FacultyLogin.resx">
       <DependentUpon>FacultyLogin.vb</DependentUpon>
