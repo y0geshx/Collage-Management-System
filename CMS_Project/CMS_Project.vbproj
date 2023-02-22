@@ -190,6 +190,12 @@
     <Compile Include="ChangeCourse.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ChangeSubject.Designer.vb">
+      <DependentUpon>ChangeSubject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeSubject.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Courses.Designer.vb">
       <DependentUpon>Courses.vb</DependentUpon>
     </Compile>
@@ -323,6 +329,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChangeCourse.resx">
       <DependentUpon>ChangeCourse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeSubject.resx">
+      <DependentUpon>ChangeSubject.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Courses.resx">
       <DependentUpon>Courses.vb</DependentUpon>

@@ -37,6 +37,7 @@ Partial Class FacultyLogin
         Me.Username2 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.LoginAsAdmin = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.ForgotL1 = New System.Windows.Forms.Label()
         Me.GradientPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -122,7 +123,7 @@ Partial Class FacultyLogin
         Me.Resetme.AutoSize = True
         Me.Resetme.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Resetme.Font = New System.Drawing.Font("Open Sans Semibold", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Resetme.Location = New System.Drawing.Point(515, 328)
+        Me.Resetme.Location = New System.Drawing.Point(457, 328)
         Me.Resetme.Name = "Resetme"
         Me.Resetme.Size = New System.Drawing.Size(41, 17)
         Me.Resetme.TabIndex = 15
@@ -288,11 +289,24 @@ Partial Class FacultyLogin
         Me.LoginAsAdmin.TabIndex = 17
         Me.LoginAsAdmin.Text = "Login as admin"
         '
+        'ForgotL1
+        '
+        Me.ForgotL1.AutoSize = True
+        Me.ForgotL1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ForgotL1.Font = New System.Drawing.Font("Open Sans Semibold", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForgotL1.ForeColor = System.Drawing.Color.Crimson
+        Me.ForgotL1.Location = New System.Drawing.Point(519, 328)
+        Me.ForgotL1.Name = "ForgotL1"
+        Me.ForgotL1.Size = New System.Drawing.Size(108, 17)
+        Me.ForgotL1.TabIndex = 18
+        Me.ForgotL1.Text = "Forgot password?"
+        '
         'FacultyLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(725, 466)
+        Me.Controls.Add(Me.ForgotL1)
         Me.Controls.Add(Me.LoginAsAdmin)
         Me.Controls.Add(Me.Resetme)
         Me.Controls.Add(Me.Showpass)
@@ -331,4 +345,5 @@ Partial Class FacultyLogin
     Friend WithEvents Username2 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents LoginAsAdmin As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents ForgotL1 As Label
 End Class

@@ -1,4 +1,5 @@
-﻿Imports Microsoft.VisualBasic.ApplicationServices
+﻿Imports System.ComponentModel
+Imports Microsoft.VisualBasic.ApplicationServices
 Imports MySql.Data.MySqlClient
 
 Public Class Courses
@@ -154,4 +155,35 @@ Public Class Courses
 
     End Sub
 
+    Private Sub TotalSemYearTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TotalSemYearTB.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter digit Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub CourseNameTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles CourseNameTB.KeyPress
+        If Not (Asc(e.KeyChar) = 8) Then
+            Dim allowedChars As String = "abcdefghijklmnopqrstuvwxyz"
+            If Not allowedChars.Contains(e.KeyChar.ToString.ToLower) Then
+                e.KeyChar = ChrW(0)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+
+    Private Sub TotalSemYearTB_Validating(sender As Object, e As CancelEventArgs) Handles TotalSemYearTB.Validating
+        Dim dd As Integer
+        dd = Len(TotalSemYearTB.Text)
+        If (dd <= 2) Then
+            'Do nothing
+        Else
+            MessageBox.Show("Phone number should be < 50 ) ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            TotalSemYearTB.Clear()
+        End If
+    End Sub
 End Class

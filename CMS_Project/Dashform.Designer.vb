@@ -277,7 +277,7 @@ Partial Class Dashform
         '
         'Panel5
         '
-        Me.Panel5.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.Panel5.BackColor = System.Drawing.Color.DarkSlateBlue
         Me.Panel5.Controls.Add(Me.PictureBox5)
         Me.Panel5.Controls.Add(Me.DateLabel)
         Me.Panel5.Controls.Add(Me.Label9)

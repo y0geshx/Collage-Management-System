@@ -2,6 +2,8 @@
 Imports MySql.Data.MySqlClient
 Imports System.ComponentModel
 Imports System.Text.RegularExpressions
+Imports CMS_Project.MemoryStream
+
 
 Public Class EditFaculty
     Dim myconnection As New DTconnection
@@ -11,6 +13,7 @@ Public Class EditFaculty
     Private Sub EditFaculty_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Start()
         FID.Enabled = False
+        FsubjectTB.Enabled = False
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         timelable.Text = DateTime.Now.ToString()
@@ -48,7 +51,17 @@ Public Class EditFaculty
                 e.Handled = True
             End If
         End If
+    End Sub
 
+    Private Sub FPhoneTB_Validated(sender As Object, e As EventArgs) Handles FPhoneTB.Validated
+        Dim dd As Integer
+        dd = Len(FPhoneTB.Text)
+        If (dd = 10) Then
+            'Do nothing
+        Else
+            MessageBox.Show("Phone number should be 10 digit ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            'FPhoneTB.Clear()
+        End If
     End Sub
 
     Private Sub FemailTB_Validating(sender As Object, e As CancelEventArgs) Handles FemailTB.Validating
@@ -58,7 +71,7 @@ Public Class EditFaculty
             'MessageBox.Show("Success", "Checking")
         Else
             MessageBox.Show("Please enter a valid Email ID", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            FemailTB.Clear()
+            'FemailTB.Clear()
         End If
     End Sub
 
@@ -72,6 +85,46 @@ Public Class EditFaculty
         End If
     End Sub
 
+    Private Sub FPINCodeTB_Validated(sender As Object, e As EventArgs) Handles FPINCodeTB.Validated
+        Dim dd As Integer
+        dd = Len(FPINCodeTB.Text)
+        If (dd = 6) Then
+            'Do nothing
+        Else
+            MessageBox.Show("PIN number should be 6 digit ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            'FPINCodeTB.Clear()
+        End If
+    End Sub
+
+    Private Sub FExpTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles FExpTB.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Plese Enter Numbers Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+    Private Sub FExpTB_Validating(sender As Object, e As CancelEventArgs) Handles FExpTB.Validating
+        Dim dd As Integer
+        dd = Len(FExpTB.Text)
+        If (dd <= 2) Then
+            'Do nothing
+        Else
+            MessageBox.Show("Please enter numbers < 100 ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            'FExpTB.Clear()
+        End If
+
+    End Sub
+    Private Sub FAgeTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles FAgeTB.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Plese Numbers < 100.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
     Private Sub FShowpass_CheckedChanged(sender As Object, e As EventArgs) Handles FShowpass.CheckedChanged
         If FShowpass.Checked = True Then
             FPasswordTB.UseSystemPasswordChar = False
@@ -194,7 +247,7 @@ Public Class EditFaculty
                 dialog = MessageBox.Show("Do you want Update the Record !", "Record Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
                 If dialog = DialogResult.Yes Then
                     'Dim query = "update users set id='" & UserID.Text & "',username='" & UserFirstName.Text & "',lastname='" & UserLastNmae.Text & "',emailid='" & UserEmail.Text & "',phone='" & UserNumber.Text & "',password='" & UserPassword1.Text & "' where id='" & UserID.Text & "'"
-                    Dim query = "update faculties set facultyid='" & FID.Text & "',facultyfirstname='" & FFirstNameTB.Text & "', facultylastname='" & FLastNameTB.Text & "', gender='" & FGenderComboBox.Text & "', dob='" & FDOBDateTimePicker.Text & "', age='" & FAgeTB.Text & "', contactnumber='" & FPhoneTB.Text & "', emailid='" & FemailTB.Text & "', address='" & FAddressTB.Text & "', city='" & FCityTB.Text & "', state='" & FStateTB.Text & "', pincode='" & FPINCodeTB.Text & "', qualification='" & FQualiTB.Text & "', experience='" & FExpTB.Text & "', password='" & FPasswordTB.Text & "',activestatus='" & StatusComboBox.Text & "', joindate='" & timelable.Text & "' where facultyid='" & FID.Text & "'"
+                    Dim query = "update faculties set facultyid='" & FID.Text & "',facultyfirstname='" & FFirstNameTB.Text & "', facultylastname='" & FLastNameTB.Text & "', gender='" & FGenderComboBox.Text & "', dob='" & FDOBDateTimePicker.Text & "', age='" & FAgeTB.Text & "', contactnumber='" & FPhoneTB.Text & "', emailid='" & FemailTB.Text & "', address='" & FAddressTB.Text & "', city='" & FCityTB.Text & "', state='" & FStateTB.Text & "', pincode='" & FPINCodeTB.Text & "', qualification='" & FQualiTB.Text & "', experience='" & FExpTB.Text & "', subjectname='" & FsubjectTB.Text & "', password='" & FPasswordTB.Text & "',activestatus='" & StatusComboBox.Text & "', joindate='" & timelable.Text & "' where facultyid='" & FID.Text & "'"
                     Dim cmd As MySqlCommand
                     cmd = New MySqlCommand(query, myconnection.open)
                     cmd.ExecuteNonQuery()
@@ -227,5 +280,10 @@ Public Class EditFaculty
         End Try
     End Sub
 
-
+    Private Sub ChangeSubButton_Click(sender As Object, e As EventArgs) Handles ChangeSubButton.Click
+        Dim cs As New ChangeSubject()
+        faculityid = FID.Text
+        faculityname = FFirstNameTB.Text
+        cs.ShowDialog()
+    End Sub
 End Class

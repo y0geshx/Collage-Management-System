@@ -39,5 +39,7 @@ Public Class FacultyLogin
         Me.Hide()
     End Sub
 
-
+    Private Sub ForgotL1_Click(sender As Object, e As EventArgs) Handles ForgotL1.Click
+        MessageBox.Show("You must contact your Administrator to Reset Your Password for you! ", "Forgot Password ?", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+    End Sub
 End Class

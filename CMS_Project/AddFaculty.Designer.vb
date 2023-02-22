@@ -36,7 +36,6 @@ Partial Class AddFaculty
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.FPINCodeTB = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.FStateTB = New Guna.UI2.WinForms.Guna2TextBox()
         Me.FCityTB = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -63,6 +62,9 @@ Partial Class AddFaculty
         Me.timelable = New System.Windows.Forms.Label()
         Me.FLastNameTB = New Guna.UI2.WinForms.Guna2TextBox()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.FStateCB = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.FsubjectCB = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Label14 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -254,7 +256,7 @@ Partial Class AddFaculty
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label11.Location = New System.Drawing.Point(462, 245)
+        Me.Label11.Location = New System.Drawing.Point(535, 245)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(121, 33)
         Me.Label11.TabIndex = 65
@@ -293,7 +295,7 @@ Partial Class AddFaculty
         Me.FPINCodeTB.HoverState.Parent = Me.FPINCodeTB
         Me.FPINCodeTB.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
         Me.FPINCodeTB.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.FPINCodeTB.Location = New System.Drawing.Point(468, 281)
+        Me.FPINCodeTB.Location = New System.Drawing.Point(541, 281)
         Me.FPINCodeTB.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.FPINCodeTB.Name = "FPINCodeTB"
         Me.FPINCodeTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -303,39 +305,6 @@ Partial Class AddFaculty
         Me.FPINCodeTB.ShadowDecoration.Parent = Me.FPINCodeTB
         Me.FPINCodeTB.Size = New System.Drawing.Size(201, 36)
         Me.FPINCodeTB.TabIndex = 63
-        '
-        'FStateTB
-        '
-        Me.FStateTB.Animated = True
-        Me.FStateTB.AutoRoundedCorners = True
-        Me.FStateTB.BorderColor = System.Drawing.Color.Silver
-        Me.FStateTB.BorderRadius = 17
-        Me.FStateTB.BorderThickness = 2
-        Me.FStateTB.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.FStateTB.DefaultText = ""
-        Me.FStateTB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.FStateTB.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.FStateTB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.FStateTB.DisabledState.Parent = Me.FStateTB
-        Me.FStateTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.FStateTB.FocusedState.BorderColor = System.Drawing.Color.Orchid
-        Me.FStateTB.FocusedState.Parent = Me.FStateTB
-        Me.FStateTB.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FStateTB.ForeColor = System.Drawing.Color.Black
-        Me.FStateTB.HoverState.BorderColor = System.Drawing.Color.MediumPurple
-        Me.FStateTB.HoverState.Parent = Me.FStateTB
-        Me.FStateTB.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
-        Me.FStateTB.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.FStateTB.Location = New System.Drawing.Point(239, 281)
-        Me.FStateTB.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.FStateTB.Name = "FStateTB"
-        Me.FStateTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.FStateTB.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.FStateTB.PlaceholderText = "State"
-        Me.FStateTB.SelectedText = ""
-        Me.FStateTB.ShadowDecoration.Parent = Me.FStateTB
-        Me.FStateTB.Size = New System.Drawing.Size(184, 36)
-        Me.FStateTB.TabIndex = 62
         '
         'FCityTB
         '
@@ -683,7 +652,7 @@ Partial Class AddFaculty
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label16.Location = New System.Drawing.Point(433, 339)
+        Me.Label16.Location = New System.Drawing.Point(691, 339)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(128, 33)
         Me.Label16.TabIndex = 88
@@ -712,7 +681,7 @@ Partial Class AddFaculty
         Me.FPasswordTB.HoverState.PlaceholderForeColor = System.Drawing.Color.DarkTurquoise
         Me.FPasswordTB.IconLeft = CType(resources.GetObject("FPasswordTB.IconLeft"), System.Drawing.Image)
         Me.FPasswordTB.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.FPasswordTB.Location = New System.Drawing.Point(439, 375)
+        Me.FPasswordTB.Location = New System.Drawing.Point(697, 375)
         Me.FPasswordTB.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.FPasswordTB.Name = "FPasswordTB"
         Me.FPasswordTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -733,7 +702,7 @@ Partial Class AddFaculty
         Me.FShowpass.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.FShowpass.Cursor = System.Windows.Forms.Cursors.Hand
         Me.FShowpass.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FShowpass.Location = New System.Drawing.Point(500, 417)
+        Me.FShowpass.Location = New System.Drawing.Point(758, 417)
         Me.FShowpass.Name = "FShowpass"
         Me.FShowpass.Size = New System.Drawing.Size(108, 19)
         Me.FShowpass.TabIndex = 91
@@ -840,11 +809,74 @@ Partial Class AddFaculty
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'FStateCB
+        '
+        Me.FStateCB.Animated = True
+        Me.FStateCB.AutoRoundedCorners = True
+        Me.FStateCB.BackColor = System.Drawing.Color.Transparent
+        Me.FStateCB.BorderColor = System.Drawing.Color.Silver
+        Me.FStateCB.BorderRadius = 17
+        Me.FStateCB.BorderThickness = 2
+        Me.FStateCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.FStateCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.FStateCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.FStateCB.FocusedColor = System.Drawing.Color.Empty
+        Me.FStateCB.FocusedState.Parent = Me.FStateCB
+        Me.FStateCB.Font = New System.Drawing.Font("Open Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FStateCB.ForeColor = System.Drawing.Color.Black
+        Me.FStateCB.FormattingEnabled = True
+        Me.FStateCB.HoverState.Parent = Me.FStateCB
+        Me.FStateCB.ItemHeight = 30
+        Me.FStateCB.Items.AddRange(New Object() {"Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu & Kashmir", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Orissa", "Punjab", "Rajasthan ", "Sikkim ", "Tamil Nadu ", "Telangana", "Tripura ", "Uttar Pradesh", "Uttarakhand", "West Bengal"})
+        Me.FStateCB.ItemsAppearance.Parent = Me.FStateCB
+        Me.FStateCB.Location = New System.Drawing.Point(239, 281)
+        Me.FStateCB.Name = "FStateCB"
+        Me.FStateCB.ShadowDecoration.Parent = Me.FStateCB
+        Me.FStateCB.Size = New System.Drawing.Size(236, 36)
+        Me.FStateCB.TabIndex = 96
+        '
+        'FsubjectCB
+        '
+        Me.FsubjectCB.AutoRoundedCorners = True
+        Me.FsubjectCB.BackColor = System.Drawing.Color.Transparent
+        Me.FsubjectCB.BorderColor = System.Drawing.Color.Silver
+        Me.FsubjectCB.BorderRadius = 17
+        Me.FsubjectCB.BorderThickness = 2
+        Me.FsubjectCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.FsubjectCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.FsubjectCB.FocusedColor = System.Drawing.Color.Empty
+        Me.FsubjectCB.FocusedState.Parent = Me.FsubjectCB
+        Me.FsubjectCB.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FsubjectCB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.FsubjectCB.FormattingEnabled = True
+        Me.FsubjectCB.HoverState.Parent = Me.FsubjectCB
+        Me.FsubjectCB.ItemHeight = 30
+        Me.FsubjectCB.ItemsAppearance.Parent = Me.FsubjectCB
+        Me.FsubjectCB.Location = New System.Drawing.Point(454, 375)
+        Me.FsubjectCB.Name = "FsubjectCB"
+        Me.FsubjectCB.ShadowDecoration.Parent = Me.FsubjectCB
+        Me.FsubjectCB.Size = New System.Drawing.Size(210, 36)
+        Me.FsubjectCB.TabIndex = 98
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label14.Location = New System.Drawing.Point(448, 339)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(181, 33)
+        Me.Label14.TabIndex = 97
+        Me.Label14.Text = "Assign Subject"
+        '
         'AddFaculty
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1045, 556)
+        Me.Controls.Add(Me.FsubjectCB)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.FStateCB)
         Me.Controls.Add(Me.FLastNameTB)
         Me.Controls.Add(Me.timelable)
         Me.Controls.Add(Me.Label18)
@@ -868,7 +900,6 @@ Partial Class AddFaculty
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.FPINCodeTB)
-        Me.Controls.Add(Me.FStateTB)
         Me.Controls.Add(Me.FCityTB)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -906,7 +937,6 @@ Partial Class AddFaculty
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents FPINCodeTB As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents FStateTB As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents FCityTB As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
@@ -933,4 +963,7 @@ Partial Class AddFaculty
     Friend WithEvents timelable As Label
     Friend WithEvents FLastNameTB As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents FStateCB As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents FsubjectCB As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Label14 As Label
 End Class

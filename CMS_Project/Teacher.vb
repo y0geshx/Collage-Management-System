@@ -76,9 +76,10 @@ Public Class Teacher
             ef.FPINCodeTB.Text = row.Cells(11).Value.ToString
             ef.FQualiTB.Text = row.Cells(12).Value.ToString
             ef.FExpTB.Text = row.Cells(13).Value.ToString
-            ef.FPasswordTB.Text = row.Cells(15).Value.ToString
-            ef.StatusComboBox.Text = row.Cells(16).Value.ToString
-            Dim bytes As Byte() = DataGridView1.CurrentRow.Cells(14).Value
+            ef.FsubjectTB.Text = row.Cells(14).Value.ToString
+            ef.FPasswordTB.Text = row.Cells(16).Value.ToString
+            ef.StatusComboBox.Text = row.Cells(17).Value.ToString
+            Dim bytes As Byte() = DataGridView1.CurrentRow.Cells(15).Value
             Using ms As New IO.MemoryStream(bytes)
                 ef.PictureBox1.Image = Image.FromStream(ms)
             End Using

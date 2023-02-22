@@ -6,6 +6,7 @@
     End Sub
     Public Shared stuid As String
     Public Shared stuname As String
-
+    Public Shared faculityid As String
+    Public Shared faculityname As String
 End Class
 

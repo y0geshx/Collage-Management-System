@@ -37,7 +37,7 @@ Partial Class Marks
         '
         'Guna2GradientPanel1
         '
-        Me.Guna2GradientPanel1.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.Guna2GradientPanel1.BackColor = System.Drawing.Color.DarkSlateBlue
         Me.Guna2GradientPanel1.Controls.Add(Me.Label1)
         Me.Guna2GradientPanel1.Controls.Add(Me.Label2)
         Me.Guna2GradientPanel1.Controls.Add(Me.RefreshButton)
@@ -55,7 +55,7 @@ Partial Class Marks
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.GhostWhite
-        Me.Label1.Location = New System.Drawing.Point(425, 32)
+        Me.Label1.Location = New System.Drawing.Point(554, 26)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(148, 37)
         Me.Label1.TabIndex = 158

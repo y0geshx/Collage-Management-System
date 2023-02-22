@@ -341,7 +341,7 @@ Partial Class AddUsers
         '
         'Guna2GradientPanel1
         '
-        Me.Guna2GradientPanel1.BackColor = System.Drawing.Color.DarkCyan
+        Me.Guna2GradientPanel1.BackColor = System.Drawing.Color.DarkSlateBlue
         Me.Guna2GradientPanel1.Controls.Add(Me.Label1)
         Me.Guna2GradientPanel1.Controls.Add(Me.PictureBox2)
         Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top

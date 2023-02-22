@@ -7,7 +7,26 @@ Public Class AddFaculty
     Dim objdatapter As New MySqlDataAdapter
     Dim dtable As New DataTable
 
+    Private Sub Subject_load()
+        Dim READER As MySqlDataReader
+        Try
+            Dim query As String
+            query = "SELECT * FROM cmsdbx.subject"
+            Dim cmd As MySqlCommand
+            cmd = New MySqlCommand(query, myconnection.open)
+            READER = cmd.ExecuteReader
+            While READER.Read
+                Dim subName = READER.GetString("subjectname")
+                FsubjectCB.Items.Add(subName)
+            End While
+            myconnection.close()
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+    End Sub
     Private Sub AddFaculty_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Subject_load()
         Timer1.Start()
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -24,7 +43,7 @@ Public Class AddFaculty
         End If
     End Sub
 
-    Private Sub FLastNameTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles FFirstNameTB.KeyPress
+    Private Sub FLastNameTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles FLastNameTB.KeyPress
         If Not (Asc(e.KeyChar) = 8) Then
             Dim allowedChars As String = "abcdefghijklmnopqrstuvwxyz"
             If Not allowedChars.Contains(e.KeyChar.ToString.ToLower) Then
@@ -33,6 +52,7 @@ Public Class AddFaculty
             End If
         End If
     End Sub
+
     Private Sub FDOBDateTimePicker_ValueChanged(sender As Object, e As EventArgs) Handles FDOBDateTimePicker.ValueChanged
         Dim ts As TimeSpan = DateTime.Now.Date - FDOBDateTimePicker.Value
         FAgeTB.Text = String.Format("{0:n0}", (ts.TotalDays / 365))
@@ -48,7 +68,16 @@ Public Class AddFaculty
         End If
 
     End Sub
-
+    Private Sub FPhoneTB_Validated(sender As Object, e As EventArgs) Handles FPhoneTB.Validated
+        Dim dd As Integer
+        dd = Len(FPhoneTB.Text)
+        If (dd = 10) Then
+            'Do nothing
+        Else
+            MessageBox.Show("Phone number should be 10 digit ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            FPhoneTB.Clear()
+        End If
+    End Sub
     Private Sub FemailTB_Validating(sender As Object, e As CancelEventArgs) Handles FemailTB.Validating
         Dim pattern As String = "^[a-z][a-z|0-9|]*([_][a-z|0-9]+)*([.][a-z|0-9]+([_][a-z|0-9]+)*)?@[a-z][a-z|0-9|]*\.([a-z][a-z|0-9]*(\.[a-z][a-z|0-9]*)?)$"
         Dim match As System.Text.RegularExpressions.Match = Regex.Match(FemailTB.Text.Trim(), pattern, RegexOptions.IgnoreCase)
@@ -64,12 +93,50 @@ Public Class AddFaculty
         If e.KeyChar <> ChrW(Keys.Back) Then
             If Char.IsNumber(e.KeyChar) Then
             Else
-                MessageBox.Show("Invalid Input ! Enter six digit PIN Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Invalid Input ! Enter 6 digit PIN Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 e.Handled = True
             End If
         End If
     End Sub
+    Private Sub FPINCodeTB_Validated(sender As Object, e As EventArgs) Handles FPINCodeTB.Validated
+        Dim dd As Integer
+        dd = Len(FPINCodeTB.Text)
+        If (dd = 6) Then
+            'Do nothing
+        Else
+            MessageBox.Show("PIN number should be 6 digit ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            FPINCodeTB.Clear()
+        End If
+    End Sub
+    Private Sub FExpTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles FExpTB.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Plese Enter Numbers Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+    Private Sub FExpTB_Validating(sender As Object, e As CancelEventArgs) Handles FExpTB.Validating
+        Dim dd As Integer
+        dd = Len(FExpTB.Text)
+        If (dd <= 2) Then
+            'Do nothing
+        Else
+            MessageBox.Show("Please enter numbers < 100 ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            FExpTB.Clear()
+        End If
 
+    End Sub
+    Private Sub FAgeTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles FAgeTB.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Plese Numbers < 100.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
     Private Sub FShowpass_CheckedChanged(sender As Object, e As EventArgs) Handles FShowpass.CheckedChanged
         If FShowpass.Checked = True Then
             FPasswordTB.UseSystemPasswordChar = False
@@ -86,7 +153,7 @@ Public Class AddFaculty
         FemailTB.Clear()
         FAddressTB.Clear()
         FCityTB.Clear()
-        FStateTB.Clear()
+        FStateCB.SelectedIndex = -1
         FPINCodeTB.Clear()
         FQualiTB.Clear()
         FExpTB.Clear()
@@ -111,7 +178,7 @@ Public Class AddFaculty
             FemailTB.Text = "" Or
             FAddressTB.Text = "" Or
             FCityTB.Text = "" Or
-            FStateTB.Text = "" Or
+            FStateCB.Text = "" Or
             FPINCodeTB.Text = "" Or
             FQualiTB.Text = "" Or
             FExpTB.Text = "" Or
@@ -120,8 +187,8 @@ Public Class AddFaculty
                 MessageBox.Show("Missing Information. Please fill all the fields ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
 
-                Dim query = "insert into faculties (facultyfirstname, facultylastname, gender, dob, age, contactnumber, emailid, address, city, state, pincode, qualification, experience, password, activestatus, joindate, profilepic )values
-                                               ('" & FFirstNameTB.Text & "','" & FLastNameTB.Text & "','" & FGenderComboBox.Text & "','" & FDOBDateTimePicker.Text & "','" & FAgeTB.Text & "','" & FPhoneTB.Text & "','" & FemailTB.Text & "','" & FAddressTB.Text & "', '" & FCityTB.Text & "','" & FStateTB.Text & "','" & FPINCodeTB.Text & "','" & FQualiTB.Text & "','" & FExpTB.Text & "','" & FPasswordTB.Text & "','" & "Active" & "','" & timelable.Text & "', @ImageFile ) "
+                Dim query = "insert into faculties (facultyfirstname, facultylastname, gender, dob, age, contactnumber, emailid, address, city, state, pincode, qualification, experience, subjectname, password, activestatus, joindate, profilepic )values
+                                               ('" & FFirstNameTB.Text & "','" & FLastNameTB.Text & "','" & FGenderComboBox.Text & "','" & FDOBDateTimePicker.Text & "','" & FAgeTB.Text & "','" & FPhoneTB.Text & "','" & FemailTB.Text & "','" & FAddressTB.Text & "', '" & FCityTB.Text & "','" & FStateCB.Text & "','" & FPINCodeTB.Text & "','" & FQualiTB.Text & "','" & FExpTB.Text & "','" & FsubjectCB.Text & "','" & FPasswordTB.Text & "','" & "Active" & "','" & timelable.Text & "', @ImageFile ) "
 
                 Dim cmd As MySqlCommand
                 cmd = New MySqlCommand(query, myconnection.open)
@@ -136,7 +203,7 @@ Public Class AddFaculty
                 FemailTB.Clear()
                 FAddressTB.Clear()
                 FCityTB.Clear()
-                FStateTB.Clear()
+                FStateCB.SelectedIndex = -1
                 FPINCodeTB.Clear()
                 FQualiTB.Clear()
                 FExpTB.Clear()
@@ -202,6 +269,7 @@ Public Class AddFaculty
 
     Private Sub PicClearButton_Click(sender As Object, e As EventArgs) Handles PicClearButton.Click
         PictureBox1.Image = Nothing
-
     End Sub
+
+
 End Class

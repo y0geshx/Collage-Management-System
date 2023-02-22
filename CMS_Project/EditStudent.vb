@@ -73,7 +73,7 @@ Public Class EditStudent
             'MessageBox.Show("Success", "Checking")
         Else
             MessageBox.Show("Please enter a valid Email ID", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            StuEmaliTB.Clear()
+            'StuEmaliTB.Clear()
         End If
     End Sub
 
@@ -236,5 +236,59 @@ Public Class EditStudent
             MessageBox.Show(ex.Message.ToString(), "Data Error")
         End Try
 
+    End Sub
+
+    Private Sub StuPhoneTB_Validating(sender As Object, e As CancelEventArgs) Handles StuPhoneTB.Validating
+        Dim dd As Integer
+        dd = Len(StuPhoneTB.Text)
+        If (dd = 10) Then
+            'Do nothing
+        Else
+            MessageBox.Show("Phone number should be 10 digit ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            'StuPhoneTB.Clear()
+        End If
+    End Sub
+
+
+    Private Sub StuFatherTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles StuFatherTB.KeyPress
+        If Not (Asc(e.KeyChar) = 8) Then
+            Dim allowedChars As String = "abcdefghijklmnopqrstuvwxyz"
+            If Not allowedChars.Contains(e.KeyChar.ToString.ToLower) Then
+                e.KeyChar = ChrW(0)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+
+    Private Sub StuMotherTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles StuMotherTB.KeyPress
+        If Not (Asc(e.KeyChar) = 8) Then
+            Dim allowedChars As String = "abcdefghijklmnopqrstuvwxyz"
+            If Not allowedChars.Contains(e.KeyChar.ToString.ToLower) Then
+                e.KeyChar = ChrW(0)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub StuAgeTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles StuAgeTB.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Plese Numbers < 100.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub StuPINTB_Validated(sender As Object, e As EventArgs) Handles StuPINTB.Validated
+        Dim dd As Integer
+        dd = Len(StuPINTB.Text)
+        If (dd = 6) Then
+            'Do nothing
+        Else
+            MessageBox.Show("PIN number should be 6 digit ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            'StuPINTB.Clear()
+        End If
     End Sub
 End Class

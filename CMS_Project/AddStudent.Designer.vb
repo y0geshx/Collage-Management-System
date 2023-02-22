@@ -42,7 +42,6 @@ Partial Class AddStudent
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.StuCityTB = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.StuStateTB = New Guna.UI2.WinForms.Guna2TextBox()
         Me.StuPINTB = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -64,6 +63,7 @@ Partial Class AddStudent
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.timelable = New System.Windows.Forms.Label()
+        Me.StuStateCB = New Guna.UI2.WinForms.Guna2ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -401,7 +401,7 @@ Partial Class AddStudent
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label9.Location = New System.Drawing.Point(463, 214)
+        Me.Label9.Location = New System.Drawing.Point(490, 214)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(74, 33)
         Me.Label9.TabIndex = 21
@@ -439,39 +439,6 @@ Partial Class AddStudent
         Me.StuCityTB.ShadowDecoration.Parent = Me.StuCityTB
         Me.StuCityTB.Size = New System.Drawing.Size(172, 36)
         Me.StuCityTB.TabIndex = 22
-        '
-        'StuStateTB
-        '
-        Me.StuStateTB.Animated = True
-        Me.StuStateTB.AutoRoundedCorners = True
-        Me.StuStateTB.BorderColor = System.Drawing.Color.Silver
-        Me.StuStateTB.BorderRadius = 17
-        Me.StuStateTB.BorderThickness = 2
-        Me.StuStateTB.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.StuStateTB.DefaultText = ""
-        Me.StuStateTB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.StuStateTB.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.StuStateTB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.StuStateTB.DisabledState.Parent = Me.StuStateTB
-        Me.StuStateTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.StuStateTB.FocusedState.BorderColor = System.Drawing.Color.Orchid
-        Me.StuStateTB.FocusedState.Parent = Me.StuStateTB
-        Me.StuStateTB.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StuStateTB.ForeColor = System.Drawing.Color.Black
-        Me.StuStateTB.HoverState.BorderColor = System.Drawing.Color.MediumPurple
-        Me.StuStateTB.HoverState.Parent = Me.StuStateTB
-        Me.StuStateTB.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
-        Me.StuStateTB.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.StuStateTB.Location = New System.Drawing.Point(469, 250)
-        Me.StuStateTB.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.StuStateTB.Name = "StuStateTB"
-        Me.StuStateTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.StuStateTB.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.StuStateTB.PlaceholderText = "State"
-        Me.StuStateTB.SelectedText = ""
-        Me.StuStateTB.ShadowDecoration.Parent = Me.StuStateTB
-        Me.StuStateTB.Size = New System.Drawing.Size(185, 36)
-        Me.StuStateTB.TabIndex = 23
         '
         'StuPINTB
         '
@@ -839,12 +806,39 @@ Partial Class AddStudent
         Me.timelable.Text = "date"
         Me.timelable.Visible = False
         '
+        'StuStateCB
+        '
+        Me.StuStateCB.Animated = True
+        Me.StuStateCB.AutoRoundedCorners = True
+        Me.StuStateCB.BackColor = System.Drawing.Color.Transparent
+        Me.StuStateCB.BorderColor = System.Drawing.Color.Silver
+        Me.StuStateCB.BorderRadius = 17
+        Me.StuStateCB.BorderThickness = 2
+        Me.StuStateCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.StuStateCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.StuStateCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.StuStateCB.FocusedColor = System.Drawing.Color.Empty
+        Me.StuStateCB.FocusedState.Parent = Me.StuStateCB
+        Me.StuStateCB.Font = New System.Drawing.Font("Open Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StuStateCB.ForeColor = System.Drawing.Color.Black
+        Me.StuStateCB.FormattingEnabled = True
+        Me.StuStateCB.HoverState.Parent = Me.StuStateCB
+        Me.StuStateCB.ItemHeight = 30
+        Me.StuStateCB.Items.AddRange(New Object() {"Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu & Kashmir", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Orissa", "Punjab", "Rajasthan ", "Sikkim ", "Tamil Nadu ", "Telangana", "Tripura ", "Uttar Pradesh", "Uttarakhand", "West Bengal"})
+        Me.StuStateCB.ItemsAppearance.Parent = Me.StuStateCB
+        Me.StuStateCB.Location = New System.Drawing.Point(496, 250)
+        Me.StuStateCB.Name = "StuStateCB"
+        Me.StuStateCB.ShadowDecoration.Parent = Me.StuStateCB
+        Me.StuStateCB.Size = New System.Drawing.Size(236, 36)
+        Me.StuStateCB.TabIndex = 97
+        '
         'AddStudent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(1045, 556)
+        Me.Controls.Add(Me.StuStateCB)
         Me.Controls.Add(Me.timelable)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.StuAgeTB)
@@ -864,7 +858,6 @@ Partial Class AddStudent
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.StuPINTB)
-        Me.Controls.Add(Me.StuStateTB)
         Me.Controls.Add(Me.StuCityTB)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -913,7 +906,6 @@ Partial Class AddStudent
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents StuCityTB As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents StuStateTB As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents StuPINTB As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
@@ -935,4 +927,5 @@ Partial Class AddStudent
     Friend WithEvents Timer1 As Timer
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents timelable As Label
+    Friend WithEvents StuStateCB As Guna.UI2.WinForms.Guna2ComboBox
 End Class

@@ -65,10 +65,10 @@ Partial Class Dashboard
         Me.TopPanel.Controls.Add(Me.Guna2CirclePictureBox1)
         Me.TopPanel.Controls.Add(Me.VarLabel1)
         Me.TopPanel.Dock = System.Windows.Forms.DockStyle.Top
-        Me.TopPanel.Location = New System.Drawing.Point(199, 0)
+        Me.TopPanel.Location = New System.Drawing.Point(158, 0)
         Me.TopPanel.Name = "TopPanel"
         Me.TopPanel.ShadowDecoration.Parent = Me.TopPanel
-        Me.TopPanel.Size = New System.Drawing.Size(1112, 52)
+        Me.TopPanel.Size = New System.Drawing.Size(1153, 52)
         Me.TopPanel.TabIndex = 2
         '
         'DateLabel2
@@ -125,7 +125,7 @@ Partial Class Dashboard
         Me.PanelLogo.Location = New System.Drawing.Point(0, 0)
         Me.PanelLogo.Name = "PanelLogo"
         Me.PanelLogo.ShadowDecoration.Parent = Me.PanelLogo
-        Me.PanelLogo.Size = New System.Drawing.Size(199, 52)
+        Me.PanelLogo.Size = New System.Drawing.Size(158, 52)
         Me.PanelLogo.TabIndex = 0
         '
         'Label1
@@ -170,7 +170,7 @@ Partial Class Dashboard
         Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.ShadowDecoration.Parent = Me.PanelMenu
-        Me.PanelMenu.Size = New System.Drawing.Size(199, 620)
+        Me.PanelMenu.Size = New System.Drawing.Size(158, 637)
         Me.PanelMenu.TabIndex = 1
         '
         'ExitButton
@@ -190,7 +190,7 @@ Partial Class Dashboard
         Me.ExitButton.Location = New System.Drawing.Point(0, 547)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.ShadowDecoration.Parent = Me.ExitButton
-        Me.ExitButton.Size = New System.Drawing.Size(199, 45)
+        Me.ExitButton.Size = New System.Drawing.Size(158, 45)
         Me.ExitButton.TabIndex = 24
         Me.ExitButton.Text = "Exit"
         '
@@ -211,9 +211,9 @@ Partial Class Dashboard
         Me.LogoutButton.Location = New System.Drawing.Point(0, 502)
         Me.LogoutButton.Name = "LogoutButton"
         Me.LogoutButton.ShadowDecoration.Parent = Me.LogoutButton
-        Me.LogoutButton.Size = New System.Drawing.Size(199, 45)
+        Me.LogoutButton.Size = New System.Drawing.Size(158, 45)
         Me.LogoutButton.TabIndex = 23
-        Me.LogoutButton.Text = "Logout"
+        Me.LogoutButton.Text = "   Logout"
         '
         'AboutButton
         '
@@ -232,9 +232,9 @@ Partial Class Dashboard
         Me.AboutButton.Location = New System.Drawing.Point(0, 457)
         Me.AboutButton.Name = "AboutButton"
         Me.AboutButton.ShadowDecoration.Parent = Me.AboutButton
-        Me.AboutButton.Size = New System.Drawing.Size(199, 45)
+        Me.AboutButton.Size = New System.Drawing.Size(158, 45)
         Me.AboutButton.TabIndex = 22
-        Me.AboutButton.Text = "About Us"
+        Me.AboutButton.Text = "    About Us"
         '
         'AddUsersButton
         '
@@ -253,9 +253,9 @@ Partial Class Dashboard
         Me.AddUsersButton.Location = New System.Drawing.Point(0, 412)
         Me.AddUsersButton.Name = "AddUsersButton"
         Me.AddUsersButton.ShadowDecoration.Parent = Me.AddUsersButton
-        Me.AddUsersButton.Size = New System.Drawing.Size(199, 45)
+        Me.AddUsersButton.Size = New System.Drawing.Size(158, 45)
         Me.AddUsersButton.TabIndex = 19
-        Me.AddUsersButton.Text = "USERS"
+        Me.AddUsersButton.Text = "  USERS"
         '
         'EmailButton
         '
@@ -274,9 +274,9 @@ Partial Class Dashboard
         Me.EmailButton.Location = New System.Drawing.Point(0, 367)
         Me.EmailButton.Name = "EmailButton"
         Me.EmailButton.ShadowDecoration.Parent = Me.EmailButton
-        Me.EmailButton.Size = New System.Drawing.Size(199, 45)
+        Me.EmailButton.Size = New System.Drawing.Size(158, 45)
         Me.EmailButton.TabIndex = 18
-        Me.EmailButton.Text = "EMAIL"
+        Me.EmailButton.Text = "  EMAIL"
         '
         'MarksButton
         '
@@ -295,9 +295,9 @@ Partial Class Dashboard
         Me.MarksButton.Location = New System.Drawing.Point(0, 322)
         Me.MarksButton.Name = "MarksButton"
         Me.MarksButton.ShadowDecoration.Parent = Me.MarksButton
-        Me.MarksButton.Size = New System.Drawing.Size(199, 45)
+        Me.MarksButton.Size = New System.Drawing.Size(158, 45)
         Me.MarksButton.TabIndex = 17
-        Me.MarksButton.Text = "MARKS"
+        Me.MarksButton.Text = "  MARKS"
         '
         'AttendanceButton
         '
@@ -316,9 +316,9 @@ Partial Class Dashboard
         Me.AttendanceButton.Location = New System.Drawing.Point(0, 277)
         Me.AttendanceButton.Name = "AttendanceButton"
         Me.AttendanceButton.ShadowDecoration.Parent = Me.AttendanceButton
-        Me.AttendanceButton.Size = New System.Drawing.Size(199, 45)
+        Me.AttendanceButton.Size = New System.Drawing.Size(158, 45)
         Me.AttendanceButton.TabIndex = 16
-        Me.AttendanceButton.Text = "ATTENDANCE"
+        Me.AttendanceButton.Text = "         ATTENDANCE"
         '
         'SubjectButton
         '
@@ -337,9 +337,9 @@ Partial Class Dashboard
         Me.SubjectButton.Location = New System.Drawing.Point(0, 232)
         Me.SubjectButton.Name = "SubjectButton"
         Me.SubjectButton.ShadowDecoration.Parent = Me.SubjectButton
-        Me.SubjectButton.Size = New System.Drawing.Size(199, 45)
+        Me.SubjectButton.Size = New System.Drawing.Size(158, 45)
         Me.SubjectButton.TabIndex = 15
-        Me.SubjectButton.Text = "SUBJECTS"
+        Me.SubjectButton.Text = "     SUBJECTS"
         '
         'CourseButton
         '
@@ -358,9 +358,9 @@ Partial Class Dashboard
         Me.CourseButton.Location = New System.Drawing.Point(0, 187)
         Me.CourseButton.Name = "CourseButton"
         Me.CourseButton.ShadowDecoration.Parent = Me.CourseButton
-        Me.CourseButton.Size = New System.Drawing.Size(199, 45)
+        Me.CourseButton.Size = New System.Drawing.Size(158, 45)
         Me.CourseButton.TabIndex = 14
-        Me.CourseButton.Text = "COURSES"
+        Me.CourseButton.Text = "     COURSES"
         '
         'TeacherButton
         '
@@ -379,9 +379,9 @@ Partial Class Dashboard
         Me.TeacherButton.Location = New System.Drawing.Point(0, 142)
         Me.TeacherButton.Name = "TeacherButton"
         Me.TeacherButton.ShadowDecoration.Parent = Me.TeacherButton
-        Me.TeacherButton.Size = New System.Drawing.Size(199, 45)
+        Me.TeacherButton.Size = New System.Drawing.Size(158, 45)
         Me.TeacherButton.TabIndex = 12
-        Me.TeacherButton.Text = "FACULTY"
+        Me.TeacherButton.Text = "     FACULTY"
         '
         'StudentButton
         '
@@ -400,9 +400,9 @@ Partial Class Dashboard
         Me.StudentButton.Location = New System.Drawing.Point(0, 97)
         Me.StudentButton.Name = "StudentButton"
         Me.StudentButton.ShadowDecoration.Parent = Me.StudentButton
-        Me.StudentButton.Size = New System.Drawing.Size(199, 45)
+        Me.StudentButton.Size = New System.Drawing.Size(158, 45)
         Me.StudentButton.TabIndex = 10
-        Me.StudentButton.Text = "STUDENTS"
+        Me.StudentButton.Text = "      STUDENTS"
         '
         'DashBoardButton
         '
@@ -421,9 +421,9 @@ Partial Class Dashboard
         Me.DashBoardButton.Location = New System.Drawing.Point(0, 52)
         Me.DashBoardButton.Name = "DashBoardButton"
         Me.DashBoardButton.ShadowDecoration.Parent = Me.DashBoardButton
-        Me.DashBoardButton.Size = New System.Drawing.Size(199, 45)
+        Me.DashBoardButton.Size = New System.Drawing.Size(158, 45)
         Me.DashBoardButton.TabIndex = 1
-        Me.DashBoardButton.Text = "DASHBOARD"
+        Me.DashBoardButton.Text = "          DASHBOARD"
         '
         'MainPanal
         '
@@ -431,9 +431,9 @@ Partial Class Dashboard
         Me.MainPanal.BackColor = System.Drawing.Color.White
         Me.MainPanal.Controls.Add(Me.PictureBox1)
         Me.MainPanal.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MainPanal.Location = New System.Drawing.Point(199, 52)
+        Me.MainPanal.Location = New System.Drawing.Point(158, 52)
         Me.MainPanal.Name = "MainPanal"
-        Me.MainPanal.Size = New System.Drawing.Size(1112, 568)
+        Me.MainPanal.Size = New System.Drawing.Size(1153, 585)
         Me.MainPanal.TabIndex = 3
         '
         'PictureBox1
@@ -443,7 +443,7 @@ Partial Class Dashboard
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1112, 568)
+        Me.PictureBox1.Size = New System.Drawing.Size(1153, 585)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -455,7 +455,7 @@ Partial Class Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1311, 620)
+        Me.ClientSize = New System.Drawing.Size(1311, 637)
         Me.Controls.Add(Me.MainPanal)
         Me.Controls.Add(Me.TopPanel)
         Me.Controls.Add(Me.PanelMenu)

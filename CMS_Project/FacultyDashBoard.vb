@@ -15,6 +15,8 @@ Public Class FacultyDashBoard
             .Show()
         End With
         VarLabel1.Text = "Students"
+        Dim obj As New Student
+        obj.AddStudentButton.Visible = False
     End Sub
 
     Private Sub AttendanceButton_Click(sender As Object, e As EventArgs) Handles AttendanceButton.Click

@@ -41,11 +41,14 @@ Partial Class FacultyDashBoard
         Me.VarLabel1 = New System.Windows.Forms.Label()
         Me.MainPanal = New System.Windows.Forms.Panel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.PanelLogo.SuspendLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainPanal.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -225,7 +228,7 @@ Partial Class FacultyDashBoard
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.DarkSlateBlue
+        Me.Panel2.BackColor = System.Drawing.Color.SlateBlue
         Me.Panel2.Controls.Add(Me.DateLabel2)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.Guna2CirclePictureBox1)
@@ -285,6 +288,7 @@ Partial Class FacultyDashBoard
         '
         Me.MainPanal.AutoScroll = True
         Me.MainPanal.BackColor = System.Drawing.Color.White
+        Me.MainPanal.Controls.Add(Me.PictureBox1)
         Me.MainPanal.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MainPanal.Location = New System.Drawing.Point(194, 52)
         Me.MainPanal.Name = "MainPanal"
@@ -293,6 +297,18 @@ Partial Class FacultyDashBoard
         '
         'Timer1
         '
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.White
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(1117, 551)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
         '
         'FacultyDashBoard
         '
@@ -314,6 +330,8 @@ Partial Class FacultyDashBoard
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainPanal.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -335,4 +353,5 @@ Partial Class FacultyDashBoard
     Friend WithEvents Label2 As Label
     Friend WithEvents Guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

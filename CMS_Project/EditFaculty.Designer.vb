@@ -67,6 +67,9 @@ Partial Class EditFaculty
         Me.Label14 = New System.Windows.Forms.Label()
         Me.StatusComboBox = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.FsubjectTB = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.ChangeSubButton = New Guna.UI2.WinForms.Guna2GradientButton()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -168,7 +171,7 @@ Partial Class EditFaculty
         Me.FShowpass.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.FShowpass.Cursor = System.Windows.Forms.Cursors.Hand
         Me.FShowpass.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FShowpass.Location = New System.Drawing.Point(657, 416)
+        Me.FShowpass.Location = New System.Drawing.Point(854, 416)
         Me.FShowpass.Name = "FShowpass"
         Me.FShowpass.Size = New System.Drawing.Size(108, 19)
         Me.FShowpass.TabIndex = 128
@@ -202,7 +205,7 @@ Partial Class EditFaculty
         Me.FPasswordTB.HoverState.PlaceholderForeColor = System.Drawing.Color.DarkTurquoise
         Me.FPasswordTB.IconLeft = CType(resources.GetObject("FPasswordTB.IconLeft"), System.Drawing.Image)
         Me.FPasswordTB.IconLeftOffset = New System.Drawing.Point(4, 0)
-        Me.FPasswordTB.Location = New System.Drawing.Point(594, 374)
+        Me.FPasswordTB.Location = New System.Drawing.Point(791, 374)
         Me.FPasswordTB.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.FPasswordTB.Name = "FPasswordTB"
         Me.FPasswordTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -219,7 +222,7 @@ Partial Class EditFaculty
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label16.Location = New System.Drawing.Point(589, 338)
+        Me.Label16.Location = New System.Drawing.Point(786, 338)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(128, 33)
         Me.Label16.TabIndex = 126
@@ -266,7 +269,7 @@ Partial Class EditFaculty
         Me.FExpTB.PlaceholderText = "Experience"
         Me.FExpTB.SelectedText = ""
         Me.FExpTB.ShadowDecoration.Parent = Me.FExpTB
-        Me.FExpTB.Size = New System.Drawing.Size(185, 36)
+        Me.FExpTB.Size = New System.Drawing.Size(163, 36)
         Me.FExpTB.TabIndex = 124
         '
         'FQualiTB
@@ -327,7 +330,7 @@ Partial Class EditFaculty
         Me.EditCloseButton1.HoverState.FillColor = System.Drawing.Color.Gray
         Me.EditCloseButton1.HoverState.FillColor2 = System.Drawing.Color.Gray
         Me.EditCloseButton1.HoverState.Parent = Me.EditCloseButton1
-        Me.EditCloseButton1.Location = New System.Drawing.Point(524, 457)
+        Me.EditCloseButton1.Location = New System.Drawing.Point(769, 457)
         Me.EditCloseButton1.Name = "EditCloseButton1"
         Me.EditCloseButton1.PressedColor = System.Drawing.Color.Teal
         Me.EditCloseButton1.PressedDepth = 50
@@ -908,7 +911,7 @@ Partial Class EditFaculty
         Me.StatusComboBox.ItemHeight = 30
         Me.StatusComboBox.Items.AddRange(New Object() {"Active", "Inactive"})
         Me.StatusComboBox.ItemsAppearance.Parent = Me.StatusComboBox
-        Me.StatusComboBox.Location = New System.Drawing.Point(420, 374)
+        Me.StatusComboBox.Location = New System.Drawing.Point(617, 374)
         Me.StatusComboBox.Name = "StatusComboBox"
         Me.StatusComboBox.ShadowDecoration.Parent = Me.StatusComboBox
         Me.StatusComboBox.Size = New System.Drawing.Size(140, 36)
@@ -919,17 +922,88 @@ Partial Class EditFaculty
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label15.Location = New System.Drawing.Point(414, 338)
+        Me.Label15.Location = New System.Drawing.Point(611, 338)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(87, 33)
         Me.Label15.TabIndex = 136
         Me.Label15.Text = "Status"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label17.Location = New System.Drawing.Point(385, 338)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(210, 33)
+        Me.Label17.TabIndex = 138
+        Me.Label17.Text = "Assigned Subject"
+        '
+        'FsubjectTB
+        '
+        Me.FsubjectTB.Animated = True
+        Me.FsubjectTB.AutoRoundedCorners = True
+        Me.FsubjectTB.BorderColor = System.Drawing.Color.Silver
+        Me.FsubjectTB.BorderRadius = 17
+        Me.FsubjectTB.BorderThickness = 2
+        Me.FsubjectTB.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.FsubjectTB.DefaultText = ""
+        Me.FsubjectTB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.FsubjectTB.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.FsubjectTB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.FsubjectTB.DisabledState.Parent = Me.FsubjectTB
+        Me.FsubjectTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.FsubjectTB.FocusedState.BorderColor = System.Drawing.Color.Orchid
+        Me.FsubjectTB.FocusedState.Parent = Me.FsubjectTB
+        Me.FsubjectTB.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FsubjectTB.ForeColor = System.Drawing.Color.Black
+        Me.FsubjectTB.HoverState.BorderColor = System.Drawing.Color.MediumPurple
+        Me.FsubjectTB.HoverState.Parent = Me.FsubjectTB
+        Me.FsubjectTB.HoverState.PlaceholderForeColor = System.Drawing.Color.Orchid
+        Me.FsubjectTB.IconLeftOffset = New System.Drawing.Point(4, 0)
+        Me.FsubjectTB.Location = New System.Drawing.Point(391, 374)
+        Me.FsubjectTB.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.FsubjectTB.Name = "FsubjectTB"
+        Me.FsubjectTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.FsubjectTB.PlaceholderForeColor = System.Drawing.Color.Black
+        Me.FsubjectTB.PlaceholderText = "Subject"
+        Me.FsubjectTB.SelectedText = ""
+        Me.FsubjectTB.ShadowDecoration.Parent = Me.FsubjectTB
+        Me.FsubjectTB.Size = New System.Drawing.Size(219, 36)
+        Me.FsubjectTB.TabIndex = 137
+        '
+        'ChangeSubButton
+        '
+        Me.ChangeSubButton.Animated = True
+        Me.ChangeSubButton.AutoRoundedCorners = True
+        Me.ChangeSubButton.BorderRadius = 21
+        Me.ChangeSubButton.CheckedState.Parent = Me.ChangeSubButton
+        Me.ChangeSubButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ChangeSubButton.CustomImages.Parent = Me.ChangeSubButton
+        Me.ChangeSubButton.FillColor = System.Drawing.Color.DarkSlateBlue
+        Me.ChangeSubButton.FillColor2 = System.Drawing.Color.DarkTurquoise
+        Me.ChangeSubButton.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ChangeSubButton.ForeColor = System.Drawing.Color.White
+        Me.ChangeSubButton.HoverState.FillColor = System.Drawing.Color.Turquoise
+        Me.ChangeSubButton.HoverState.FillColor2 = System.Drawing.Color.SlateBlue
+        Me.ChangeSubButton.HoverState.Parent = Me.ChangeSubButton
+        Me.ChangeSubButton.Location = New System.Drawing.Point(518, 457)
+        Me.ChangeSubButton.Name = "ChangeSubButton"
+        Me.ChangeSubButton.PressedColor = System.Drawing.Color.Teal
+        Me.ChangeSubButton.PressedDepth = 50
+        Me.ChangeSubButton.ShadowDecoration.Parent = Me.ChangeSubButton
+        Me.ChangeSubButton.Size = New System.Drawing.Size(180, 45)
+        Me.ChangeSubButton.TabIndex = 143
+        Me.ChangeSubButton.Text = "Change Subject"
         '
         'EditFaculty
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1045, 556)
+        Me.Controls.Add(Me.ChangeSubButton)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.FsubjectTB)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.StatusComboBox)
         Me.Controls.Add(Me.Label14)
@@ -1024,4 +1098,7 @@ Partial Class EditFaculty
     Friend WithEvents Label14 As Label
     Friend WithEvents StatusComboBox As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Label15 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents FsubjectTB As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents ChangeSubButton As Guna.UI2.WinForms.Guna2GradientButton
 End Class

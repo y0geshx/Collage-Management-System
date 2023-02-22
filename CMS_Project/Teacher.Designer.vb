@@ -28,7 +28,6 @@ Partial Class Teacher
         Me.LoadButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Guna2GradientButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel5.SuspendLayout()
@@ -61,11 +60,10 @@ Partial Class Teacher
         '
         'Panel5
         '
-        Me.Panel5.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.Panel5.BackColor = System.Drawing.Color.DarkSlateBlue
         Me.Panel5.Controls.Add(Me.LoadButton1)
         Me.Panel5.Controls.Add(Me.Label1)
         Me.Panel5.Controls.Add(Me.PictureBox1)
-        Me.Panel5.Controls.Add(Me.Guna2GradientButton2)
         Me.Panel5.Controls.Add(Me.AddFacultyButton1)
         Me.Panel5.Controls.Add(Me.Label8)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
@@ -81,8 +79,8 @@ Partial Class Teacher
         Me.LoadButton1.CheckedState.Parent = Me.LoadButton1
         Me.LoadButton1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LoadButton1.CustomImages.Parent = Me.LoadButton1
-        Me.LoadButton1.FillColor = System.Drawing.Color.SlateBlue
-        Me.LoadButton1.FillColor2 = System.Drawing.Color.Orchid
+        Me.LoadButton1.FillColor = System.Drawing.Color.DarkTurquoise
+        Me.LoadButton1.FillColor2 = System.Drawing.Color.RoyalBlue
         Me.LoadButton1.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LoadButton1.ForeColor = System.Drawing.Color.White
         Me.LoadButton1.HoverState.FillColor = System.Drawing.Color.Orchid
@@ -102,7 +100,7 @@ Partial Class Teacher
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.GhostWhite
-        Me.Label1.Location = New System.Drawing.Point(454, 43)
+        Me.Label1.Location = New System.Drawing.Point(586, 25)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(160, 37)
         Me.Label1.TabIndex = 17
@@ -117,30 +115,6 @@ Partial Class Teacher
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
-        '
-        'Guna2GradientButton2
-        '
-        Me.Guna2GradientButton2.AutoRoundedCorners = True
-        Me.Guna2GradientButton2.BorderRadius = 17
-        Me.Guna2GradientButton2.CheckedState.Parent = Me.Guna2GradientButton2
-        Me.Guna2GradientButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton2.CustomImages.Parent = Me.Guna2GradientButton2
-        Me.Guna2GradientButton2.FillColor = System.Drawing.Color.SlateBlue
-        Me.Guna2GradientButton2.FillColor2 = System.Drawing.Color.SlateBlue
-        Me.Guna2GradientButton2.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GradientButton2.ForeColor = System.Drawing.Color.White
-        Me.Guna2GradientButton2.HoverState.FillColor = System.Drawing.Color.Orchid
-        Me.Guna2GradientButton2.HoverState.FillColor2 = System.Drawing.Color.Orchid
-        Me.Guna2GradientButton2.HoverState.Parent = Me.Guna2GradientButton2
-        Me.Guna2GradientButton2.Location = New System.Drawing.Point(900, 81)
-        Me.Guna2GradientButton2.Name = "Guna2GradientButton2"
-        Me.Guna2GradientButton2.PressedColor = System.Drawing.Color.Turquoise
-        Me.Guna2GradientButton2.PressedDepth = 100
-        Me.Guna2GradientButton2.ShadowDecoration.Parent = Me.Guna2GradientButton2
-        Me.Guna2GradientButton2.Size = New System.Drawing.Size(157, 37)
-        Me.Guna2GradientButton2.TabIndex = 8
-        Me.Guna2GradientButton2.Text = "EDIT"
-        Me.Guna2GradientButton2.Visible = False
         '
         'Label8
         '
@@ -184,7 +158,6 @@ Partial Class Teacher
 
     Friend WithEvents AddFacultyButton1 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents Guna2GradientButton2 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Label8 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label

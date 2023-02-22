@@ -1,4 +1,5 @@
-﻿Imports Microsoft.VisualBasic.ApplicationServices
+﻿Imports System.ComponentModel
+Imports Microsoft.VisualBasic.ApplicationServices
 Imports MySql.Data.MySqlClient
 
 Public Class Subject
@@ -192,5 +193,54 @@ Public Class Subject
         PracticalMarksTB.Clear()
     End Sub
 
+    Private Sub TheoryMarksTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TheoryMarksTB.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+    Private Sub PracticalMarksTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles PracticalMarksTB.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
 
+    Private Sub TheoryMarksTB_Validating(sender As Object, e As CancelEventArgs) Handles TheoryMarksTB.Validating
+        Dim dd As Integer
+        dd = Len(TheoryMarksTB.Text)
+        If (dd <= 4) Then
+            'Do nothing
+        Else
+            MessageBox.Show("It should be <= 4 digits ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            TheoryMarksTB.Clear()
+        End If
+    End Sub
+
+    Private Sub PracticalMarksTB_Validating(sender As Object, e As CancelEventArgs) Handles PracticalMarksTB.Validating
+        Dim dd As Integer
+        dd = Len(PracticalMarksTB.Text)
+        If (dd <= 4) Then
+            'Do nothing
+        Else
+            MessageBox.Show("It should be <= 4 digits ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            PracticalMarksTB.Clear()
+        End If
+    End Sub
+
+    Private Sub SubjectNameTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles SubjectNameTB.KeyPress
+        If Not (Asc(e.KeyChar) = 8) Then
+            Dim allowedChars As String = "abcdefghijklmnopqrstuvwxyz"
+            If Not allowedChars.Contains(e.KeyChar.ToString.ToLower) Then
+                e.KeyChar = ChrW(0)
+                e.Handled = True
+            End If
+        End If
+    End Sub
 End Class

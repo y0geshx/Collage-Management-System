@@ -53,6 +53,25 @@ Public Class EnterMarks
     Private Sub EnterMarks_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         StudentID_load()
         Subject_load()
+        stuLastNameTB.Enabled = False
+        StuNameTB.Enabled = False
+        CourseTB.Enabled = False
+        SubTMax1.Enabled = False
+        SubTMax2.Enabled = False
+        SubTMax3.Enabled = False
+        SubTMax4.Enabled = False
+        SubTMax5.Enabled = False
+        SubTMax6.Enabled = False
+        SubPMax1.Enabled = False
+        SubPMax2.Enabled = False
+        SubPMax3.Enabled = False
+        SubPMax4.Enabled = False
+        SubPMax5.Enabled = False
+        SubPMax6.Enabled = False
+        TotalTheory.Enabled = False
+        TotalObtainMarks.Enabled = False
+        TotalPractical.Enabled = False
+        TotalObtinedPMarks.Enabled = False
     End Sub
     Private Sub StudentIDCB_SelectedIndexChanged(sender As Object, e As EventArgs) Handles StudentIDCB.SelectedIndexChanged
         Dim READER As MySqlDataReader
@@ -268,4 +287,167 @@ Public Class EnterMarks
         TotalObtinedPMarks.Clear()
     End Sub
 
+    Private Sub SubOMarks1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles SubOMarks1.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub SubOMarks2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles SubOMarks2.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub SubOMarks3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles SubOMarks3.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub SubOMarks4_KeyPress(sender As Object, e As KeyPressEventArgs) Handles SubOMarks4.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub SubOMarks5_KeyPress(sender As Object, e As KeyPressEventArgs) Handles SubOMarks5.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub SubOMarks6_KeyPress(sender As Object, e As KeyPressEventArgs) Handles SubOMarks6.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+
+    Private Sub SubOPMarks1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles SubOPMarks1.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub SubOPMarks2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles SubOPMarks2.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub SubOPMarks3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles SubOPMarks3.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub SubOPMarks4_KeyPress(sender As Object, e As KeyPressEventArgs) Handles SubOPMarks4.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub SubOPMarks5_KeyPress(sender As Object, e As KeyPressEventArgs) Handles SubOPMarks5.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub SubOPMarks6_KeyPress(sender As Object, e As KeyPressEventArgs) Handles SubOPMarks6.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub TotalTheory_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TotalTheory.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+
+    Private Sub TotalObtainMarks_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TotalObtainMarks.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+
+    Private Sub TotalPractical_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TotalPractical.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+
+    Private Sub TotalObtinedPMarks_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TotalObtinedPMarks.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
 End Class

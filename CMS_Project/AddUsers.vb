@@ -1,4 +1,6 @@
-﻿Imports Guna.UI2.HtmlRenderer.Adapters
+﻿Imports System.ComponentModel
+Imports System.Text.RegularExpressions
+Imports Guna.UI2.HtmlRenderer.Adapters
 Imports MySql.Data.MySqlClient
 
 Public Class AddUsers
@@ -182,5 +184,59 @@ Public Class AddUsers
         UserPassword1.Clear()
     End Sub
 
+    Private Sub UserFirstName_KeyPress(sender As Object, e As KeyPressEventArgs) Handles UserFirstName.KeyPress
+        If Not (Asc(e.KeyChar) = 8) Then
+            Dim allowedChars As String = "abcdefghijklmnopqrstuvwxyz"
+            If Not allowedChars.Contains(e.KeyChar.ToString.ToLower) Then
+                e.KeyChar = ChrW(0)
+                e.Handled = True
+            End If
+        End If
+    End Sub
 
+    Private Sub UserLastNmae_KeyPress(sender As Object, e As KeyPressEventArgs) Handles UserLastNmae.KeyPress
+        If Not (Asc(e.KeyChar) = 8) Then
+            Dim allowedChars As String = "abcdefghijklmnopqrstuvwxyz"
+            If Not allowedChars.Contains(e.KeyChar.ToString.ToLower) Then
+                e.KeyChar = ChrW(0)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub UserEmail_TextChanged(sender As Object, e As EventArgs) Handles UserEmail.TextChanged
+
+    End Sub
+
+    Private Sub UserEmail_Validating(sender As Object, e As CancelEventArgs) Handles UserEmail.Validating
+        Dim pattern As String = "^[a-z][a-z|0-9|]*([_][a-z|0-9]+)*([.][a-z|0-9]+([_][a-z|0-9]+)*)?@[a-z][a-z|0-9|]*\.([a-z][a-z|0-9]*(\.[a-z][a-z|0-9]*)?)$"
+        Dim match As System.Text.RegularExpressions.Match = Regex.Match(UserEmail.Text.Trim(), pattern, RegexOptions.IgnoreCase)
+        If (match.Success) Then
+            'MessageBox.Show("Success", "Checking")
+        Else
+            MessageBox.Show("Please enter a valid Email ID", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            UserEmail.Clear()
+        End If
+    End Sub
+
+    Private Sub UserNumber_KeyPress(sender As Object, e As KeyPressEventArgs) Handles UserNumber.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Enter Number Only.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub UserNumber_Validating(sender As Object, e As CancelEventArgs) Handles UserNumber.Validating
+        Dim dd As Integer
+        dd = Len(UserNumber.Text)
+        If (dd = 10) Then
+            'Do nothing
+        Else
+            MessageBox.Show("Phone number should be 10 digit ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            UserNumber.Clear()
+        End If
+    End Sub
 End Class

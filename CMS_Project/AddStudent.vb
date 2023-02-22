@@ -100,7 +100,7 @@ Public Class AddStudent
         StuEmaliTB.Clear()
         StuAddressTB.Clear()
         StuCityTB.Clear()
-        StuStateTB.Clear()
+        StuStateCB.SelectedIndex = -1
         StuPINTB.Clear()
         StuCourseTB.SelectedIndex = -1
         StuGenderCB.SelectedIndex = -1
@@ -177,13 +177,13 @@ Public Class AddStudent
         StuEmaliTB.Text = "" Or
         StuAddressTB.Text = "" Or
         StuCityTB.Text = "" Or
-        StuStateTB.Text = "" Or
+        StuStateCB.Text = "" Or
         StuPINTB.Text = "" Then
                 MessageBox.Show("Missing Information. Please fill all the fields ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
 
                 Dim query = "insert into students (firstname, lastname, gender, dob, age,fathername,mothername, contactnumber, emailid, address, city, state, pincode, coursename, admissiondate, activestatus, profilepic )values
-                                               ('" & StuFirstNameTB.Text & "','" & StuLastNameTB.Text & "','" & StuGenderCB.Text & "','" & StuDateTimePicker.Text & "','" & StuAgeTB.Text & "','" & StuFatherTB.Text & "','" & StuMotherTB.Text & "','" & StuPhoneTB.Text & "','" & StuEmaliTB.Text & "','" & StuAddressTB.Text & "', '" & StuCityTB.Text & "','" & StuStateTB.Text & "','" & StuPINTB.Text & "','" & StuCourseTB.Text & "','" & StuAdmissionTB.Text & "','" & "Active" & "', @ImageFile ) "
+                                               ('" & StuFirstNameTB.Text & "','" & StuLastNameTB.Text & "','" & StuGenderCB.Text & "','" & StuDateTimePicker.Text & "','" & StuAgeTB.Text & "','" & StuFatherTB.Text & "','" & StuMotherTB.Text & "','" & StuPhoneTB.Text & "','" & StuEmaliTB.Text & "','" & StuAddressTB.Text & "', '" & StuCityTB.Text & "','" & StuStateCB.Text & "','" & StuPINTB.Text & "','" & StuCourseTB.Text & "','" & StuAdmissionTB.Text & "','" & "Active" & "', @ImageFile ) "
 
                 Dim cmd As MySqlCommand
                 cmd = New MySqlCommand(query, myconnection.open)
@@ -200,7 +200,7 @@ Public Class AddStudent
                 StuEmaliTB.Clear()
                 StuAddressTB.Clear()
                 StuCityTB.Clear()
-                StuStateTB.Clear()
+                StuStateCB.SelectedIndex = -1
                 StuPINTB.Clear()
                 StuCourseTB.SelectedIndex = -1
                 StuGenderCB.SelectedIndex = -1
@@ -212,5 +212,59 @@ Public Class AddStudent
     End Sub
     Private Sub AddCloseButton1_Click(sender As Object, e As EventArgs) Handles CloseButton.Click
         Me.Close()
+    End Sub
+
+    Private Sub StuPhoneTB_Validating(sender As Object, e As CancelEventArgs) Handles StuPhoneTB.Validating
+        Dim dd As Integer
+        dd = Len(StuPhoneTB.Text)
+        If (dd = 10) Then
+            'Do nothing
+        Else
+            MessageBox.Show("Phone number should be 10 digit ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            StuPhoneTB.Clear()
+        End If
+    End Sub
+
+
+    Private Sub StuFatherTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles StuFatherTB.KeyPress
+        If Not (Asc(e.KeyChar) = 8) Then
+            Dim allowedChars As String = "abcdefghijklmnopqrstuvwxyz"
+            If Not allowedChars.Contains(e.KeyChar.ToString.ToLower) Then
+                e.KeyChar = ChrW(0)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+
+    Private Sub StuMotherTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles StuMotherTB.KeyPress
+        If Not (Asc(e.KeyChar) = 8) Then
+            Dim allowedChars As String = "abcdefghijklmnopqrstuvwxyz"
+            If Not allowedChars.Contains(e.KeyChar.ToString.ToLower) Then
+                e.KeyChar = ChrW(0)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub StuAgeTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles StuAgeTB.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+            Else
+                MessageBox.Show("Invalid Input ! Plese Numbers < 100.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub StuPINTB_Validated(sender As Object, e As EventArgs) Handles StuPINTB.Validated
+        Dim dd As Integer
+        dd = Len(StuPINTB.Text)
+        If (dd = 6) Then
+            'Do nothing
+        Else
+            MessageBox.Show("PIN number should be 6 digit ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            StuPINTB.Clear()
+        End If
     End Sub
 End Class

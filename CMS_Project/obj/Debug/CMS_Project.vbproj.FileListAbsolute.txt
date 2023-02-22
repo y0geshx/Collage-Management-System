@@ -60,3 +60,4 @@ C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.Marks.res
 C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.EmailWeb.resources
 C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.ViewMarks.resources
 C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.FacultyDashBoard.resources
+C:\Users\yx\source\repos\CMS_Project\CMS_Project\obj\Debug\CMS_Project.ChangeSubject.resources
