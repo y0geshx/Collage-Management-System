@@ -12,8 +12,8 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("The college management system helps Educational Institutions especially colleges in various ways, such as storing data, maintaining student profiles, analyzing administrative and academic data, improving communication, and engaging students.")>
 <Assembly: AssemblyCompany("CMS")>
 <Assembly: AssemblyProduct("CMS_Project")>
-<Assembly: AssemblyCopyright("Copyright ©")>
-<Assembly: AssemblyTrademark("cms")>
+<Assembly: AssemblyCopyright("Copyright © Yogeshwar S")>
+<Assembly: AssemblyTrademark("CMS")>
 
 <Assembly: ComVisible(False)>
 
