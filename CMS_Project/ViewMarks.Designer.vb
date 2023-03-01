@@ -131,6 +131,7 @@ Partial Class ViewMarks
         Me.PrintButton.Size = New System.Drawing.Size(180, 45)
         Me.PrintButton.TabIndex = 285
         Me.PrintButton.Text = "Print"
+        Me.PrintButton.Visible = False
         '
         'Label6
         '
