@@ -77,7 +77,7 @@ Partial Class AddFaculty
         Me.AddCloseButton1.CustomImages.Parent = Me.AddCloseButton1
         Me.AddCloseButton1.FillColor = System.Drawing.Color.Silver
         Me.AddCloseButton1.FillColor2 = System.Drawing.Color.Silver
-        Me.AddCloseButton1.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddCloseButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AddCloseButton1.ForeColor = System.Drawing.Color.Black
         Me.AddCloseButton1.HoverState.FillColor = System.Drawing.Color.Gray
         Me.AddCloseButton1.HoverState.FillColor2 = System.Drawing.Color.Gray
@@ -101,7 +101,7 @@ Partial Class AddFaculty
         Me.FacultyResetButton.CustomImages.Parent = Me.FacultyResetButton
         Me.FacultyResetButton.FillColor = System.Drawing.Color.DarkSlateBlue
         Me.FacultyResetButton.FillColor2 = System.Drawing.Color.DarkTurquoise
-        Me.FacultyResetButton.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FacultyResetButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FacultyResetButton.ForeColor = System.Drawing.Color.White
         Me.FacultyResetButton.HoverState.FillColor = System.Drawing.Color.Turquoise
         Me.FacultyResetButton.HoverState.FillColor2 = System.Drawing.Color.SlateBlue
@@ -125,7 +125,7 @@ Partial Class AddFaculty
         Me.FacultySaveButton.CustomImages.Parent = Me.FacultySaveButton
         Me.FacultySaveButton.FillColor = System.Drawing.Color.DarkSlateBlue
         Me.FacultySaveButton.FillColor2 = System.Drawing.Color.DarkTurquoise
-        Me.FacultySaveButton.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FacultySaveButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FacultySaveButton.ForeColor = System.Drawing.Color.White
         Me.FacultySaveButton.HoverState.FillColor = System.Drawing.Color.Turquoise
         Me.FacultySaveButton.HoverState.FillColor2 = System.Drawing.Color.SlateBlue
@@ -148,7 +148,7 @@ Partial Class AddFaculty
         Me.PicClearButton.CustomImages.Parent = Me.PicClearButton
         Me.PicClearButton.FillColor = System.Drawing.Color.SlateBlue
         Me.PicClearButton.FillColor2 = System.Drawing.Color.SlateBlue
-        Me.PicClearButton.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PicClearButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PicClearButton.ForeColor = System.Drawing.Color.White
         Me.PicClearButton.HoverState.FillColor = System.Drawing.Color.Orchid
         Me.PicClearButton.HoverState.FillColor2 = System.Drawing.Color.Orchid
@@ -171,7 +171,7 @@ Partial Class AddFaculty
         Me.PicSelectButton.CustomImages.Parent = Me.PicSelectButton
         Me.PicSelectButton.FillColor = System.Drawing.Color.SlateBlue
         Me.PicSelectButton.FillColor2 = System.Drawing.Color.SlateBlue
-        Me.PicSelectButton.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PicSelectButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PicSelectButton.ForeColor = System.Drawing.Color.White
         Me.PicSelectButton.HoverState.FillColor = System.Drawing.Color.Orchid
         Me.PicSelectButton.HoverState.FillColor2 = System.Drawing.Color.Orchid
@@ -188,11 +188,11 @@ Partial Class AddFaculty
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label13.Location = New System.Drawing.Point(843, 36)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(84, 33)
+        Me.Label13.Size = New System.Drawing.Size(81, 29)
         Me.Label13.TabIndex = 69
         Me.Label13.Text = "Photo"
         '
@@ -210,11 +210,11 @@ Partial Class AddFaculty
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label12.Location = New System.Drawing.Point(331, 123)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(79, 33)
+        Me.Label12.Size = New System.Drawing.Size(79, 29)
         Me.Label12.TabIndex = 67
         Me.Label12.Text = "Email"
         '
@@ -234,7 +234,7 @@ Partial Class AddFaculty
         Me.FemailTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.FemailTB.FocusedState.BorderColor = System.Drawing.Color.Orchid
         Me.FemailTB.FocusedState.Parent = Me.FemailTB
-        Me.FemailTB.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FemailTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FemailTB.ForeColor = System.Drawing.Color.Black
         Me.FemailTB.HoverState.BorderColor = System.Drawing.Color.MediumPurple
         Me.FemailTB.HoverState.Parent = Me.FemailTB
@@ -254,22 +254,22 @@ Partial Class AddFaculty
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label11.Location = New System.Drawing.Point(535, 245)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(121, 33)
+        Me.Label11.Size = New System.Drawing.Size(126, 29)
         Me.Label11.TabIndex = 65
         Me.Label11.Text = "PIN Code"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label10.Location = New System.Drawing.Point(528, 123)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(109, 33)
+        Me.Label10.Size = New System.Drawing.Size(109, 29)
         Me.Label10.TabIndex = 64
         Me.Label10.Text = "Address"
         '
@@ -289,7 +289,7 @@ Partial Class AddFaculty
         Me.FPINCodeTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.FPINCodeTB.FocusedState.BorderColor = System.Drawing.Color.Orchid
         Me.FPINCodeTB.FocusedState.Parent = Me.FPINCodeTB
-        Me.FPINCodeTB.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FPINCodeTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FPINCodeTB.ForeColor = System.Drawing.Color.Black
         Me.FPINCodeTB.HoverState.BorderColor = System.Drawing.Color.MediumPurple
         Me.FPINCodeTB.HoverState.Parent = Me.FPINCodeTB
@@ -322,7 +322,7 @@ Partial Class AddFaculty
         Me.FCityTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.FCityTB.FocusedState.BorderColor = System.Drawing.Color.Orchid
         Me.FCityTB.FocusedState.Parent = Me.FCityTB
-        Me.FCityTB.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FCityTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FCityTB.ForeColor = System.Drawing.Color.Black
         Me.FCityTB.HoverState.BorderColor = System.Drawing.Color.MediumPurple
         Me.FCityTB.HoverState.Parent = Me.FCityTB
@@ -342,22 +342,22 @@ Partial Class AddFaculty
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label9.Location = New System.Drawing.Point(233, 245)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(74, 33)
+        Me.Label9.Size = New System.Drawing.Size(73, 29)
         Me.Label9.TabIndex = 60
         Me.Label9.Text = "State"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label8.Location = New System.Drawing.Point(20, 245)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(59, 33)
+        Me.Label8.Size = New System.Drawing.Size(57, 29)
         Me.Label8.TabIndex = 59
         Me.Label8.Text = "City"
         '
@@ -375,7 +375,7 @@ Partial Class AddFaculty
         Me.FAddressTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.FAddressTB.FocusedState.BorderColor = System.Drawing.Color.Orchid
         Me.FAddressTB.FocusedState.Parent = Me.FAddressTB
-        Me.FAddressTB.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FAddressTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FAddressTB.ForeColor = System.Drawing.Color.Black
         Me.FAddressTB.HoverState.BorderColor = System.Drawing.Color.MediumPurple
         Me.FAddressTB.HoverState.Parent = Me.FAddressTB
@@ -404,7 +404,7 @@ Partial Class AddFaculty
         Me.FGenderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.FGenderComboBox.FocusedColor = System.Drawing.Color.Empty
         Me.FGenderComboBox.FocusedState.Parent = Me.FGenderComboBox
-        Me.FGenderComboBox.Font = New System.Drawing.Font("Open Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FGenderComboBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FGenderComboBox.ForeColor = System.Drawing.Color.Black
         Me.FGenderComboBox.FormattingEnabled = True
         Me.FGenderComboBox.HoverState.Parent = Me.FGenderComboBox
@@ -420,11 +420,11 @@ Partial Class AddFaculty
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label7.Location = New System.Drawing.Point(405, 36)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(100, 33)
+        Me.Label7.Size = New System.Drawing.Size(100, 29)
         Me.Label7.TabIndex = 56
         Me.Label7.Text = "Gender"
         '
@@ -444,7 +444,7 @@ Partial Class AddFaculty
         Me.FPhoneTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.FPhoneTB.FocusedState.BorderColor = System.Drawing.Color.Orchid
         Me.FPhoneTB.FocusedState.Parent = Me.FPhoneTB
-        Me.FPhoneTB.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FPhoneTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FPhoneTB.ForeColor = System.Drawing.Color.Black
         Me.FPhoneTB.HoverState.BorderColor = System.Drawing.Color.MediumPurple
         Me.FPhoneTB.HoverState.Parent = Me.FPhoneTB
@@ -469,7 +469,7 @@ Partial Class AddFaculty
         Me.FDOBDateTimePicker.BorderThickness = 2
         Me.FDOBDateTimePicker.CheckedState.Parent = Me.FDOBDateTimePicker
         Me.FDOBDateTimePicker.FillColor = System.Drawing.Color.White
-        Me.FDOBDateTimePicker.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FDOBDateTimePicker.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FDOBDateTimePicker.ForeColor = System.Drawing.Color.Black
         Me.FDOBDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.FDOBDateTimePicker.HoverState.Parent = Me.FDOBDateTimePicker
@@ -485,22 +485,22 @@ Partial Class AddFaculty
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label6.Location = New System.Drawing.Point(149, 123)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(89, 33)
+        Me.Label6.Size = New System.Drawing.Size(88, 29)
         Me.Label6.TabIndex = 53
         Me.Label6.Text = "Phone"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label5.Location = New System.Drawing.Point(551, 36)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(163, 33)
+        Me.Label5.Size = New System.Drawing.Size(157, 29)
         Me.Label5.TabIndex = 52
         Me.Label5.Text = "Date of Birth"
         '
@@ -520,7 +520,7 @@ Partial Class AddFaculty
         Me.FFirstNameTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.FFirstNameTB.FocusedState.BorderColor = System.Drawing.Color.Orchid
         Me.FFirstNameTB.FocusedState.Parent = Me.FFirstNameTB
-        Me.FFirstNameTB.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FFirstNameTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FFirstNameTB.ForeColor = System.Drawing.Color.Black
         Me.FFirstNameTB.HoverState.BorderColor = System.Drawing.Color.MediumPurple
         Me.FFirstNameTB.HoverState.Parent = Me.FFirstNameTB
@@ -540,33 +540,33 @@ Partial Class AddFaculty
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label2.Location = New System.Drawing.Point(213, 36)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(139, 33)
+        Me.Label2.Size = New System.Drawing.Size(137, 29)
         Me.Label2.TabIndex = 46
         Me.Label2.Text = "Last Name"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label1.Location = New System.Drawing.Point(20, 36)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(142, 33)
+        Me.Label1.Size = New System.Drawing.Size(141, 29)
         Me.Label1.TabIndex = 44
         Me.Label1.Text = "First Name"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label3.Location = New System.Drawing.Point(21, 339)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(164, 33)
+        Me.Label3.Size = New System.Drawing.Size(159, 29)
         Me.Label3.TabIndex = 81
         Me.Label3.Text = "Qualification"
         '
@@ -586,7 +586,7 @@ Partial Class AddFaculty
         Me.FQualiTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.FQualiTB.FocusedState.BorderColor = System.Drawing.Color.Orchid
         Me.FQualiTB.FocusedState.Parent = Me.FQualiTB
-        Me.FQualiTB.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FQualiTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FQualiTB.ForeColor = System.Drawing.Color.Black
         Me.FQualiTB.HoverState.BorderColor = System.Drawing.Color.MediumPurple
         Me.FQualiTB.HoverState.Parent = Me.FQualiTB
@@ -619,7 +619,7 @@ Partial Class AddFaculty
         Me.FExpTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.FExpTB.FocusedState.BorderColor = System.Drawing.Color.Orchid
         Me.FExpTB.FocusedState.Parent = Me.FExpTB
-        Me.FExpTB.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FExpTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FExpTB.ForeColor = System.Drawing.Color.Black
         Me.FExpTB.HoverState.BorderColor = System.Drawing.Color.MediumPurple
         Me.FExpTB.HoverState.Parent = Me.FExpTB
@@ -639,22 +639,22 @@ Partial Class AddFaculty
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label4.Location = New System.Drawing.Point(219, 339)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(142, 33)
+        Me.Label4.Size = New System.Drawing.Size(145, 29)
         Me.Label4.TabIndex = 84
         Me.Label4.Text = "Experience"
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label16.Location = New System.Drawing.Point(691, 339)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(128, 33)
+        Me.Label16.Size = New System.Drawing.Size(128, 29)
         Me.Label16.TabIndex = 88
         Me.Label16.Text = "Password"
         '
@@ -674,7 +674,7 @@ Partial Class AddFaculty
         Me.FPasswordTB.FocusedState.BorderColor = System.Drawing.Color.Turquoise
         Me.FPasswordTB.FocusedState.Parent = Me.FPasswordTB
         Me.FPasswordTB.FocusedState.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.FPasswordTB.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FPasswordTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FPasswordTB.ForeColor = System.Drawing.Color.Black
         Me.FPasswordTB.HoverState.BorderColor = System.Drawing.Color.DarkSlateBlue
         Me.FPasswordTB.HoverState.Parent = Me.FPasswordTB
@@ -701,10 +701,10 @@ Partial Class AddFaculty
         Me.FShowpass.CheckedState.BorderThickness = 0
         Me.FShowpass.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.FShowpass.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.FShowpass.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FShowpass.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FShowpass.Location = New System.Drawing.Point(758, 417)
         Me.FShowpass.Name = "FShowpass"
-        Me.FShowpass.Size = New System.Drawing.Size(108, 19)
+        Me.FShowpass.Size = New System.Drawing.Size(102, 17)
         Me.FShowpass.TabIndex = 91
         Me.FShowpass.Text = "Show Password"
         Me.FShowpass.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
@@ -716,11 +716,11 @@ Partial Class AddFaculty
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label18.Location = New System.Drawing.Point(21, 123)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(58, 33)
+        Me.Label18.Size = New System.Drawing.Size(59, 29)
         Me.Label18.TabIndex = 93
         Me.Label18.Text = "Age"
         '
@@ -740,7 +740,7 @@ Partial Class AddFaculty
         Me.FAgeTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.FAgeTB.FocusedState.BorderColor = System.Drawing.Color.Orchid
         Me.FAgeTB.FocusedState.Parent = Me.FAgeTB
-        Me.FAgeTB.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FAgeTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FAgeTB.ForeColor = System.Drawing.Color.Black
         Me.FAgeTB.HoverState.BorderColor = System.Drawing.Color.MediumPurple
         Me.FAgeTB.HoverState.Parent = Me.FAgeTB
@@ -763,11 +763,11 @@ Partial Class AddFaculty
         'timelable
         '
         Me.timelable.AutoSize = True
-        Me.timelable.Font = New System.Drawing.Font("Open Sans", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.timelable.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.timelable.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.timelable.Location = New System.Drawing.Point(1010, 539)
         Me.timelable.Name = "timelable"
-        Me.timelable.Size = New System.Drawing.Size(35, 18)
+        Me.timelable.Size = New System.Drawing.Size(34, 16)
         Me.timelable.TabIndex = 94
         Me.timelable.Text = "date"
         Me.timelable.Visible = False
@@ -788,7 +788,7 @@ Partial Class AddFaculty
         Me.FLastNameTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.FLastNameTB.FocusedState.BorderColor = System.Drawing.Color.Orchid
         Me.FLastNameTB.FocusedState.Parent = Me.FLastNameTB
-        Me.FLastNameTB.Font = New System.Drawing.Font("Open Sans Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FLastNameTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FLastNameTB.ForeColor = System.Drawing.Color.Black
         Me.FLastNameTB.HoverState.BorderColor = System.Drawing.Color.MediumPurple
         Me.FLastNameTB.HoverState.Parent = Me.FLastNameTB
@@ -822,7 +822,7 @@ Partial Class AddFaculty
         Me.FStateCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.FStateCB.FocusedColor = System.Drawing.Color.Empty
         Me.FStateCB.FocusedState.Parent = Me.FStateCB
-        Me.FStateCB.Font = New System.Drawing.Font("Open Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FStateCB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FStateCB.ForeColor = System.Drawing.Color.Black
         Me.FStateCB.FormattingEnabled = True
         Me.FStateCB.HoverState.Parent = Me.FStateCB
@@ -861,11 +861,11 @@ Partial Class AddFaculty
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Open Sans Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label14.Location = New System.Drawing.Point(448, 339)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(181, 33)
+        Me.Label14.Size = New System.Drawing.Size(186, 29)
         Me.Label14.TabIndex = 97
         Me.Label14.Text = "Assign Subject"
         '

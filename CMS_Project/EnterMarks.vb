@@ -69,9 +69,9 @@ Public Class EnterMarks
         SubPMax5.Enabled = False
         SubPMax6.Enabled = False
         TotalTheory.Enabled = False
-        TotalObtainMarks.Enabled = False
+        'TotalObtainMarks.Enabled = False
         TotalPractical.Enabled = False
-        TotalObtinedPMarks.Enabled = False
+        'TotalObtinedPMarks.Enabled = False
     End Sub
     Private Sub StudentIDCB_SelectedIndexChanged(sender As Object, e As EventArgs) Handles StudentIDCB.SelectedIndexChanged
         Dim READER As MySqlDataReader
@@ -212,6 +212,11 @@ Public Class EnterMarks
         TotalPractical.Text = Convert.ToInt32(SubPMax1.Text) + Convert.ToInt32(SubPMax2.Text) + Convert.ToInt32(SubPMax3.Text) + Convert.ToInt32(SubPMax4.Text) + Convert.ToInt32(SubPMax5.Text) + Convert.ToInt32(SubPMax6.Text)
         TotalObtainMarks.Text = Convert.ToInt32(SubOMarks1.Text) + Convert.ToInt32(SubOMarks2.Text) + Convert.ToInt32(SubOMarks3.Text) + Convert.ToInt32(SubOMarks4.Text) + Convert.ToInt32(SubOMarks5.Text) + Convert.ToInt32(SubOMarks6.Text)
         TotalObtinedPMarks.Text = Convert.ToInt32(SubOPMarks1.Text) + Convert.ToInt32(SubOPMarks2.Text) + Convert.ToInt32(SubOPMarks3.Text) + Convert.ToInt32(SubOPMarks4.Text) + Convert.ToInt32(SubOPMarks5.Text) + Convert.ToInt32(SubOPMarks6.Text)
+        If TotalObtainMarks.Text < 210 Then
+            MessageBox.Show(" Candidate Has FAILED ", "Result Message", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            MessageBox.Show(" Candidate Has PASSED ", "Result Message", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
     End Sub
 
     Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click

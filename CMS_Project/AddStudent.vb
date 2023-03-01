@@ -241,7 +241,6 @@ Public Class AddStudent
         If Not (Asc(e.KeyChar) = 8) Then
             Dim allowedChars As String = "abcdefghijklmnopqrstuvwxyz"
             If Not allowedChars.Contains(e.KeyChar.ToString.ToLower) Then
-                e.KeyChar = ChrW(0)
                 e.Handled = True
             End If
         End If
@@ -251,7 +250,7 @@ Public Class AddStudent
         If e.KeyChar <> ChrW(Keys.Back) Then
             If Char.IsNumber(e.KeyChar) Then
             Else
-                MessageBox.Show("Invalid Input ! Plese Numbers < 100.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Invalid Input ! Please Numbers < 100.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 e.Handled = True
             End If
         End If

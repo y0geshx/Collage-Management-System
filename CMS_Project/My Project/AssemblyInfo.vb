@@ -9,11 +9,11 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("Collage Mangement System")>
-<Assembly: AssemblyDescription("The college management system helps Educational Institutions especially colleges in various ways, such as storing data, maintaining student profiles, analyzing administrative and academic data, improving communication, and engaging students.")>
+<Assembly: AssemblyDescription("The college management system helps Educational Institutions especially colleges in various ways, such as storing data, maintaining student profiles, analyzing administrative and academic data, improving communication, and engaging students. College management system project is to provide a system which can manage all the records of students and college. This system will automate all the working of college. This automated system will be able to store records without paper and will be able to consume less time. Now admin can spend more time on monitoring the college instead of managing paper work.")>
 <Assembly: AssemblyCompany("CMS")>
 <Assembly: AssemblyProduct("CMS_Project")>
-<Assembly: AssemblyCopyright("Copyright © Yogeshwar S")>
-<Assembly: AssemblyTrademark("CMS")>
+<Assembly: AssemblyCopyright("Copyright © Yogeshwar S , Vinodkumar M , Taiyab AR")>
+<Assembly: AssemblyTrademark("COLLEGE MANAGEMENT SYSTEM")>
 
 <Assembly: ComVisible(False)>
 

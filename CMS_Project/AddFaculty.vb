@@ -271,5 +271,4 @@ Public Class AddFaculty
         PictureBox1.Image = Nothing
     End Sub
 
-
 End Class

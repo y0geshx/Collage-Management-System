@@ -1,7 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class DTconnection
     'Dim connect As New MySqlConnection("server='containers-us-west-95.railway.app';port=5999;uid='root';pwd='RZECLgj1qnH49foeAhb7';database='railway'")
-    Dim connect As New MySqlConnection("server='localhost';uid='root';pwd='yxdb';database='cmsdbx'")
+    Dim connect As New MySqlConnection("server='localhost';uid='root';pwd='root';database='cmsdbx'")
     Public Function open() As MySqlConnection
         Try
             connect.Open()
