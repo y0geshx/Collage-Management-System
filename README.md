@@ -25,6 +25,7 @@ A Desktop Application for managing a `college` data. It's developed using `VB.Ne
 - impoer cmsdb.sql database in Mysql Workbench
 - change MySqlConnection `` Collage-Management-System/CMS_Project/DTconnection/DTconnection.vb ``
 
+
 ## Screenshots
 
 <img src="" align="center" alt="img" />
@@ -37,3 +38,6 @@ A Desktop Application for managing a `college` data. It's developed using `VB.Ne
 
 <img src="" align="center" alt="img" />
 
+### Issues
+- If you have trouble setup please a open issue.
+- connect me via email or discord.
