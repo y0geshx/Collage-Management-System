@@ -26,18 +26,29 @@ A Desktop Application for managing a `college` data. It's developed using `VB.Ne
 - change MySqlConnection `` Collage-Management-System/CMS_Project/DTconnection/DTconnection.vb ``
 
 
-## Screenshots
+## Snapshots
 
-<img src="" align="center" alt="img" />
+<img src="./snapshots/splash.png" align="center" alt="img" />
 
-<img src="" align="center" alt="img" />
+<img src="./snapshots/AdminLogin.png" align="center" alt="img" />
 
-<img src="" align="center" alt="img" />
+<img  src="./snapshots/FacultyLogin.png" align="center" alt="img" />
 
-<img  src="" align="center" alt="img" />
+<img src="./snapshots/Dashboard.png" align="center" alt="img" />
 
-<img src="" align="center" alt="img" />
+<img  src="./snapshots/Student.png" align="center" alt="img" />
+
+<img  src="./snapshots/AddStudent.png" align="center" alt="img" />
+
+<img  src="./snapshots/EditFaculty.png" align="center" alt="img" />
+
+<img src="./snapshots/subject.png" align="center" alt="img" />
+
+<img src="./snapshots/EditMarks.png" align="center" alt="img" />
+<br/>
+
+[More snapshots](./snapshots/)
 
 ### Issues
 - If you have trouble setup please a open issue.
-- connect me via email or discord.
+- Contact me via email or discord.
