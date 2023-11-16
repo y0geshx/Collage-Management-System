@@ -28,26 +28,26 @@ A Desktop Application for managing a `college` data. It's developed using `VB.Ne
 
 ## Snapshots
 
-<img src="./snapshots/splash.png" align="center" alt="img" />
+<img src="snapshots/splash.png" align="center" alt="img" />
 
-<img src="./snapshots/AdminLogin.png" align="center" alt="img" />
+<img src="snapshots/AdminLogin.png" align="center" alt="img" />
 
-<img  src="./snapshots/FacultyLogin.png" align="center" alt="img" />
+<img  src="snapshots/FacultyLogin.png" align="center" alt="img" />
 
-<img src="./snapshots/Dashboard.png" align="center" alt="img" />
+<img src="snapshots/Dashboard.png" align="center" alt="img" />
 
-<img  src="./snapshots/Student.png" align="center" alt="img" />
+<img  src="snapshots/Student.png" align="center" alt="img" />
 
-<img  src="./snapshots/AddStudent.png" align="center" alt="img" />
+<img  src="snapshots/AddStudent.png" align="center" alt="img" />
 
-<img  src="./snapshots/EditFaculty.png" align="center" alt="img" />
+<img  src="snapshots/EditFaculty.png" align="center" alt="img" />
 
-<img src="./snapshots/subject.png" align="center" alt="img" />
+<img src="snapshots/subject.png" align="center" alt="img" />
 
-<img src="./snapshots/EditMarks.png" align="center" alt="img" />
+<img src="snapshots/EditMarks.png" align="center" alt="img" />
 <br/>
 
-[More snapshots](./snapshots/)
+#### [More snapshots](snapshots/)
 
 ### Issues
 - If you have trouble setup please a open issue.
