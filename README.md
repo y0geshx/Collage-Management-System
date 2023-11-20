@@ -2,6 +2,7 @@
 
 A Desktop Application for managing a `college` data. It's developed using `VB.Net` programming language & `MySQL` database.
 
+
 ### Requirements
 
 - git
@@ -22,8 +23,8 @@ A Desktop Application for managing a `college` data. It's developed using `VB.Ne
 
 ### Database setup
 
-- impoer cmsdb.sql database in Mysql Workbench
-- change MySqlConnection `` Collage-Management-System/CMS_Project/DTconnection/DTconnection.vb ``
+- Import cmsdb.sql database in Mysql Workbench
+- Change MySqlConnection `` Collage-Management-System/CMS_Project/DTconnection/DTconnection.vb ``
 
 
 ## Snapshots
@@ -45,7 +46,6 @@ A Desktop Application for managing a `college` data. It's developed using `VB.Ne
 <img src="snapshots/subject.png" align="center" alt="img" />
 
 <img src="snapshots/EditMarks.png" align="center" alt="img" />
-<br/>
 
 #### [More snapshots](snapshots/)
 
