@@ -2,6 +2,7 @@
 
 A Desktop Application for managing a `college` data. It's developed using `VB.Net` programming language & `MySQL` database.
 
+![GitHub License](https://img.shields.io/github/license/y0geshx/Collage-Management-System?logo=github)
 
 ### Requirements
 
